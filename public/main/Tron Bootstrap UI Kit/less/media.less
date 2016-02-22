@@ -1,0 +1,42 @@
+//
+// Media objects
+// (dependencies: bootstrap/media.less)
+//---------------------------------------------
+
+.media-right,
+.media > .pull-right {
+  padding-left: 15px;
+}
+
+.media-left,
+.media > .pull-left {
+  padding-right: 15px;
+}
+.media-object {
+  border-radius: @border-radius-small;
+}
+.media-body {
+  font-size: @font-size-small;
+  > p {
+    margin-bottom: 0;
+  } 
+}
+.media-heading {
+  margin-bottom: 8px;
+  font-size: @font-size-base;
+  font-weight: normal;
+  a {
+    color: @text-color;
+    font-weight: normal;
+    &:hover {
+      color: @link-color;
+    }
+  }
+}
+
+// Media list variation
+.media-list {
+  li {
+    color: @text-color;
+  }
+}

@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Tron Docs | Extras</title>
+  <!--SEO Meta Tags-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Tron Bootstrap based UI Kit, flat, modern front-end framework for faster and easier web development.">
+  <meta name="keywords" content="HTML, CSS, JS, JavaScript, framework, bootstrap, front-end, frontend, web development">
+  <meta name="author" content="8 Guild">
+  <!-- Favicons -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- Tron Bootstrap Skin and UI CSS -->
+  <link href="../css/tron-ui.min.css" rel="stylesheet">
+  <!-- Documentation styles -->
+  <link href="css/docs.css" rel="stylesheet">
+
+  <!-- Outdated Browser Plugin Styles -->
+  <link href="../outdatedbrowser/outdatedbrowser.css" rel="stylesheet">
+
+</head>
+
+<!-- Body -->
+
+<body>
+
+  <!-- Header -->
+  <header class="navbar navbar-default navbar-static-top tron-docs-nav" id="top" role="banner">
+    <div class="container">
+      <div class="navbar-header">
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".tron-navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="arrow"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="index.html" class="navbar-logo"><img src="img/logo.png" alt="Tron"></a>
+      </div>
+      <nav class="collapse navbar-collapse tron-navbar-collapse" role="navigation">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">CSS</a></li>
+          <li><a href="components.html">Components</a></li>
+          <li><a href="javascript.html">JavaScript</a></li>
+          <li class="active"><a href="tron-extras.html">Tron Extras</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://8guild.ticksy.com/" target="_blank">Support</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- Header Close-->
+
+  <!-- Page content -->
+  <main class="tron-docs-header" id="content">
+    <div class="container">
+      <h1>Tron Extras</h1>
+      <p>In this section you will find additional components provided by Tron UI Kit. With these components you will be able to build full-featured website or application.</p>
+    </div>
+  </main>
+
+  <div class="container tron-docs-container">
+    <div class="row">
+      <div class="col-md-9" role="main">
+        
+        <!-- Switches
+        ================================================== -->
+        <div class="tron-docs-section">
+          <h1 id="switches" class="page-header">Switches</h1>
+          <p>Switch is a common UI element on especially mobile devices that is used for binary on/off or true/false data input.</p>
+          <p>Below are the live examples and markup needed for creating toggable switch element. Note that for capturing user input we used <strong>hidden input.</strong></p>
+
+          <h3>Basic example</h3>
+          <div class="tron-example tron-example-switch">
+            <div class="form-inline">
+              <div class="form-group">
+                <small>Default switch</small>
+                <div class="switch on">
+                  <div class="knob">
+                    <span class="label">On</span>
+                    <span class="label">Off</span>
+                  </div>
+                  <input type="hidden" value="on">
+                </div>
+              </div>
+              <div class="form-group">
+                <small>Outlined switch</small>
+                <div class="switch switch-outlined">
+                  <div class="knob">
+                    <span class="label">On</span>
+                    <span class="label">Off</span>
+                  </div>
+                  <input type="hidden" value="off">
+                </div>
+              </div>
+            </div>
+          </div><!-- /example -->
+          <div class="highlight"><pre><code>
+&lt;div class="switch on"&gt;
+  &lt;div class="knob"&gt;
+    &lt;span class="label"&gt;On&lt;/span&gt;
+    &lt;span class="label"&gt;Off&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;input type="hidden" value="on"&gt;
+&lt;/div&gt;
+
+&lt;div class="switch switch-outlined"&gt;
+  &lt;div class="knob"&gt;
+    &lt;span class="label"&gt;On&lt;/span&gt;
+    &lt;span class="label"&gt;Off&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;input type="hidden" value="off"&gt;
+&lt;/div&gt;
+          </code></pre></div>
+
+          <h3>No labels</h3>
+          <p>In case there is no need for lables simply do not put <code>.label</code> inside <code>.knob</code>.</p>
+          <div class="tron-example tron-example-switch">
+            <div class="form-inline">
+              <div class="form-group">
+                <div class="switch on">
+                  <div class="knob"></div>
+                  <input type="hidden" value="on">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="switch">
+                  <div class="knob"></div>
+                  <input type="hidden" value="off">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="switch switch-outlined on">
+                  <div class="knob"></div>
+                  <input type="hidden" value="on">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="switch switch-outlined">
+                  <div class="knob"></div>
+                  <input type="hidden" value="off">
+                </div>
+              </div>
+            </div>
+          </div><!-- /example -->
+          <div class="highlight"><pre><code>
+&lt;div class="switch on"&gt;
+  &lt;div class="knob"&gt;&lt;/div&gt;
+  &lt;input type="hidden" value="on"&gt;
+&lt;/div&gt;
+          </code></pre></div>
+
+          <h3>Color options</h3>
+          <p>Choose between 4 additional color variations. Place modifier class <code>.switch-success</code>, <code>.switch-info</code>, <code>.switch-warning</code> or <code>.switch-danger</code> on <code>.switch</code> element.</p>
+          <div class="tron-example">
+            <div class="row">
+              <div class="col-xs-6 col-md-3 col-sm-4">
+                <div class="form-group">
+                  <small>Default switch</small>
+                  <div class="switch on">
+                    <div class="knob">
+                      <span class="label">On</span>
+                      <span class="label">Off</span>
+                    </div>
+                    <input type="hidden" value="on">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <small>Success switch</small>
+                  <div class="switch switch-success on">
+                    <div class="knob">
+                      <span class="label">On</span>
+                      <span class="label">Off</span>
+                    </div>
+                    <input type="hidden" value="on">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <small>Info switch</small>
+                  <div class="switch switch-info on">
+                    <div class="knob">
+                      <span class="label">On</span>
+                      <span class="label">Off</span>
+                    </div>
+                    <input type="hidden" value="on">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <small>Warning switch</small>
+                  <div class="switch switch-warning on">
+                    <div class="knob">
+                      <span class="label">On</span>
+                      <span class="label">Off</span>
+                    </div>
+                    <input type="hidden" value="on">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <small>Danger switch</small>
+                  <div class="switch switch-danger on">
+                    <div class="knob">
+                      <span class="label">On</span>
+                      <span class="label">Off</span>
+                    </div>
+                    <input type="hidden" value="on">
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xs-6 col-md-3 col-sm-4">
+                <div class="form-group">
+                  <small>Default switch</small>
+                  <div class="switch switch-outlined on">
+                    <div class="knob">
+                      <span class="label">On</span>
+                      <span class="label">Off</span>
+                    </div>
+                    <input type="hidden" value="on">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <small>Success switch</small>
+                  <div class="switch switch-outlined switch-success on">
+                    <div class="knob">
+                      <span class="label">On</span>
+                      <span class="label">Off</span>
+                    </div>
+                    <input type="hidden" value="on">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <small>Info switch</small>
+                  <div class="switch switch-outlined switch-info on">
+                    <div class="knob">
+                      <span class="label">On</span>
+                      <span class="label">Off</span>
+                    </div>
+                    <input type="hidden" value="on">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <small>Warning switch</small>
+                  <div class="switch switch-outlined switch-warning on">
+                    <div class="knob">
+                      <span class="label">On</span>
+                      <span class="label">Off</span>
+                    </div>
+                    <input type="hidden" value="on">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <small>Danger switch</small>
+                  <div class="switch switch-outlined switch-danger on">
+                    <div class="knob">
+                      <span class="label">On</span>
+                      <span class="label">Off</span>
+                    </div>
+                    <input type="hidden" value="on">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="highlight"><pre><code>
+&lt;div class="switch switch-success"&gt; ... &lt;/div&gt;
+
+&lt;div class="switch switch-info"&gt; ... &lt;/div&gt;
+
+&lt;div class="switch switch-warning"&gt; ... &lt;/div&gt;
+
+&lt;div class="switch switch-danger"&gt; ... &lt;/div&gt;
+          </code></pre></div>
+
+          <h3>Disabled state</h3>
+          <p>Add the <code>.disabled</code> class on a <code>.switch</code> to prevent user interaction and generate a different look.</p>
+          <div class="tron-example tron-example-switch">
+            <div class="form-inline">
+              <div class="form-group">
+                <div class="switch on disabled">
+                  <div class="knob">
+                    <span class="label">On</span>
+                    <span class="label">Off</span>
+                  </div>
+                  <input type="hidden" value="on">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="switch switch-outlined disabled">
+                  <div class="knob">
+                    <span class="label">On</span>
+                    <span class="label">Off</span>
+                  </div>
+                  <input type="hidden" value="off">
+                </div>
+              </div>
+            </div>
+          </div><!-- /example -->
+          <div class="highlight"><pre><code>
+&lt;div class="switch on"&gt;
+  &lt;div class="knob"&gt;
+    &lt;span class="label"&gt;On&lt;/span&gt;
+    &lt;span class="label"&gt;Off&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;input type="hidden" value="on"&gt;
+&lt;/div&gt;
+
+&lt;div class="switch switch-outlined"&gt;
+  &lt;div class="knob"&gt;
+    &lt;span class="label"&gt;On&lt;/span&gt;
+    &lt;span class="label"&gt;Off&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;input type="hidden" value="off"&gt;
+&lt;/div&gt;
+          </code></pre></div>
+        </div>
+
+
+        <!-- Slider
+        ================================================== -->
+        <div class="tron-docs-section">
+          <h1 id="slider" class="page-header">Slider <small>bootstrap-slider.js</small></h1>
+          <h4>Browser support</h4>
+          <p><strong>Plugin supports modern browsers. Basically, anything below IE9 is not compatible with this plugin!</strong></p>
+          <h4>Plugin initializing</h4>
+          <p>Every single slider used on the page should be initialized individually.</p>
+          <h2>Examples</h2>
+          <p>Below are different examples of how <strong>bootstrap-slider.js</strong> plugin can be used <strong>(included in tron-ui.js)</strong>.</p>
+
+          <h3>Basic Example</h3>
+          <p>Basic example with custom formatter and colored selected region</p>
+          <div class="tron-example">
+            <input id="slider-basic" type="text" data-slider-min="0" data-slider-max="30" data-slider-step="1" data-slider-value="15"/>
+          </div> <!-- /example -->
+          <div class="highlight"><pre><code>
+&lt;!-- HTML --&gt;
+&lt;input id="slider-basic" type="text" data-slider-min="0" data-slider-max="30" data-slider-step="1" data-slider-value="15"/&gt;
+
+&lt;!-- Javascript --&gt;
+$('#slider-basic').slider({
+  formatter: function(value) {
+    return 'Current value: ' + value;
+  }
+});
+          </code></pre></div>
+
+          <h3>Vertical slider</h3>
+          <p>Position slider vertically by adding <code>data-slider-orientation="vertical"</code> attribute.</p>
+          <div class="tron-example">
+            <input id="slider-vertical" type="text" data-slider-min="0" data-slider-max="30" data-slider-step="1" data-slider-value="15" data-slider-orientation="vertical"/>
+          </div> <!-- /example -->
+          <div class="highlight"><pre><code>
+&lt;!-- HTML --&gt;
+&lt;input id="slider-vertical" type="text" data-slider-min="0" data-slider-max="30" data-slider-step="1" data-slider-value="15" data-slider-orientation="vertical"/&gt;
+
+&lt;!-- Javascript --&gt;
+$('#slider-vertical').slider({
+  formatter: function(value) {
+    return 'Current value: ' + value;
+  }
+});
+          </code></pre></div>
+
+          <h3>Slider Range</h3>
+          <p>Convert slider to range selector with options specified via data attribute.</p>
+          <div class="tron-example">
+            <label>Filter by price interval:</label><br>
+            <b>$ 10</b> <input id="slider-range" data-slider-class="abvg" type="text" data-slider-min="100" data-slider-max="1000" data-slider-step="10" data-slider-value="[300,700]"/> <b>$ 1000</b>
+          </div> <!-- /example -->
+          <div class="highlight"><pre><code>
+&lt;!-- HTML --&gt;
+&lt;label&gt;Filter by price interval:&lt;/label&gt;&lt;br&gt;
+&lt;b&gt;$ 10&lt;/b&gt; &lt;input id="slider-range" type="text" data-slider-min="100" data-slider-max="1000" data-slider-step="10" data-slider-value="[300,700]"/&gt; &lt;b&gt;$ 1000&lt;/b&gt;
+
+&lt;!-- Javascript --&gt;
+$('#slider-range').slider();
+          </code></pre></div>
+
+          <h3>Disable state</h3>
+          <p>Add the <code>data-slider-enabled="false"</code> attribute to prevent user interaction and trigger a different look.</p>
+          <div class="tron-example">
+            <input id="slider-disabled" type="text" data-slider-min="0" data-slider-max="30" data-slider-step="1" data-slider-value="15" data-slider-enabled="false"/>
+          </div> <!-- /example -->
+          <div class="highlight"><pre><code>
+&lt;!-- HTML --&gt;
+&lt;input id="slider-vertical" type="text" data-slider-min="0" data-slider-max="30" data-slider-step="1" data-slider-value="15" data-slider-enabled="false"/&gt;
+          </code></pre></div>
+
+          <h2>Usage</h2>
+          <p>For more information regarding <strong>usage, options and methods of bootstrap-slider.js plugin</strong> refer to official <a href="https://github.com/seiyria/bootstrap-slider" target="_blank">plugin documentation page</a> on GitHub.</p>
+        </div>
+
+
+        <!-- Datepicker
+        ================================================== -->
+        <div class="tron-docs-section">
+          <h1 id="datepicker-section" class="page-header">Datepicker <small>bootstrap-datepicker.js</small></h1>
+          <p>Javascript dependent components for setting date via user friendly interface.</p>
+          <h4>Initialization</h4>
+          <p>Every single slider used on the page should be initialized individually.</p>
+
+          <h2>Examples</h2>
+          <h3>Basic Example <small>(focus over the input)</small></h3>
+          <p>Requires minimum setup. Optionally you can highlight current date.</p>
+          <div class="tron-example">
+            <input id="datepicker-base" type="text" class="form-control">
+          </div><!-- /example -->
+          <div class="highlight"><pre><code>
+&lt;!-- HTML --&gt;
+&lt;input id="datepicker-base" type="text" class="form-control"&gt;
+
+&lt;!-- Javascript --&gt;
+$('#datepicker-base').datepicker({
+  todayHighlight: true
+});
+          </code></pre></div>
+
+          <h3>With input addon</h3>
+          <div class="tron-example">
+            <div class="input-group">
+              <input id="datepicker-addon" type="text" class="form-control addon-right"><span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+            </div>
+          </div><!-- /example -->
+          <div class="highlight"><pre><code>
+&lt;!-- HTML --&gt;
+&lt;div class="input-group"&gt;
+  &lt;input id="datepicker-addon" type="text" class="form-control addon-right"&gt;&lt;span class="input-group-addon"&gt;&lt;i class="fa fa-calendar"&gt;&lt;/i&gt;&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;!-- Javascript --&gt;
+$('#datepicker-addon').datepicker({
+  todayHighlight: true
+});
+          </code></pre></div>
+
+          <h3>Date Range</h3>
+          <p>Useful component for selecting fro/to date range.</p>
+          <div class="tron-example">
+            <div class="input-daterange input-group" id="datepicker">
+              <input type="text" class="form-control addon-right" name="start" />
+              <span class="input-group-addon">to</span>
+              <input type="text" class="form-control addon-left" name="end" />
+            </div>
+          </div><!-- /example -->
+          <div class="highlight"><pre><code>
+&lt;!-- HTML --&gt;
+&lt;div class="input-daterange input-group" id="datepicker"&gt;
+  &lt;input type="text" class="form-control addon-right" name="start" /&gt;
+  &lt;span class="input-group-addon"&gt;to&lt;/span&gt;
+  &lt;input type="text" class="form-control addon-left" name="end" /&gt;
+&lt;/div&gt;
+
+&lt;!-- Javascript --&gt;
+$('.input-daterange').datepicker();
+          </code></pre></div>
+
+          <h3>Inline datepicker</h3>
+          <p>Use <code>&lt;div&gt;</code> element instead of <code>input</code> to always show datepicker on the page.</p>
+          <div class="tron-example">
+            <div id="datepicker-inline"></div>
+          </div><!-- /example -->
+          <div class="highlight"><pre><code>
+&lt;!-- HTML --&gt;
+&lt;div id="datepicker-inline"&gt;&lt;/div&gt;
+
+&lt;!-- Javascript --&gt;
+$('#datepicker-inline').datepicker({
+  todayHighlight: true
+});
+          </code></pre></div>
+
+          <h2>Usage</h2>
+          <p>For more information regarding <strong>usage, options, methods and events of bootstrap-datepicker.js plugin</strong> refer to official <a href="http://bootstrap-datepicker.readthedocs.org/en/release/" target="_blank">plugin documentation page.</a></p>
+          <p>There is also bootstrap-datepicker sandbox available where you can tweak the options and resulted code appears in real time. You than just need to copy and paste it onto your page. <a href="http://eternicode.github.io/bootstrap-datepicker/" target="_blank">Link to sanbox.</a></p>
+        </div>
+
+
+        <!-- Tags
+        ================================================== -->
+        <div class="tron-docs-section">
+          <h1 id="tags" class="page-header">Tags</h1>
+          <p>Tag is a non-hierarchical keyword or term that helps describe an item and allows it to be found again by browsing or searching. They are widely used in blogging platforms such as WordPress as part of blog post metadata.</p>
+
+          <h3>Basic Example</h3>
+          <p>Add <code>.tag</code> class to anchor <code>&lt;a&gt;</code> element or if you do not need to link tag simply place class on <code>&lt;span&gt;</code> element.</p>
+          <div class="tron-example">
+            <a href="#" class="tag">Clickable tag</a>
+            <span class="tag active">Inactive tag</span>
+          </div><!-- /example -->
+          <div class="highlight"><pre><code>
+&lt;a href="#" class="tag"&gt;Clickable tag&lt;/a&gt;
+&lt;span class="tag"&gt;Inactive tag&lt;/span&gt;
+          </code></pre></div>
+
+          <h3>Color options</h3>
+          <p>Simply add <code>.tag-success</code>, <code>.tag-info</code>, <code>.tag-warning</code> or <code>.tag-danger</code> modifier class to <code>.tag</code> element.</p>
+          <div class="tron-example">
+            <div class="form-group">
+              <label>Normal state</label><br>
+              <a href="#" class="tag">Default tag</a>
+              <a href="#" class="tag tag-success">Success tag</a>
+              <a href="#" class="tag tag-info">Info tag</a>
+              <a href="#" class="tag tag-warning">Warning tag</a>
+              <a href="#" class="tag tag-danger">Danger tag</a><br>
+            </div>
+            <div class="form-group">
+              <label>Hover / active state</label><br>
+              <a href="#" class="tag active">Default tag</a>
+              <a href="#" class="tag tag-success active">Success tag</a>
+              <a href="#" class="tag tag-info active">Info tag</a>
+              <a href="#" class="tag tag-warning active">Warning tag</a>
+              <a href="#" class="tag tag-danger active">Danger tag</a>
+            </div>
+          </div><!-- /example -->
+          <div class="highlight"><pre><code>
+&lt;a href="#" class="tag"&gt;Default tag&lt;/a&gt;
+&lt;a href="#" class="tag tag-success"&gt;Success tag&lt;/a&gt;
+&lt;a href="#" class="tag tag-info"&gt;Info tag&lt;/a&gt;
+&lt;a href="#" class="tag tag-warning"&gt;Warning tag&lt;/a&gt;
+&lt;a href="#" class="tag tag-danger"&gt;Danger tag&lt;/a&gt;
+
+&lt;a href="#" class="tag active"&gt;Default tag&lt;/a&gt;
+&lt;a href="#" class="tag tag-success active"&gt;Success tag&lt;/a&gt;
+&lt;a href="#" class="tag tag-info active"&gt;Info tag&lt;/a&gt;
+&lt;a href="#" class="tag tag-warning active"&gt;Warning tag&lt;/a&gt;
+&lt;a href="#" class="tag tag-danger active"&gt;Danger tag&lt;/a&gt;
+          </code></pre></div>
+        </div>
+
+
+        <!-- Social Buttons
+        ================================================== -->
+        <div class="tron-docs-section">
+          <h1 id="social-btns" class="page-header">Social Buttons</h1>
+          <p>Social media has given us great ways to build our digital reputations and promote our online businesses. Nowadays almost every business or individual has social accounts. And every website certainly should have links to these accounts.</p>
+
+          <h3>Examples (38 buttons)</h3>
+          <p>Add <code>.social-btn</code> class to anchor <code>&lt;a&gt;</code> element along with network specific class (<code>.sb-facebook</code> for instance).</p>
+          <div class="tron-example">
+            <a href="#" class="social-btn sb-behance"><i class="fa fa-behance"></i></a>
+            <a href="#" class="social-btn sb-bitbucket"><i class="fa fa-bitbucket"></i></a>
+            <a href="#" class="social-btn sb-codepen"><i class="fa fa-codepen"></i></a>
+            <a href="#" class="social-btn sb-deviantart"><i class="fa fa-deviantart"></i></a>
+            <a href="#" class="social-btn sb-digg"><i class="fa fa-digg"></i></a>
+            <a href="#" class="social-btn sb-dribbble"><i class="fa fa-dribbble"></i></a>
+            <a href="#" class="social-btn sb-dropbox"><i class="fa fa-dropbox"></i></a>
+            <a href="#" class="social-btn sb-facebook"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="social-btn sb-flickr"><i class="fa fa-flickr"></i></a>
+            <a href="#" class="social-btn sb-foursquare"><i class="fa fa-foursquare"></i></a>
+            <a href="#" class="social-btn sb-github"><i class="fa fa-github-alt"></i></a>
+            <a href="#" class="social-btn sb-google-plus"><i class="fa fa-google-plus"></i></a>
+            <a href="#" class="social-btn sb-instagram"><i class="fa fa-instagram"></i></a>
+            <a href="#" class="social-btn sb-jsfiddle"><i class="fa fa-jsfiddle"></i></a>
+            <a href="#" class="social-btn sb-lastfm"><i class="fa fa-lastfm"></i></a>
+            <a href="#" class="social-btn sb-linkedin"><i class="fa fa-linkedin"></i></a>
+            <a href="#" class="social-btn sb-paypal"><i class="fa fa-paypal"></i></a>
+            <a href="#" class="social-btn sb-pinterest"><i class="fa fa-pinterest"></i></a>
+            <a href="#" class="social-btn sb-reddit"><i class="fa fa-reddit"></i></a>
+            <a href="#" class="social-btn sb-skype"><i class="fa fa-skype"></i></a>
+            <a href="#" class="social-btn sb-soundcloud"><i class="fa fa-soundcloud"></i></a>
+            <a href="#" class="social-btn sb-stack-overflow"><i class="fa fa-stack-overflow"></i></a>
+            <a href="#" class="social-btn sb-steam"><i class="fa fa-steam"></i></a>
+            <a href="#" class="social-btn sb-stumbleupon"><i class="fa fa-stumbleupon"></i></a>
+            <a href="#" class="social-btn sb-trello"><i class="fa fa-trello"></i></a>
+            <a href="#" class="social-btn sb-tumblr"><i class="fa fa-tumblr"></i></a>
+            <a href="#" class="social-btn sb-twitch"><i class="fa fa-twitch"></i></a>
+            <a href="#" class="social-btn sb-twitter"><i class="fa fa-twitter"></i></a>
+            <a href="#" class="social-btn sb-vimeo"><i class="fa fa-vimeo-square"></i></a>
+            <a href="#" class="social-btn sb-vine"><i class="fa fa-vine"></i></a>
+            <a href="#" class="social-btn sb-vk"><i class="fa fa-vk"></i></a>
+            <a href="#" class="social-btn sb-wechat"><i class="fa fa-wechat"></i></a>
+            <a href="#" class="social-btn sb-wordpress"><i class="fa fa-wordpress"></i></a>
+            <a href="#" class="social-btn sb-xing"><i class="fa fa-xing"></i></a>
+            <a href="#" class="social-btn sb-yahoo"><i class="fa fa-yahoo"></i></a>
+            <a href="#" class="social-btn sb-yelp"><i class="fa fa-yelp"></i></a>
+            <a href="#" class="social-btn sb-youtube"><i class="fa fa-youtube"></i></a>
+            <a href="#" class="social-btn sb-email"><i class="fa fa-envelope"></i></a>
+          </div><!-- /example -->
+          <div class="highlight"><pre><code>
+&lt;a href="#" class="social-btn sb-behance"&gt;&lt;i class="fa fa-behance"&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href="#" class="social-btn sb-bitbucket"&gt;&lt;i class="fa fa-bitbucket"&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href="#" class="social-btn sb-codepen"&gt;&lt;i class="fa fa-codepen"&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href="#" class="social-btn sb-deviantart"&gt;&lt;i class="fa fa-deviantart"&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href="#" class="social-btn sb-digg"&gt;&lt;i class="fa fa-digg"&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href="#" class="social-btn sb-dribbble"&gt;&lt;i class="fa fa-dribbble"&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href="#" class="social-btn sb-dropbox"&gt;&lt;i class="fa fa-dropbox"&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href="#" class="social-btn sb-facebook"&gt;&lt;i class="fa fa-facebook"&gt;&lt;/i>&gt;&lt;/a&gt;
+&lt;a href="#" class="social-btn sb-flickr"&gt;&lt;i class="fa fa-flickr"&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href="#" class="social-btn sb-foursquare"&gt;&lt;i class="fa fa-foursquare"&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href="#" class="social-btn sb-github"&gt;&lt;i class="fa fa-github-alt"&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href="#" class="social-btn sb-google-plus"&gt;&lt;i class="fa fa-google-plus"&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href="#" class="social-btn sb-instagram"&gt;&lt;i class="fa fa-instagram"&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href="#" class="social-btn sb-jsfiddle"&gt;&lt;i class="fa fa-jsfiddle"&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href="#" class="social-btn sb-lastfm"&gt;&lt;i class="fa fa-lastfm"&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href="#" class="social-btn sb-linkedin"&gt;&lt;i class="fa fa-linkedin"&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href="#" class="social-btn sb-paypal"&gt;&lt;i class="fa fa-paypal"&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href="#" class="social-btn sb-pinterest"&gt;&lt;i class="fa fa-pinterest"&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href="#" class="social-btn sb-reddit"&gt;&lt;i class="fa fa-reddit"&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href="#" class="social-btn sb-skype"&gt;&lt;i class="fa fa-skype"&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href="#" class="social-btn sb-soundcloud"&gt;&lt;i class="fa fa-soundcloud"&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href="#" class="social-btn sb-stack-overflow"&gt;&lt;i class="fa fa-stack-overflow"&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href="#" class="social-btn sb-steam"&gt;&lt;i class="fa fa-steam"&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href="#" class="social-btn sb-stumbleupon"&gt;&lt;i class="fa fa-stumbleupon"&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href="#" class="social-btn sb-trello"&gt;&lt;i class="fa fa-trello"&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href="#" class="social-btn sb-tumblr"&gt;&lt;i class="fa fa-tumblr"&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href="#" class="social-btn sb-twitch"&gt;&lt;i class="fa fa-twitch"&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href="#" class="social-btn sb-twitter"&gt;&lt;i class="fa fa-twitter"&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href="#" class="social-btn sb-vimeo"&gt;&lt;i class="fa fa-vimeo-square"&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href="#" class="social-btn sb-vine"&gt;&lt;i class="fa fa-vine"&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href="#" class="social-btn sb-vk"&gt;&lt;i class="fa fa-vk"&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href="#" class="social-btn sb-wechat"&gt;&lt;i class="fa fa-wechat"&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href="#" class="social-btn sb-wordpress"&gt;&lt;i class="fa fa-wordpress"&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href="#" class="social-btn sb-xing"&gt;&lt;i class="fa fa-xing"&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href="#" class="social-btn sb-yahoo"&gt;&lt;i class="fa fa-yahoo"&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href="#" class="social-btn sb-yelp"&gt;&lt;i class="fa fa-yelp"&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href="#" class="social-btn sb-youtube"&gt;&lt;i class="fa fa-youtube"&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href="#" class="social-btn sb-email"&gt;&lt;i class="fa fa-envelope"&gt;&lt;/i&gt;&lt;/a&gt;
+          </code></pre></div>
+
+          <h3>Button Sizes</h3>
+          <p>Like with normal buttons you can set different social button sizes via modifier classes <code>.sb-sm</code> and <code>.sb-lg</code>.</p>
+          <div class="tron-example">
+            <a href="#" class="social-btn sb-twitter sb-sm"><i class="fa fa-twitter"></i></a>
+            <a href="#" class="social-btn sb-twitter"><i class="fa fa-twitter"></i></a>
+            <a href="#" class="social-btn sb-twitter sb-lg"><i class="fa fa-twitter"></i></a>
+          </div><!-- /example -->
+          <div class="highlight"><pre><code>
+&lt;a href="#" class="social-btn sb-twitter sb-sm"&gt;&lt;i class="fa fa-twitter"&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href="#" class="social-btn sb-twitter"&gt;&lt;i class="fa fa-twitter"&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href="#" class="social-btn sb-twitter sb-lg"&gt;&lt;i class="fa fa-twitter"&gt;&lt;/i&gt;&lt;/a&gt;
+          </code></pre></div>
+        </div>
+
+        <!-- Tiles
+        ================================================== -->
+        <div class="tron-docs-section">
+          <h1 id="tiles" class="page-header">Tiles</h1>
+          <p>Nowadays it is quite popular to present content using grid layouts. Tile is created especially for this purpose. You can wrap your blog posts, shop items in tiles. Tiles take less space and look nicely on the page.</p>
+          <h3>Examples <small>(Hover over tile image to see effect)</small></h3>
+          <p>Tiles are 100% width by default and limited by parent container width as well as  by <code>max-width</code> set to <strong>460px</strong> which you can easily change. The best way to use tiles is to put them inside Bootstrap columns and control their width using predefined classes like <code>.col-md-6</code>.</p>
+          <div class="tron-example tron-example-tiles">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="tile">
+                  <div class="thumb">
+                    <div class="action">
+                      <a href="#" class="btn-outlined btn-light icon-right">View More <i class="fa fa-caret-right"></i></a>
+                    </div>
+                    <img src="img/thumb2.png" alt="Thumbnail">
+                  </div>
+                  <div class="caption">
+                    <h4>Tile Label</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="tile">
+                  <div class="thumb">
+                    <div class="action">
+                      <a href="#" class="btn-outlined btn-light icon-right">View More <i class="fa fa-caret-right"></i></a>
+                    </div>
+                    <img src="img/thumb2.png" alt="Thumbnail">
+                  </div>
+                  <div class="caption">
+                    <h4>Longer Tile Label</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- /example -->
+          <div class="highlight"><pre><code>
+&lt;div class="row"&gt;
+
+  &lt;!-- Constraining column --&gt;
+  &lt;div class="col-sm-6"&gt;
+
+    &lt;!-- Tile --&gt;
+    &lt;div class="tile"&gt;
+      &lt;div class="thumb"&gt;
+        &lt;div class="action"&gt;
+          &lt;a href="#" class="btn-outlined btn-light icon-right"&gt;View More &lt;i class="fa fa-caret-right"&gt;&lt;/i&gt;&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;img src="img/thumb2.png" alt="Thumbnail"&gt;
+      &lt;/div&gt;
+      &lt;div class="caption"&gt;
+        &lt;h4&gt;Tile Label&lt;/h4&gt;
+        &lt;p&gt; ... &lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  ...
+&lt;/div&gt;
+          </code></pre></div>
+
+          <h3>Bordered Tiles</h3>
+          <p>Bordered version is for the cases when image has white backgrounds. To turn to bordered version you simply need to add <code>.bordered</code> class to <code>.tile</code> element.</p>
+        </div>
+
+
+        <!-- Pricing Plans
+        ================================================== -->
+        <div class="tron-docs-section">
+          <h1 id="pricing-plan" class="page-header">Pricing Plans</h1>
+          <p>If you use subscription payment system to sell your products or services than pricing plans is the best way to inform user about it.</p>
+          <h3>Basic Example</h3>
+          <p>Pricing plans are 100% width by default and limited by parent container width as well as  by <code>max-width</code> set to <strong>460px</strong> which you can easily change. The best way to use pricing plans is to put them inside Bootstrap columns and control their width using predefined classes like <code>.col-md-6</code>.</p>
+          <div class="tron-example tron-example-pricing">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="pricing-plan pricing-plan-primary">
+                  <div class="pp-heading">
+                    <h3 class="pp-title">Basic Plan</h3>
+                    <div class="pp-price">$49<small>/mo</small></div>
+                  </div>
+                  <div class="pp-body">
+                    <ul>
+                      <li>10GB of space</li>
+                      <li>1 account</li>
+                      <li>e-mail support</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Sign Up</a>
+                  </div>
+                </div>
+              </div>
+             <div class="col-sm-6">
+                <div class="pricing-plan">
+                  <div class="pp-heading">
+                    <h3 class="pp-title">Free Plan</h3>
+                    <div class="pp-price">Free</div>
+                  </div>
+                  <div class="pp-body">
+                    <ul>
+                      <li>5GB of space</li>
+                      <li>1 account</li>
+                      <li>limited support</li>
+                    </ul>
+                    <a href="#" class="btn btn-default">Sign Up</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- /example -->
+          <div class="highlight"><pre><code>
+&lt;div class="row"&gt;
+
+  &lt;!-- Constraining column --&gt;
+  &lt;div class="col-sm-6"&gt;
+
+    &lt;!-- Pricing Plan --&gt;
+    &lt;div class="pricing-plan"&gt;
+      &lt;div class="pp-heading"&gt;
+        &lt;h3 class="pp-title"&gt;Free Plan &lt;/h3&gt;
+        &lt;div class="pp-price"&gt;Free&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="pp-body"&gt;
+        &lt;ul&gt;
+          &lt;li&gt;5GB of space &lt;/li&gt;
+          &lt;li&gt;1 account &lt;/li&gt;
+          &lt;li&gt;limited support&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;a href="#" class="btn btn-default"&gt;Sign Up &lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  ...
+&lt;/div&gt;
+          </code></pre></div>
+
+          <h3>Optional Icons</h3>
+          <div class="tron-example tron-example-pricing">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="pricing-plan pricing-plan-primary">
+                  <div class="pp-heading">
+                    <div class="pp-icon"><i class="fa fa-file-text-o"></i></div>
+                    <h3 class="pp-title">Basic Plan</h3>
+                    <div class="pp-price">$49<small>/mo</small></div>
+                  </div>
+                  <div class="pp-body">
+                    <ul>
+                      <li>10GB of space</li>
+                      <li>5 accounts</li>
+                      <li>e-mail support</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Sign Up</a>
+                  </div>
+                </div>
+              </div>
+             <div class="col-sm-6">
+                <div class="pricing-plan">
+                  <div class="pp-heading">
+                    <div class="pp-icon"><i class="flaticon-underline6"></i></div>
+                    <h3 class="pp-title">Free Plan</h3>
+                    <div class="pp-price">Free</div>
+                  </div>
+                  <div class="pp-body">
+                    <ul>
+                      <li>5GB of space</li>
+                      <li>1 account</li>
+                      <li>limited support</li>
+                    </ul>
+                    <a href="#" class="btn btn-default">Sign Up</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- /example -->
+          <div class="highlight"><pre><code>
+&lt;!-- Pricing Plan --&gt;
+&lt;div class="pricing-plan"&gt;
+  &lt;div class="pp-heading"&gt;
+    &lt;div class="pp-icon"&gt;&lt;i class="fa fa-file-text-o"&gt;&lt;/i&gt;&lt;/div&gt;
+    &lt;h3 class="pp-title"&gt;Free Plan &lt;/h3&gt;
+    &lt;div class="pp-price"&gt;Free&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="pp-body"&gt;
+    &lt;ul&gt;
+      &lt;li&gt;5GB of space &lt;/li&gt;
+      &lt;li&gt;1 account &lt;/li&gt;
+      &lt;li&gt;limited support&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;a href="#" class="btn btn-default"&gt;Sign Up &lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+          </code></pre></div>
+
+          <h3>Other color options</h3>
+          <p>Besides colors in the example above which are default (no extra class) and primary with <code>.pricing-plan-primary</code> class there are 4 other color classes: <code>.pricing-plan-success</code>, <code>.pricing-plan-info</code>, <code>.pricing-plan-warning</code> and <code>.pricing-plan-danger</code>.</p>
+         <div class="tron-example tron-example-pricing">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="pricing-plan pricing-plan-success">
+                  <div class="pp-heading">
+                    <div class="pp-icon"><i class="fa fa-file-text-o"></i></div>
+                    <h3 class="pp-title">Success Plan</h3>
+                    <div class="pp-price">$55<small>/mo</small></div>
+                  </div>
+                  <div class="pp-body">
+                    <ul>
+                      <li>10GB of space</li>
+                      <li>5 accounts</li>
+                      <li>e-mail support</li>
+                    </ul>
+                    <a href="#" class="btn btn-success">Sign Up</a>
+                  </div>
+                </div>
+              </div>
+             <div class="col-sm-6">
+                <div class="pricing-plan pricing-plan-info">
+                  <div class="pp-heading">
+                    <div class="pp-icon"><i class="fa fa-file-text-o"></i></div>
+                    <h3 class="pp-title">Info Plan</h3>
+                    <div class="pp-price">$55<small>/mo</small></div>
+                  </div>
+                  <div class="pp-body">
+                    <ul>
+                      <li>10GB of space</li>
+                      <li>5 accounts</li>
+                      <li>e-mail support</li>
+                    </ul>
+                    <a href="#" class="btn btn-info">Sign Up</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="pricing-plan pricing-plan-warning">
+                  <div class="pp-heading">
+                    <div class="pp-icon"><i class="fa fa-file-text-o"></i></div>
+                    <h3 class="pp-title">Warning Plan</h3>
+                    <div class="pp-price">$55<small>/mo</small></div>
+                  </div>
+                  <div class="pp-body">
+                    <ul>
+                      <li>10GB of space</li>
+                      <li>5 accounts</li>
+                      <li>e-mail support</li>
+                    </ul>
+                    <a href="#" class="btn btn-warning">Sign Up</a>
+                  </div>
+                </div>
+              </div>
+             <div class="col-sm-6">
+                <div class="pricing-plan pricing-plan-danger">
+                  <div class="pp-heading">
+                    <div class="pp-icon"><i class="fa fa-file-text-o"></i></div>
+                    <h3 class="pp-title">Danger Plan</h3>
+                    <div class="pp-price">$55<small>/mo</small></div>
+                  </div>
+                  <div class="pp-body">
+                    <ul>
+                      <li>10GB of space</li>
+                      <li>5 accounts</li>
+                      <li>e-mail support</li>
+                    </ul>
+                    <a href="#" class="btn btn-danger">Sign Up</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+           </div><!-- /example -->
+          <div class="highlight"><pre><code>
+&lt;!-- Pricing Plan Success --&gt;
+&lt;div class="pricing-plan pricing-plan-success"&gt;
+  ...
+&lt;/div&gt;
+
+&lt;!-- Pricing Plan Info --&gt;
+&lt;div class="pricing-plan pricing-plan-info"&gt;
+  ...
+&lt;/div&gt;
+
+&lt;!-- Pricing Plan Warning --&gt;
+&lt;div class="pricing-plan pricing-plan-warning"&gt;
+  ...
+&lt;/div&gt;
+
+&lt;!-- Pricing Plan Danger --&gt;
+&lt;div class="pricing-plan pricing-plan-danger"&gt;
+  ...
+&lt;/div&gt;
+          </code></pre></div>
+        </div>
+      </div>
+
+      
+      <!-- Sidebar
+      ================================================== -->
+      <div class="col-md-3">
+        <div class="tron-docs-sidebar hidden-print" role="complementary">
+          <ul class="nav tron-docs-sidenav">
+            <li><a href="#switches">Switches</a></li>
+            <li><a href="#slider">Slider</a></li>
+            <li><a href="#datepicker-section">Datepicker</a></li>
+            <li><a href="#tags">Tags</a></li>
+            <li><a href="#social-btns">Social Buttons</a></li>
+            <li><a href="#tiles">Tiles</a></li>
+            <li><a href="#pricing-plan">Pricing Plans</a></li>
+          </ul>
+          <a class="back-to-top" href="#top">Back to top</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer
+    ================================================== -->
+  <footer class="tron-docs-footer">
+    <div class="container">
+      <div class="row">
+        <div class="support-message col-md-offset-2 col-md-8">
+          <p>Dear User, thank you for choosing Tron UI Kit! If you have any questions that are beyond the scope of this documentation, please feel free to email us using the link below.</p>
+          <p>
+            <a class="normal" href="mailto:support@8guild.com">support@8guild.com</a>&nbsp;&nbsp; Or open a ticket at&nbsp;&nbsp;<a class="normal" href="http://8guild.ticksy.com/" target="_blank">8guild.ticksy.com</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="copyright col-md-12">&copy; 2014 8 Guild. All Rights Reserved.</div>
+  </footer>
+
+
+  <!-- Outdated Browser
+  ================================================== -->
+  <div id="outdated">
+    <span class="icon-outdated fa fa-exclamation-triangle"></span>
+    <h2>Your browser is out-of-date!</h2>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+  </div>
+  
+  <!-- jQuery Library
+  ================================================== -->
+  <script src="../js/vendor/jquery.min.js"></script>
+
+  <!-- Outdated Browser Plugin
+  ================================================== -->
+  <script src="../outdatedbrowser/outdatedbrowser.min.js"></script>
+  <script src="../outdatedbrowser/outdatedbrowser.init.js"></script>
+
+  <!-- Plugins and Custom scripts
+  ================================================== -->
+  <script src="../js/vendor/bootstrap.min.js"></script>
+  <script src="../js/tron-ui.js"></script>
+  <script src="js/docs.js"></script>
+
+</body><!-- Body End -->
+</html>

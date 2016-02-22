@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Tron Docs | Javascript</title>
+  <!--SEO Meta Tags-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Tron Bootstrap based UI Kit, flat, modern front-end framework for faster and easier web development.">
+  <meta name="keywords" content="HTML, CSS, JS, JavaScript, framework, bootstrap, front-end, frontend, web development">
+  <meta name="author" content="8 Guild">
+  <!-- Favicons -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- Tron Bootstrap Skin and UI CSS -->
+  <link href="../css/tron-ui.min.css" rel="stylesheet">
+  <!-- Documentation styles -->
+  <link href="css/docs.css" rel="stylesheet">
+
+  <!-- Outdated Browser Plugin Styles -->
+  <link href="../outdatedbrowser/outdatedbrowser.css" rel="stylesheet">
+  
+</head>
+
+<!-- Body -->
+
+<body>
+
+  <!-- Header -->
+  <header class="navbar navbar-default navbar-static-top tron-docs-nav" id="top" role="banner">
+    <div class="container">
+      <div class="navbar-header">
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".tron-navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="arrow"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="index.html" class="navbar-logo"><img src="img/logo.png" alt="Tron"></a>
+      </div>
+      <nav class="collapse navbar-collapse tron-navbar-collapse" role="navigation">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">CSS</a></li>
+          <li><a href="components.html">Components</a></li>
+          <li class="active"><a href="javascript.html">JavaScript</a></li>
+          <li><a href="tron-extras.html">Tron Extras</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://8guild.ticksy.com/" target="_blank">Support</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- Header Close-->
+
+  <!-- Page content -->
+  <main class="tron-docs-header" id="content">
+    <div class="container">
+      <h1>JavaScript</h1>
+      <p>In this section presented all default Bootstrap's custom jQuery plugins like <strong>modals</strong>, <strong>dropdowns</strong>, <strong>scrollspy</strong>, <strong>tabs</strong>, <strong>tooltips</strong>, <strong>popovers</strong>, <strong>alerts</strong>, <strong>collapse</strong>, <strong>carousel</strong>, <strong>affix</strong>.</p>
+    </div>
+  </main>
+
+  <div class="container tron-docs-container">
+    <div class="row">
+      <div class="col-md-9" role="main">
+
+        <!-- Overview
+        ================================================== -->
+        <div class="tron-docs-section">
+          <h1 id="js-overview" class="page-header">Overview</h1>
+          <p>Overview of all default Bootstrap's jQuery plugins you will find in the <a href="http://getbootstrap.com/javascript/#js-overview" target="_blank">relevant section of the oficcial documentation.</a> We didn't change anything here.</p>
+        </div>
+
+
+        <!-- Transitions
+        ================================================== -->
+        <div class="tron-docs-section">
+          <h1 id="transitions" class="page-header">Transitions <small>transition.js</small></h1>
+          <p>For detailed information please check <a href="http://getbootstrap.com/javascript/#transitions" target="_blank">Bootstrap's transitions.js plugin page.</a></p>
+        </div>
+
+
+        <!-- Modal
+        ================================================== -->
+        <div class="tron-docs-section">
+          <h1 id="modals" class="page-header">Modals <small>modal.js</small></h1>
+
+          <h2 id="modals-examples">Examples</h2>
+          <h4>Modal markup placement</h4>
+          <p>Always try to place a modal's HTML code in a top-level position in your document to avoid other components affecting the modal's appearance and/or functionality.</p>
+
+          <h3>Static example</h3>
+          <p>A rendered modal with header, body, and buttons in the footer.</p>
+          <div class="tron-example tron-example-modal">
+            <div class="modal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Modal title</h4>
+                  </div>
+                  <div class="modal-body">
+                    <p>Modal body&hellip;</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-sm btn-danger" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-sm btn-success">Save changes</button>
+                  </div>
+                </div><!-- /.modal-content -->
+              </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+          </div><!-- /example -->
+          <div class="highlight"><pre><code>
+&lt;div class="modal"&gt;
+  &lt;div class="modal-dialog"&gt;
+    &lt;div class="modal-content"&gt;
+      &lt;div class="modal-header"&gt;
+        &lt;button type="button" class="close" data-dismiss="modal" aria-hidden="true"&gt;&times;&lt;/button&gt;
+        &lt;h4 class="modal-title"&gt;Modal title&lt;/h4&gt;
+      &lt;/div&gt;
+      &lt;div class="modal-body"&gt;
+        &lt;p&gt;Modal body&hellip;&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class="modal-footer"&gt;
+        &lt;button type="button" class="btn btn-sm btn-danger" data-dismiss="modal"&gt;Close&lt;/button&gt;
+        &lt;button type="button" class="btn btn-sm btn-success"&gt;Save changes&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;!-- /.modal-content --&gt;
+  &lt;/div&gt;&lt;!-- /.modal-dialog --&gt;
+&lt;/div&gt;&lt;!-- /.modal --&gt;
+          </code></pre></div>
+
+          <h3>Live demo</h3>
+          <p>Toggle a modal via JavaScript by clicking the button below. It will slide down and fade in from the top of the page.</p>
+          <!-- sample modal content -->
+          <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title" id="myModalLabel">Modal Heading</h4>
+                </div>
+                <div class="modal-body">
+                  <h4>Text in a modal</h4>
+                  <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+
+                  <h4>Popover in a modal</h4>
+                  <p>This <button class="btn btn-default btn-sm" data-toggle="popover" title="A Title" data-content="And here's some amazing content. It's very engaging. right?">button</button> should trigger a popover on click.</p>
+
+                  <h4>Tooltips in a modal</h4>
+                  <p><a href="#" data-toggle="tooltip" title="Tooltip">This link</a> and <a href="#" data-toggle="tooltip" title="Tooltip">that link</a> should have tooltips on hover.</p>
+
+                  <hr>
+
+                  <h4>Overflowing text to show scroll behavior</h4>
+                  <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                  <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                  <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                  <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                  <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                  <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger btn-sm" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-success btn-sm">Save changes</button>
+                </div>
+
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+          </div><!-- /.modal -->
+
+          <div class="tron-example" style="padding-bottom: 24px;">
+            <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+              Launch demo modal
+            </button>
+          </div><!-- /example -->
+          <div class="highlight"><pre><code>
+&lt;!-- Button trigger modal --&gt;
+&lt;button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"&gt;
+  Launch demo modal
+&lt;/button&gt;
+
+&lt;!-- Modal --&gt;
+&lt;div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"&gt;
+  &lt;div class="modal-dialog"&gt;
+    &lt;div class="modal-content"&gt;
+      &lt;div class="modal-header"&gt;
+        &lt;button type="button" class="close" data-dismiss="modal" aria-hidden="true"&gt;&times;&lt;/button&gt;
+        &lt;h4 class="modal-title" id="myModalLabel"&gt;Modal title&lt;/h4&gt;
+      &lt;/div&gt;
+      &lt;div class="modal-body"&gt;
+        ...
+      &lt;/div&gt;
+      &lt;div class="modal-footer"&gt;
+        &lt;button type="button" class="btn btn-danger btn-sm" data-dismiss="modal"&gt;Close&lt;/button&gt;
+        &lt;button type="button" class="btn btn-success btn-sm"&gt;Save changes&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+          </code></pre></div>
+
+          <h2 id="modals-sizes">Optional sizes</h2>
+          <p>Modals have two optional sizes, available via modifier classes <code>.modal-lg</code> and <code>.modal-sm</code> to be placed on a <code>.modal-dialog</code>.</p>
+          <div class="tron-example">
+            <button class="btn btn-primary" data-toggle="modal" data-target=".tron-example-modal-lg">Large modal</button>
+            <button class="btn btn-primary" data-toggle="modal" data-target=".tron-example-modal-sm">Small modal</button>
+          </div>
+          <div class="highlight"><pre><code>
+&lt;!-- Large modal --&gt;
+&lt;button class="btn btn-primary" data-toggle="modal" data-target=".tron-example-modal-lg"&gt;Large modal&lt;/button&gt;
+
+&lt;div class="modal fade tron-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"&gt;
+  &lt;div class="modal-dialog modal-lg"&gt;
+    &lt;div class="modal-content"&gt;
+      ...
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Small modal --&gt;
+&lt;button class="btn btn-primary" data-toggle="modal" data-target=".tron-example-modal-sm"&gt;Small modal&lt;/button&gt;
+
+&lt;div class="modal fade tron-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true"&gt;
+  &lt;div class="modal-dialog modal-sm"&gt;
+    &lt;div class="modal-content"&gt;
+      ...
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+          </code></pre></div>
+
+          <!--  Modal content for the above example -->
+          <div class="modal fade tron-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title" id="myLargeModalLabel">Large modal</h4>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+          </div><!-- /.modal -->
+          <div class="modal fade tron-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-sm">
+              <div class="modal-content">
+
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title" id="mySmallModalLabel">Small modal</h4>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+          </div><!-- /.modal -->
+
+          <h2>Usage</h2>
+          <p>Refer to official Bootstrap documentation regarding <strong>usage, options and methods of modal.js plugin.</strong> <a href="http://getbootstrap.com/javascript/#modals-usage" target="_blank">Documentation can be found here.</a></p>
+        </div>
+
+
+        <!-- Dropdowns
+        ================================================== -->
+        <div class="tron-docs-section">
+          <h1 id="dropdowns" class="page-header">Dropdowns <small>dropdown.js</small></h1>
+
+          <h2 id="dropdowns-examples">Examples</h2>
+          <p>Add dropdown menus to nearly anything with this dropdown plugin, including the navbar, tabs, and pills.</p>
+
+          <h3>Within a navbar</h3>
+          <div class="tron-example">
+            <nav id="navbar-example" class="navbar navbar-default navbar-static" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".tron-example-js-navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#">Project Name</a>
+                </div>
+                <div class="collapse navbar-collapse tron-example-js-navbar-collapse">
+                  <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                      <a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                      <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Action</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Another action</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Something else here</a></li>
+                        <li role="presentation" class="divider"></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Separated link</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#" id="drop2" role="button" class="dropdown-toggle" data-toggle="dropdown">Dropdown 2 <b class="caret"></b></a>
+                      <ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Action</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Another action</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Something else here</a></li>
+                        <li role="presentation" class="divider"></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Separated link</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <ul class="nav navbar-nav navbar-right">
+                    <li id="fat-menu" class="dropdown">
+                      <a href="#" id="drop3" role="button" class="dropdown-toggle" data-toggle="dropdown">Dropdown 3 <b class="caret"></b></a>
+                      <ul class="dropdown-menu" role="menu" aria-labelledby="drop3">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Action</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Another action</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Something else here</a></li>
+                        <li role="presentation" class="divider"></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Separated link</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div><!-- /.nav-collapse -->
+              </div><!-- /.container-fluid -->
+            </nav> <!-- /navbar-example -->
+          </div> <!-- /example -->
+
+          <h3>Within pills</h3>
+          <div class="tron-example">
+            <ul class="nav nav-pills">
+              <li class="active"><a href="#">Regular link</a></li>
+              <li class="dropdown">
+                <a id="drop4" role="button" data-toggle="dropdown" href="#">Dropdown <b class="caret"></b></a>
+                <ul id="menu1" class="dropdown-menu" role="menu" aria-labelledby="drop4">
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Action</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Another action</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Something else here</a></li>
+                  <li role="presentation" class="divider"></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Separated link</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a id="drop5" role="button" data-toggle="dropdown" href="#">Dropdown 2 <b class="caret"></b></a>
+                <ul id="menu2" class="dropdown-menu" role="menu" aria-labelledby="drop5">
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Action</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Another action</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Something else here</a></li>
+                  <li role="presentation" class="divider"></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Separated link</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a id="drop6" role="button" data-toggle="dropdown" href="#">Dropdown 3 <b class="caret"></b></a>
+                <ul id="menu3" class="dropdown-menu" role="menu" aria-labelledby="drop6">
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Action</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Another action</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Something else here</a></li>
+                  <li role="presentation" class="divider"></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Separated link</a></li>
+                </ul>
+              </li>
+            </ul> <!-- /pills -->
+          </div> <!-- /example -->
+
+          <h2>Usage</h2>
+          <p>Refer to official Bootstrap documentation regarding <strong>usage, options and methods of dropdown.js plugin.</strong> <a href="http://getbootstrap.com/javascript/#dropdowns-usage" target="_blank">Documentation can be found here.</a></p>
+        </div>
+
+
+        <!-- ScrollSpy
+        ================================================== -->
+        <div class="tron-docs-section">
+          <h1 id="scrollspy" class="page-header">ScrollSpy <small>scrollspy.js</small></h1>
+
+          <h2 id="scrollspy-examples">Example in navbar</h2>
+          <p>The ScrollSpy plugin is for automatically updating nav targets based on scroll position. Scroll the area below the navbar and watch the active class change. The dropdown sub items will be highlighted as well.</p>
+          <div class="tron-example">
+            <nav id="navbar-example2" class="navbar navbar-default navbar-static" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".tron-example-js-navbar-scrollspy">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#">Project Name</a>
+                </div>
+                <div class="collapse navbar-collapse tron-example-js-navbar-scrollspy">
+                  <ul class="nav navbar-nav">
+                    <li><a href="#bedismo">@bedismo</a></li>
+                    <li><a href="#rokaux">@rokaux</a></li>
+                    <li class="dropdown">
+                      <a href="#" id="navbarDrop1" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                      <ul class="dropdown-menu" role="menu" aria-labelledby="navbarDrop1">
+                        <li><a href="#one" tabindex="-1">one</a></li>
+                        <li><a href="#two" tabindex="-1">two</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#three" tabindex="-1">three</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+            <div data-spy="scroll" data-target="#navbar-example2" data-offset="0" class="scrollspy-example">
+              <h4 id="bedismo">@bedismo</h4>
+              <p>Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.</p>
+              <h4 id="rokaux">@rokaux</h4>
+              <p>Veniam marfa mustache skateboard, adipisicing fugiat velit pitchfork beard. Freegan beard aliqua cupidatat mcsweeney's vero. Cupidatat four loko nisi, ea helvetica nulla carles. Tattooed cosby sweater food truck, mcsweeney's quis non freegan vinyl. Lo-fi wes anderson +1 sartorial. Carles non aesthetic exercitation quis gentrify. Brooklyn adipisicing craft beer vice keytar deserunt.</p>
+              <h4 id="one">one</h4>
+              <p>Occaecat commodo aliqua delectus. Fap craft beer deserunt skateboard ea. Lomo bicycle rights adipisicing banh mi, velit ea sunt next level locavore single-origin coffee in magna veniam. High life id vinyl, echo park consequat quis aliquip banh mi pitchfork. Vero VHS est adipisicing. Consectetur nisi DIY minim messenger bag. Cred ex in, sustainable delectus consectetur fanny pack iphone.</p>
+              <h4 id="two">two</h4>
+              <p>In incididunt echo park, officia deserunt mcsweeney's proident master cleanse thundercats sapiente veniam. Excepteur VHS elit, proident shoreditch +1 biodiesel laborum craft beer. Single-origin coffee wayfarers irure four loko, cupidatat terry richardson master cleanse. Assumenda you probably haven't heard of them art party fanny pack, tattooed nulla cardigan tempor ad. Proident wolf nesciunt sartorial keffiyeh eu banh mi sustainable. Elit wolf voluptate, lo-fi ea portland before they sold out four loko. Locavore enim nostrud mlkshk brooklyn nesciunt.</p>
+              <h4 id="three">three</h4>
+              <p>Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.</p>
+              <p>Keytar twee blog, culpa messenger bag marfa whatever delectus food truck. Sapiente synth id assumenda. Locavore sed helvetica cliche irony, thundercats you probably haven't heard of them consequat hoodie gluten-free lo-fi fap aliquip. Labore elit placeat before they sold out, terry richardson proident brunch nesciunt quis cosby sweater pariatur keffiyeh ut helvetica artisan. Cardigan craft beer seitan readymade velit. VHS chambray laboris tempor veniam. Anim mollit minim commodo ullamco thundercats.
+              </p>
+            </div>
+          </div><!-- /example -->
+
+          <h2>Usage</h2>
+          <p>Refer to official Bootstrap documentation regarding <strong>usage, options and methods of scrollspy.js plugin.</strong> <a href="http://getbootstrap.com/javascript/#scrollspy-usage" target="_blank">Documentation can be found here.</a></p>
+        </div>
+
+
+        <!-- Tabs
+        ================================================== -->
+        <div class="tron-docs-section">
+          <h1 id="tabs" class="page-header">Togglable tabs <small>tab.js</small></h1>
+
+          <h2 id="tatron-examples">Example tabs</h2>
+          <p>Add tab functionality to transition through panes of local content and even via dropdown menus.</p>
+          <div class="tron-example tron-example-tabs">
+            <ul id="myTab" class="nav nav-tabs">
+              <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
+              <li><a href="#profile" data-toggle="tab">Profile</a></li>
+              <li class="dropdown">
+                <a href="#" id="myTabDrop1" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1">
+                  <li><a href="#dropdown1" tabindex="-1" data-toggle="tab">@bedismo</a></li>
+                  <li><a href="#dropdown2" tabindex="-1" data-toggle="tab">@rokaux</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div id="myTabContent" class="tab-content">
+              <div class="tab-pane fade in active" id="home">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse nesciunt minima, natus cumque at tenetur, omnis facilis quae aperiam rerum, sed voluptate culpa vero nam placeat. Deleniti nemo quos, minus? Adipisci obcaecati tempore tempora minus aspernatur numquam repellat quasi optio quis dolore. Quis ullam aperiam quos libero fuga dignissimos asperiores iste reiciendis. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</p>
+              </div>
+              <div class="tab-pane fade" id="profile">
+                <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel.</p>
+              </div>
+              <div class="tab-pane fade" id="dropdown1">
+                <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog.</p>
+              </div>
+              <div class="tab-pane fade" id="dropdown2">
+                <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo park vegan.</p>
+              </div>
+            </div>
+          </div><!-- /example -->
+
+          <h2>Usage</h2>
+          <p>Refer to official Bootstrap documentation regarding <strong>usage, options and methods of tab.js plugin.</strong> <a href="http://getbootstrap.com/javascript/#tabs-usage" target="_blank">Documentation can be found here.</a></p>
+        </div>
+
+
+        <!-- Tooltips
+        ================================================== -->
+        <div class="tron-docs-section">
+          <h1 id="tooltips" class="page-header">Tooltips <small>tooltip.js</small></h1>
+
+          <h2 id="tooltips-examples">Examples</h2>
+          <p>Hover over the links below to see tooltips:</p>
+          <div class="tron-example tooltip-demo">
+            <p class="muted" style="margin-bottom: 0;">Tight pants next level keffiyeh <a href="#" data-toggle="tooltip" title="Default tooltip">you probably</a> haven't heard of them. Photo booth beard raw denim letterpress vegan messenger bag stumptown. Farm-to-table seitan, mcsweeney's fixie sustainable quinoa 8-bit american apparel <a href="#" data-toggle="tooltip" title="Another tooltip">have a</a> terry richardson vinyl chambray. Beard stumptown, cardigans banh mi lomo thundercats. Tofu biodiesel williamsburg marfa, four loko mcsweeney's cleanse vegan chambray. A really ironic artisan <a href="#" data-toggle="tooltip" title="Another one here too">whatever keytar</a>, scenester farm-to-table banksy Austin <a href="#" data-toggle="tooltip" title="The last tip!">twitter handle</a> freegan cred raw denim single-origin coffee viral.
+            </p>
+          </div><!-- /example -->
+
+          <h3>Four directions</h3>
+          <div class="tron-example tooltip-demo">
+            <div class="tron-example-tooltips">
+              <button type="button" class="btn btn-primary btn-sm" data-toggle="tooltip" data-color="danger" data-placement="left" title="Tooltip on left">Tooltip on left</button>
+              <button type="button" class="btn btn-primary btn-sm" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</button>
+              <button type="button" class="btn btn-primary btn-sm" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button>
+              <button type="button" class="btn btn-primary btn-sm" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button>
+            </div>
+          </div><!-- /example -->
+          <div class="highlight"><pre><code>
+&lt;button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="left" title="Tooltip on left"&gt;Tooltip on left&lt;/button&gt;
+
+&lt;button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Tooltip on top"&gt;Tooltip on top&lt;/button&gt;
+
+&lt;button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom"&gt;Tooltip on bottom&lt;/button&gt;
+
+&lt;button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="right" title="Tooltip on right"&gt;Tooltip on right&lt;/button&gt;
+          </code></pre></div>
+
+          <h2>Usage</h2>
+          <p>Refer to official Bootstrap documentation regarding <strong>usage, options and methods of tooltip.js plugin.</strong> <a href="http://getbootstrap.com/javascript/#tooltips-usage" target="_blank">Documentation can be found here.</a></p>
+        </div>
+
+        
+        <!-- Popovers
+        ================================================== -->
+        <div class="tron-docs-section">
+          <h1 id="popovers" class="page-header">Popovers <small>popover.js</small></h1>
+
+          <h2 id="popovers-examples">Examples</h2>
+          <p>Small popups with content for housing secondary information.</p>
+
+          <h3>Static popover</h3>
+          <p>Four options are available: top, right, bottom, and left aligned.</p>
+          <div class="tron-example tron-example-popover">
+            <div class="popover top">
+              <div class="arrow"></div>
+              <h3 class="popover-title">Popover top</h3>
+              <div class="popover-content">
+                <p>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+              </div>
+            </div>
+
+            <div class="popover right">
+              <div class="arrow"></div>
+              <h3 class="popover-title">Popover right</h3>
+              <div class="popover-content">
+                <p>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+              </div>
+            </div>
+
+            <div class="popover bottom has-title">
+              <div class="arrow"></div>
+              <h3 class="popover-title">Popover bottom</h3>
+
+              <div class="popover-content">
+                <p>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+              </div>
+            </div>
+
+            <div class="popover left">
+              <div class="arrow"></div>
+              <h3 class="popover-title">Popover left</h3>
+              <div class="popover-content">
+                <p>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+              </div>
+            </div>
+
+            <div class="clearfix"></div>
+          </div>
+
+          <h3>Live demo</h3>
+          <div class="tron-example" style="padding-bottom: 24px;">
+            <button class="btn btn-danger" data-toggle="popover" title="A Title" data-placement="top" data-content="And here's some amazing content. It's very engaging. right?">Click to toggle popover</button>
+          </div>
+
+          <h4>Four directions</h4>
+          <div class="tron-example tooltip-demo">
+            <div class="tron-example-tooltips">
+              <button type="button" class="btn btn-sm btn-primary" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                Popover on left
+              </button>
+              <button type="button" class="btn btn-sm btn-primary" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                Popover on top
+              </button>
+              <button type="button" class="btn btn-sm btn-primary" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                Popover on bottom
+              </button>
+              <button type="button" class="btn btn-sm btn-primary" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                Popover on right
+              </button>
+            </div>
+          </div><!-- /example -->
+          <div class="highlight"><pre><code>
+&lt;button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."&gt;
+  Popover on left
+&lt;/button&gt;
+
+&lt;oggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."&gt;
+  Popover on top
+&lt;/button&gt;
+
+&lt;button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."&gt;
+  Popover on bottom
+&lt;/button&gt;
+
+&lt;button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."&gt;
+  Popover on right
+&lt;/button&gt;
+          </code></pre></div>
+
+          <h2>Usage</h2>
+          <p>Refer to official Bootstrap documentation regarding <strong>usage, options and methods of popover.js plugin.</strong> <a href="http://getbootstrap.com/javascript/#popovers-usage" target="_blank">Documentation can be found here.</a></p>
+        </div>
+
+
+        <!-- Alert
+        ================================================== -->
+        <div class="tron-docs-section">
+          <h1 id="alerts" class="page-header">Alert messages <small>alert.js</small></h1>
+
+          <h2 id="alerts-examples">Example alerts</h2>
+          <p>Add dismiss functionality to all alert messages with this plugin.</p>
+          <div class="tron-example">
+            <div class="alert alert-warning fade in">
+              <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+              <strong>Warning alert!</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </div>
+          </div><!-- /example -->
+
+          <div class="tron-example">
+            <div class="alert alert-danger fade in">
+              <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+              <h4>Oh snap! You got an error!</h4>
+              <p>Change this and that and try again. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
+              <footer>
+                <button type="button" class="btn btn-sm btn-primary">Take this action</button>
+                <button type="button" class="btn btn-sm btn-default">Or do this</button>
+              </footer>
+            </div>
+          </div><!-- /example -->
+
+          <h2>Usage</h2>
+          <p>Refer to official Bootstrap documentation regarding <strong>usage, options and methods of alert.js plugin.</strong> <a href="http://getbootstrap.com/javascript/#alerts-usage" target="_blank">Documentation can be found here.</a></p>
+        </div>
+
+
+        <!-- Buttons
+        ================================================== -->
+        <div class="tron-docs-section">
+          <h1 id="buttons" class="page-header">Buttons <small>button.js</small></h1>
+
+          <p>Do more with buttons. Control button states or create groups of buttons for components like checkbox and radio groups.</p>
+
+          <h3>Group of checkboxes</h3>
+          <p>Add <code>data-toggle="buttons"</code> to a group of checkboxes for checkbox style toggling on btn-group. Also place <code>.with-checkbox</code> on each individual <code>.btn</code> for proper alignment.</p>
+          <div class="tron-example" style="padding-bottom: 24px;">
+            <div class="btn-group" data-toggle="buttons">
+              <label class="btn btn-primary with-checkbox">
+                <input type="checkbox" checked=""> Option 1
+              </label>
+              <label class="btn btn-primary with-checkbox">
+                <input type="checkbox"> Option 2
+              </label>
+              <label class="btn btn-primary with-checkbox">
+                <input type="checkbox"> Option 3
+              </label>
+            </div>
+          </div><!-- /example -->
+          <div class="highlight"><pre><code>
+&lt;div class="btn-group" data-toggle="buttons"&gt;
+  &lt;label class="btn btn-primary with-checkbox"&gt;
+    &lt;input type="checkbox"&gt; Option 1
+  &lt;/label&gt;
+  &lt;label class="btn btn-primary with-checkbox"&gt;
+    &lt;input type="checkbox"&gt; Option 2
+  &lt;/label&gt;
+  &lt;label class="btn btn-primary with-checkbox"&gt;
+    &lt;input type="checkbox"&gt; Option 3
+  &lt;/label&gt;
+&lt;/div&gt;
+          </code></pre></div>
+
+          <h4>Groups of radios</h4>
+          <p>Add <code>data-toggle="buttons"</code> to a group of radio inputs for radio style toggling on btn-group. Also place <code>.with-radio</code> on each individual <code>.btn</code> for proper alignment.</p>
+          <div class="tron-example" style="padding-bottom: 24px;">
+            <div class="btn-group" data-toggle="buttons">
+              <label class="btn btn-primary with-radio">
+                <input type="radio" name="options" id="option1" checked> Option 1
+              </label>
+              <label class="btn btn-primary with-radio">
+                <input type="radio" name="options" id="option2"> Option 2
+              </label>
+              <label class="btn btn-primary with-radio">
+                <input type="radio" name="options" id="option3"> Option 3
+              </label>
+            </div>
+          </div><!-- /example -->
+          <div class="highlight"><pre><code>
+&lt;div class="btn-group" data-toggle="buttons"&gt;
+  &lt;label class="btn btn-primary with-radio"&gt;
+    &lt;input type="radio" name="options" id="option1"&gt; Option 1
+  &lt;/label&gt;
+  &lt;label class="btn btn-primary with-radio"&gt;
+    &lt;input type="radio" name="options" id="option2"&gt; Option 2
+  &lt;/label&gt;
+  &lt;label class="btn btn-primary with-radio"&gt;
+    &lt;input type="radio" name="options" id="option3"&gt; Option 3
+  &lt;/label&gt;
+&lt;/div&gt;
+          </code></pre></div>
+
+          <h2>Usage</h2>
+          <p>Refer to official Bootstrap documentation regarding <strong>usage and methods of buttons.js plugin.</strong><br><a href="http://getbootstrap.com/javascript/#buttons-methods" target="_blank">Documentation can be found here.</a></p>
+        </div>
+
+
+        <!-- Collapse
+        ================================================== -->
+        <div class="tron-docs-section">
+          <h1 id="collapse" class="page-header">Collapse <small>collapse.js</small></h1>
+
+          <h4>Plugin dependency</h4>
+          <p>Collapse requires the <strong>transitions plugin</strong> to be included in your version of Bootstrap.</p>
+
+          <h2 id="collapse-examples">Example accordion</h2>
+          <p>Using the collapse plugin, we built a simple accordion by extending the panel component.</p>
+          <p class="text-danger"><strong>Make sure you keep HTML structure as in example below. Otherwise accordion is not going to work.</strong></p>
+          <div class="tron-example">
+            <div class="panel-group panel-group-primary" id="accordion">
+              <div class="panel">
+                <div class="panel-heading">
+                  <h4 class="panel-title active">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                      Collapsible Group Item #1
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse in">
+                  <div class="panel-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <div class="panel">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                      Collapsible Group Item #2
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <div class="panel">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                      Collapsible Group Item #3
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- /example -->
+          <div class="highlight"><pre><code>
+&lt;div class="panel-group panel-group-primary" id="accordion"&gt;
+  &lt;div class="panel"&gt;
+    &lt;div class="panel-heading"&gt;
+      &lt;h4 class="panel-title active"&gt;
+        &lt;a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"&gt;
+          Collapsible Group Item #1
+        &lt;/a&gt;
+      &lt;/h4&gt;
+    &lt;/div&gt;
+    &lt;div id="collapseOne" class="panel-collapse collapse in"&gt;
+      &lt;div class="panel-body"&gt;
+        ...
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="panel"&gt;
+    &lt;div class="panel-heading"&gt;
+      &lt;h4 class="panel-title"&gt;
+        &lt;a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"&gt;
+          Collapsible Group Item #2
+        &lt;/a&gt;
+      &lt;/h4&gt;
+    &lt;/div&gt;
+    &lt;div id="collapseTwo" class="panel-collapse collapse"&gt;
+      &lt;div class="panel-body"&gt;
+        ...
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="panel"&gt;
+    &lt;div class="panel-heading"&gt;
+      &lt;h4 class="panel-title"&gt;
+        &lt;a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"&gt;
+          Collapsible Group Item #3
+        &lt;/a&gt;
+      &lt;/h4&gt;
+    &lt;/div&gt;
+    &lt;div id="collapseThree" class="panel-collapse collapse"&gt;
+      &lt;div class="panel-body"&gt;
+        ...
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+          </code></pre></div>
+
+          <h4>Color options</h4>
+          <p>The same as with panels you can switch between 6 colors with modifier classes <code>.panel-group-default</code>, <code>.panel-group-primary</code>, <code>.panel-group-success</code>, <code>.panel-group-info</code>, <code>.panel-group-warning</code>, <code>.panel-group-danger</code> placed on <code>.panel-group</code>.</p>
+
+          <p>You can also use the plugin without the accordion markup. Make a button toggle the expanding and collapsing of another element.</p>
+          <div class="highlight"><pre><code>
+&lt;button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#demo"&gt;
+  simple collapsible
+&lt;/button&gt;
+
+&lt;div id="demo" class="collapse in"&gt;...&lt;/div&gt;
+          </code></pre></div>
+
+          <h2>Usage</h2>
+          <p>Refer to official Bootstrap documentation regarding <strong>usage, options and methods of collapse.js plugin.</strong> <a href="http://getbootstrap.com/javascript/#collapse-usage" target="_blank">Documentation can be found here.</a></p>
+        </div>
+
+
+        <!-- Carousel
+        ================================================== -->
+        <div class="tron-docs-section">
+          <h1 id="carousel" class="page-header">Carousel <small>carousel.js</small></h1>
+
+          <h2 id="carousel-examples">Examples</h2>
+          <p>The slideshow below shows a generic plugin and component for cycling through elements like a carousel.</p>
+          <div class="tron-example">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="item active">
+                  <img src="img/slide1.png" alt="First slide">
+                </div>
+                <div class="item">
+                  <img src="img/slide2.png" alt="Second slide">
+                </div>
+                <div class="item">
+                  <img src="img/slide3.png" alt="Third slide">
+                </div>
+              </div>
+              <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                <span class="flaticon-left216"></span>
+              </a>
+              <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                <span class="flaticon-right237"></span>
+              </a>
+            </div>
+          </div><!-- /example -->
+          <div class="highlight"><pre><code>
+&lt;div id="carousel-example-generic" class="carousel slide" data-ride="carousel"&gt;
+  &lt;!-- Indicators --&gt;
+  &lt;ol class="carousel-indicators"&gt;
+    &lt;li data-target="#carousel-example-generic" data-slide-to="0" class="active"&gt;&lt;/li&gt;
+    &lt;li data-target="#carousel-example-generic" data-slide-to="1"&gt;&lt;/li&gt;
+    &lt;li data-target="#carousel-example-generic" data-slide-to="2"&gt;&lt;/li&gt;
+  &lt;/ol&gt;
+
+  &lt;!-- Wrapper for slides --&gt;
+  &lt;div class="carousel-inner"&gt;
+    &lt;div class="item active"&gt;
+      &lt;img src="..." alt="..."&gt;
+    &lt;/div&gt;
+    ...
+  &lt;/div&gt;
+
+  &lt;!-- Controls --&gt;
+  &lt;a class="left carousel-control" href="#carousel-example-generic" data-slide="prev"&gt;
+    &lt;span class="glyphicon glyphicon-chevron-left"&gt;&lt;/span&gt;
+  &lt;/a&gt;
+  &lt;a class="right carousel-control" href="#carousel-example-generic" data-slide="next"&gt;
+    &lt;span class="glyphicon glyphicon-chevron-right"&gt;&lt;/span&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
+          </code></pre></div>
+
+          <h4>Transition animations not supported in Internet Explorer 8 &amp; 9</h4>
+          <p>Bootstrap exclusively uses CSS3 for its animations, but Internet Explorer 8 &amp; 9 don't support the necessary CSS properties. Thus, there are no slide transition animations when using these browsers.</p>
+
+          <h3>Optional captions</h3>
+          <p>Add captions to your slides easily with the <code>.carousel-caption</code> element within any <code>.item</code>.</p>
+          <div class="tron-example">
+            <div id="carousel-example-captions" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-example-captions" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-captions" data-slide-to="1"></li>
+                <li data-target="#carousel-example-captions" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="item active">
+                  <img src="img/slide1.png" alt="First slide image">
+                  <div class="carousel-caption">
+                    <h3>First slide label</h3>
+                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="img/slide2.png" alt="Second slide image">
+                  <div class="carousel-caption">
+                    <h3>Second slide label</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="img/slide3.png" alt="Third slide image">
+                  <div class="carousel-caption">
+                    <h3>Third slide label</h3>
+                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                  </div>
+                </div>
+              </div>
+              <a class="left carousel-control" href="#carousel-example-captions" data-slide="prev">
+                <span class="flaticon-left216"></span>
+              </a>
+              <a class="right carousel-control" href="#carousel-example-captions" data-slide="next">
+                <span class="flaticon-right237"></span>
+              </a>
+            </div>
+          </div><!-- /example -->
+          <div class="highlight"><pre><code>
+&lt;div class="item active"&gt;
+  &lt;img src="..." alt="..."&gt;
+  &lt;div class="carousel-caption"&gt;
+    &lt;h3&gt;...&lt;/h3&gt;
+    &lt;p&gt;...&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+          </code></pre></div>
+
+          <h2 id="carousel-usage">Usage</h2>
+          <p>Refer to official Bootstrap documentation regarding <strong>usage, options and methods of carousel.js plugin.</strong> <a href="http://getbootstrap.com/javascript/#carousel-usage" target="_blank">Documentation can be found here.</a></p>
+        </div>
+
+        
+        <!-- Affix
+        ================================================== -->
+        <div class="tron-docs-section">
+          <h1 id="affix" class="page-header">Affix <small>affix.js</small></h1>
+
+          <h2 id="affix-examples">Example</h2>
+          <p>The subnavigation on the right is a live demo of the affix plugin.</p>
+          <hr class="tron-docs-separator">
+
+          <h2 id="affix-usage">Usage</h2>
+          <p>Refer to official Bootstrap documentation regarding <strong>usage, options and events of affix.js plugin.</strong> <a href="http://getbootstrap.com/javascript/#affix-usage" target="_blank">Documentation can be found here.</a></p>
+        </div>
+
+      </div>
+
+      
+      <!-- Sidebar
+      ================================================== -->
+      <div class="col-md-3">
+        <div class="tron-docs-sidebar hidden-print" role="complementary">
+          <ul class="nav tron-docs-sidenav">
+            <li><a href="#js-overview">Overview</a></li>
+            <li><a href="#transitions">Transitions</a></li>
+            <li><a href="#modals">Modal</a></li>
+            <li><a href="#dropdowns">Dropdown</a></li>
+            <li><a href="#scrollspy">Scrollspy</a></li>
+            <li><a href="#tabs">Tab</a></li>
+            <li><a href="#tooltips">Tooltip</a></li>
+            <li><a href="#popovers">Popover</a></li>
+            <li><a href="#alerts">Alert</a></li>
+            <li><a href="#buttons">Buttons</a></li>
+            <li><a href="#collapse">Collapse</a></li>
+            <li><a href="#carousel">Carousel</a></li>
+            <li><a href="#affix">Affix</a></li>
+          </ul>
+          <a class="back-to-top" href="#top">Back to top</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer
+    ================================================== -->
+  <footer class="tron-docs-footer">
+    <div class="container">
+      <div class="row">
+        <div class="support-message col-md-offset-2 col-md-8">
+          <p>Dear User, thank you for choosing Tron UI Kit! If you have any questions that are beyond the scope of this documentation, please feel free to email us using the link below.</p>
+          <p>
+            <a class="normal" href="mailto:support@8guild.com">support@8guild.com</a>&nbsp;&nbsp; Or open a ticket at&nbsp;&nbsp;<a class="normal" href="http://8guild.ticksy.com/" target="_blank">8guild.ticksy.com</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="copyright col-md-12">&copy; 2014 8 Guild. All Rights Reserved.</div>
+  </footer>
+
+
+  <!-- Outdated Browser
+  ================================================== -->
+  <div id="outdated">
+    <span class="icon-outdated fa fa-exclamation-triangle"></span>
+    <h2>Your browser is out-of-date!</h2>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+  </div>
+
+  <!-- jQuery Library
+  ================================================== -->
+  <script src="../js/vendor/jquery.min.js"></script>
+
+  <!-- Outdated Browser Plugin
+  ================================================== -->
+  <script src="../outdatedbrowser/outdatedbrowser.min.js"></script>
+  <script src="../outdatedbrowser/outdatedbrowser.init.js"></script>
+
+  <!-- Plugins and Custom scripts
+  ================================================== -->
+  <script src="../js/vendor/bootstrap.min.js"></script>
+  <script src="../js/tron-ui.js"></script>
+  <script src="js/docs.js"></script>
+
+</body><!-- Body End -->
+</html>

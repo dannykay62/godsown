@@ -1,0 +1,271 @@
+@charset "UTF-8";
+@font-face {
+	font-family: "pixelvicon";
+	src: url("fonts/pixelvicon.eot");
+	src: url("fonts/pixelvicon.eot?#iefix") format("embedded-opentype"), url("fonts/pixelvicon.woff") format("woff"), url("fonts/pixelvicon.ttf") format("truetype"), url("fonts/pixelvicon.svg#pixelvicon") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+[data-icon]:before {
+	font-family: "pixelvicon" !important;
+	content: attr(data-icon);
+	font-style: normal !important;
+	font-weight: normal !important;
+	font-variant: normal !important;
+	text-transform: none !important;
+	speak: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+[class^="icon-"]:before, [class*=" icon-"]:before {
+	font-family: "pixelvicon" !important;
+	font-style: normal !important;
+	font-weight: normal !important;
+	font-variant: normal !important;
+	text-transform: none !important;
+	speak: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.icon-browser-1:before {
+	content: "a";
+}
+.icon-browser-2:before {
+	content: "b";
+}
+.icon-browser-3:before {
+	content: "c";
+}
+.icon-browser-4:before {
+	content: "d";
+}
+.icon-browser-5:before {
+	content: "e";
+}
+.icon-browser-6:before {
+	content: "f";
+}
+.icon-imac:before {
+	content: "g";
+}
+.icon-laptop:before {
+	content: "h";
+}
+.icon-monitor:before {
+	content: "i";
+}
+.icon-pc-case:before {
+	content: "j";
+}
+.icon-tablet-1:before {
+	content: "k";
+}
+.icon-tablet-2:before {
+	content: "l";
+}
+.icon-tablet-3:before {
+	content: "m";
+}
+.icon-tablet-4:before {
+	content: "n";
+}
+.icon-smart-phone-1:before {
+	content: "o";
+}
+.icon-smart-phone-2:before {
+	content: "p";
+}
+.icon-smart-phone-3:before {
+	content: "q";
+}
+.icon-smart-phone-4:before {
+	content: "r";
+}
+.icon-printer:before {
+	content: "s";
+}
+.icon-calculator:before {
+	content: "t";
+}
+.icon-keyboard:before {
+	content: "u";
+}
+.icon-mouse:before {
+	content: "v";
+}
+.icon-video-game-controller:before {
+	content: "w";
+}
+.icon-floppy-disk:before {
+	content: "x";
+}
+.icon-coffee:before {
+	content: "y";
+}
+.icon-mug:before {
+	content: "z";
+}
+.icon-briefcase-1:before {
+	content: "A";
+}
+.icon-briefcase-2:before {
+	content: "B";
+}
+.icon-briefcase-3:before {
+	content: "C";
+}
+.icon-first-aid:before {
+	content: "D";
+}
+.icon-shopping-bag:before {
+	content: "E";
+}
+.icon-gift:before {
+	content: "F";
+}
+.icon-notepad-1:before {
+	content: "G";
+}
+.icon-notepad-2:before {
+	content: "H";
+}
+.icon-list-1:before {
+	content: "I";
+}
+.icon-list-2:before {
+	content: "J";
+}
+.icon-list-3:before {
+	content: "K";
+}
+.icon-book:before {
+	content: "L";
+}
+.icon-calendar-1:before {
+	content: "M";
+}
+.icon-calendar-2:before {
+	content: "N";
+}
+.icon-notebook:before {
+	content: "O";
+}
+.icon-ruler:before {
+	content: "P";
+}
+.icon-pen-1:before {
+	content: "Q";
+}
+.icon-pen-2:before {
+	content: "R";
+}
+.icon-document-1:before {
+	content: "S";
+}
+.icon-document-2:before {
+	content: "T";
+}
+.icon-document-3:before {
+	content: "U";
+}
+.icon-film:before {
+	content: "V";
+}
+.icon-photo-gallery:before {
+	content: "W";
+}
+.icon-clock:before {
+	content: "X";
+}
+.icon-cupboard:before {
+	content: "Y";
+}
+.icon-drawer:before {
+	content: "Z";
+}
+.icon-dresser:before {
+	content: "0";
+}
+.icon-chair:before {
+	content: "1";
+}
+.icon-sofa:before {
+	content: "2";
+}
+.icon-desk:before {
+	content: "3";
+}
+.icon-table:before {
+	content: "4";
+}
+.icon-door:before {
+	content: "5";
+}
+.icon-window:before {
+	content: "6";
+}
+.icon-brick-wall:before {
+	content: "7";
+}
+.icon-trash-1:before {
+	content: "8";
+}
+.icon-trash-2:before {
+	content: "9";
+}
+.icon-lock:before {
+	content: "!";
+}
+.icon-unlock:before {
+	content: "\"";
+}
+.icon-plus:before {
+	content: "#";
+}
+.icon-minus:before {
+	content: "$";
+}
+.icon-battery-1:before {
+	content: "%";
+}
+.icon-battery-2:before {
+	content: "&";
+}
+.icon-battery-3:before {
+	content: "'";
+}
+.icon-battery-4:before {
+	content: "(";
+}
+.icon-transform:before {
+	content: ")";
+}
+.icon-resize:before {
+	content: "*";
+}
+.icon-grid:before {
+	content: "+";
+}
+.icon-menu:before {
+	content: ",";
+}
+.icon-fullscreen:before {
+	content: "-";
+}
+.icon-outline:before {
+	content: ".";
+}
+.icon-align-left:before {
+	content: "/";
+}
+.icon-align-center:before {
+	content: ":";
+}
+.icon-align-right:before {
+	content: ";";
+}
+.icon-align-justify:before {
+	content: "<";
+}

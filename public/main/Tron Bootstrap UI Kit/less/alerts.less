@@ -1,0 +1,105 @@
+//
+// Alerts
+// (dependencies: bootstrap/alerts.less)
+// --------------------------------------------------
+
+// Base styles
+// -------------------------
+.alert {
+  border: none;
+  font-size: @font-size-small;
+  color: @alert-color;
+  -webkit-backface-visibility: hidden;
+
+
+  p {
+    font-size: @font-size-small;
+  }
+
+  h3, .h3,
+  h4, .h4,
+  h5, .h5,
+  h6, .h6, 
+  strong {
+    margin-right: 8px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  h1, .h1,
+  h2, .h2,
+  h3, .h3,
+  h4, .h4,
+  h5, .h5,
+  h6, .h6 {
+    margin-top: 6px;
+  }
+
+
+  a,
+  .alert-link {
+    font-weight: bold;
+    color: @alert-color;
+    .opacity(1);
+    .transition(opacity, 0.25s);
+    &:hover {
+      .opacity(0.7);
+    }
+  }
+
+  // Full width alerts
+  &.alert-fullwidth {
+    padding-left: 0;
+    padding-right: 0;
+    border-radius: 0;
+    .close {
+      right: -5px;
+    }
+  }
+
+  // Alert footer for action links and buttons
+  footer {
+    padding: @line-height-computed 0 (@line-height-computed / 3) 0;
+  }
+}
+
+// Dismissible alerts
+.alert,
+.alert-dismissable,
+.alert-dismissible {
+  .close {
+    color: @alert-close-color;
+    top: 0px;
+    right: -10px;
+    .opacity(1);
+    .transition(opacity, 0.25s);
+    &:hover {
+      color: inherit;
+      .opacity(0.7);
+    }
+  }
+}
+
+// Alternate styles
+// Generate contextual modifier classes for colorizing the alert.
+.alert-primary {
+  background-color: @alert-primary-bg;
+  color: @alert-primary-text;
+}
+.alert-success {
+  background-color: @alert-success-bg;
+  color: @alert-success-text;
+}
+.alert-info {
+  background-color: @alert-info-bg;
+  color: @alert-info-text;
+}
+.alert-warning {
+  background-color: @alert-warning-bg;
+  color: @alert-warning-text;
+}
+.alert-danger {
+  background-color: @alert-danger-bg;
+  color: @alert-danger-text;
+}

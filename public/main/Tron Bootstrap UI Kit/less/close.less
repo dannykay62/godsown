@@ -1,0 +1,63 @@
+//
+// Close icons
+// (dependencies: bootstrap/close.less)
+// --------------------------------------------------
+
+.close {
+  font-weight: normal;
+  text-shadow: none;
+  .opacity(1);
+  .transition(opacity, 0.25s);
+  border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    .opacity(.8);
+    outline: none;
+  }
+  
+  //Different styles and colors
+  &.light {
+    color: #fff;
+  }
+  &.primary {
+    color: @brand-primary;
+  }
+  &.success {
+    color: @brand-success;
+  }
+  &.info {
+    color: @brand-info;
+  }
+  &.warning {
+    color: @brand-warning;
+  }
+  &.danger {
+    color: @brand-danger;
+  }
+
+  &.circle {
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    color: #fff;
+    &.default {
+      background-color: @gray-dark;
+    }
+    &.primary {
+      background-color: @brand-primary;
+    }
+    &.success {
+      background-color: @brand-success;
+    }
+    &.info {
+      background-color: @brand-info;
+    }
+    &.warning {
+      background-color: @brand-warning;
+    }
+    &.danger {
+      background-color: @brand-danger;
+    }
+  }  
+}

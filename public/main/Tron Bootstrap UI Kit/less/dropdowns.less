@@ -1,0 +1,89 @@
+//
+// Dropdown menus
+// (dependencies: bootstrap/dropdowns.less)
+// --------------------------------------------------
+
+// Dropdown arrow/caret
+.caret {
+  margin-left: 6px !important;
+}
+
+// Dropdown menu
+.dropdown-menu {
+  min-width: @dropdown-min-width;
+	padding: 22px 0;
+  margin-top: 8px;
+  font-size: @font-size-small;
+  border-radius: @border-radius-base;
+  box-shadow: none;
+  -webkit-animation-duration: 0.25s;
+          animation-duration: 0.25s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+	
+	> li {
+		padding: 0 22px;
+
+    &.disabled {
+      & > a {
+        pointer-events: none;
+        color: @gray-light;
+      }
+    }
+	}
+
+  // Links within the dropdown menu
+  > li > a {
+    padding: 7px 22px;
+    margin: 2px 0;
+	  border-radius: (@border-radius-base*1.5);
+	  .transition(all, 0.3s);
+  }
+}
+
+// Open state for the dropdown
+//
+.open {
+  > .dropdown-menu {
+    opacity: 1;
+    -webkit-animation-name: fadeInUp;
+            animation-name: fadeInUp;
+  }
+}
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 15px, 0);
+            transform: translate3d(0, 15px, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 15px, 0);
+            transform: translate3d(0, 15px, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+// Dropdown section headers
+.dropdown-header {
+  padding: 7px 44px !important;
+}
+
+// Dropups
+.dropup,
+.navbar-fixed-bottom .dropdown {
+  .dropdown-menu {
+    margin-bottom: 8px;
+  }
+}

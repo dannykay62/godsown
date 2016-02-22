@@ -1,0 +1,153 @@
+/*!
+ * Datepicker for Bootstrap
+ *
+ * Copyright 2012 Stefan Petre
+ * Improvements by Andrew Rowls
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ */
+
+.datepicker {
+  border-radius: @datepicker-border-radius;
+  overflow: hidden;
+  &-inline {
+    font-size: @font-size-small;
+    width: @datepicker-inline-width;
+  }
+  direction: ltr;
+  &&-rtl {
+    direction: rtl;
+    table tr td span {
+      float: right;
+    }
+  }
+  &-dropdown {
+    top: 0;
+    left: 0;
+    padding: 5px;
+    min-width: 200px;
+  }
+  >div {
+    display: none;
+  }
+  &.days div.datepicker-days,
+  &.months div.datepicker-months,
+  &.years div.datepicker-years {
+    display: block;
+  }
+  table {
+    margin: 0;
+    .user-select(none);
+    background-color: @datepicker-bg;
+    tr {
+      td, th {
+        text-align: center;
+        width: 20px;
+        height: 20px;
+        padding: 8px 9px !important;
+        border-radius: @border-radius-small;
+        border: none;
+        .transition(all, 0.25s);
+      }
+    }
+  }
+  .table-striped & table tr {
+    td, th {
+      background-color: transparent;
+    }
+  }
+  table tr td {
+    &.day:hover, &.day.focused {
+      background: @datepicker-date-hover-bg;
+      cursor: pointer;
+    }
+    &.old, &.new {
+      color: @btn-link-disabled-color;
+    }
+    &.disabled, &.disabled:hover {
+      background: none;
+      color: @btn-link-disabled-color;
+      cursor: default;
+    }
+    &.today,
+    &.today:hover,
+    &.today.active,
+    &.today.active:hover {
+      color: @datepicker-date-active-color;
+      background-color: @datepicker-today-bg;
+    }
+    &.today.disabled,
+    &.today.disabled:hover {
+      color: @datepicker-date-disabled-color;
+      background: none !important;
+    }
+    &.selected, 
+    &.selected:hover, 
+    &.selected.disabled, 
+    &.selected.disabled:hover,
+    &.active, 
+    &.active:hover, 
+    &.active.disabled, 
+    &.active.disabled:hover {
+      color: @datepicker-date-active-color;
+      background-color: @datepicker-date-active-bg;
+    }
+    span {
+      display: block;
+      width: 23%;
+      height: 40px;
+      line-height: 40px;
+      float: left;
+      margin: 1%;
+      background-color: transparent;
+      cursor: pointer;
+      border-radius: @border-radius-small;
+      .transition(background-color, 0.25s);
+      &:hover {
+        background: @datepicker-date-hover-bg;
+      }
+      &.disabled, &.disabled:hover {
+        background: none;
+        color: @datepicker-date-disabled-color;
+        cursor: default;
+      }
+      &.active, 
+      &.active:hover, 
+      &.active.disabled, 
+      &.active.disabled:hover {
+        color: @datepicker-date-active-color;
+        background-color: @datepicker-date-active-bg;
+      }
+      &.old, &.new {
+        color: @gray-light;
+      }
+    }
+  }
+  th.datepicker-switch {
+    width: 145px;
+  }
+  thead tr:first-child th, tfoot tr th {
+    cursor: pointer;
+    &:hover {
+      background: @datepicker-date-hover-bg;
+    }
+  }
+
+  // Basic styling for calendar-week cells
+  .cw {
+    font-size: 10px;
+    width: 12px;
+    padding: 0 2px 0 5px;
+    vertical-align: middle;
+  }
+  thead tr:first-child th.cw {
+    cursor: default;
+    background-color: transparent;
+  }
+}
+.input-daterange {
+  input {
+    text-align: center;
+  }
+}

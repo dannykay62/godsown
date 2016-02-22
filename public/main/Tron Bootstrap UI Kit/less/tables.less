@@ -1,0 +1,133 @@
+//
+// Tables
+// (dependencies: bootstrap/tables.less)
+// --------------------------------------------------
+
+.table {
+  text-align: center;
+  border: none;
+
+  tr:first-child th {
+    border-bottom: 2px solid @table-border-color;
+  }
+
+  // Cells
+  > thead,
+  > tbody,
+  > tfoot {
+    > tr {
+      > th,
+      > td {
+        padding: floor(@table-cell-padding - 1.5) floor(@table-cell-padding / 2);
+        border-top: 2px solid @table-border-color;
+      }
+    }
+  }
+  // Bottom align for column headings
+  > thead > tr > th {
+    text-align: center;
+    border-bottom: none;
+  }
+
+  th {
+    padding: @table-cell-padding floor(@table-cell-padding / 2) !important;
+  	background-color: @table-head-bg;
+  	color: #fff;
+  	font-size: @font-size-small;
+  	font-weight: 600;
+
+    &:first-child {
+      border-top-left-radius: @border-radius-base;
+    }
+    &:last-child {
+      border-top-right-radius: @border-radius-base;
+    }
+  }
+
+  td {
+    background-color: @table-bg;
+  }
+
+  tr:last-child {
+    & > td:first-child {
+      border-bottom-left-radius: @border-radius-base;
+    }
+    & > td:last-child {
+      border-bottom-right-radius: @border-radius-base;
+    }
+  }
+}
+
+// Bordered version
+//
+.table-bordered {
+  border: none;
+  > thead,
+  > tbody,
+  > tfoot {
+    > tr {
+      > th,
+      > td {
+        border: 2px solid @table-border-color;
+        &:first-child {
+          border-left: none;
+        }
+        &:last-child {
+          border-right: none;
+        }
+      }
+    }
+  }
+}
+
+// Striped version
+//
+.table-striped {
+  > tbody > tr:nth-child(even) {
+    > td,
+    > th {
+      background-color: @table-bg-accent;
+    }
+  }
+  > tbody > tr:nth-child(odd) {
+    > td,
+    > th {
+      background-color: @table-bg;
+    }
+  }
+}
+
+// Hover effect
+//
+.table-hover {
+  > tbody > tr {
+    > td,
+    > th {
+      .transition(background-color, 0.25s);
+    }
+  }
+  > tbody > tr:hover {
+    > td,
+    > th {
+      background-color: @table-bg-hover;
+    }
+  }
+}
+
+// Condensed table
+.table-condensed {
+  > thead,
+  > tbody,
+  > tfoot {
+    > tr {
+      > th,
+      > td {
+        padding: @table-condensed-cell-padding !important;
+      }
+    }
+  }
+}
+
+// Added new Primary Contextual variant 
+// to Bootstrap default active, success, info, warning and danger
+.table-row-variant(primary; @state-primary-bg);

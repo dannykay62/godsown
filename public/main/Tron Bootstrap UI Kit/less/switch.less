@@ -1,0 +1,161 @@
+//
+// Switches
+// --------------------------------------------------
+
+.switch {
+	position: relative;
+	width: @switch-width;
+	height: @switch-height;
+	background-color: @switch-default-color-off;
+	border-radius: @switch-border-radius;
+	overflow: hidden;
+	margin: 10px 0; 
+	.transition(all, 0.3s);
+	cursor: pointer;
+	.user-select(none);
+
+	// Switch knob
+	.knob {
+		position: absolute;
+		width: (@switch-height - 2);
+		height: (@switch-height - 2);
+		top: 1px;
+		left: 1px;
+		background-color: #fff;
+		border-radius: @switch-knob-border-radius;
+		.translate(0; 0);
+		.transition(all, 0.3s);
+	}
+
+	// Labels
+	.label {
+		position: absolute;
+		display: block;
+		font-size: @font-size-small;
+		color: @switch-label-color;
+		top: 4px;
+		margin: 0;
+		width: auto;
+		padding: 0;
+		&:first-child {
+			text-align: right;
+			padding-right: 12px;
+			right: 100%; 
+		}
+		&:last-child {
+			text-align: left;
+			padding-left: 11px;
+			left: 100%; 
+		}
+	}
+
+	// "On" state
+	&.on {
+		background-color: @switch-default-color-on; 
+		.knob {
+			.translate(46px; 0);
+		}
+	}
+	
+	// Disabled state
+	&.disabled {
+		background-color: @switch-disabled-color !important;
+		cursor: not-allowed;
+	}
+
+	// Outlined switch
+	&.switch-outlined {
+		background: none;
+		border: 1px solid @switch-default-color-off;
+		
+		.knob {
+			width: (@switch-height - 4);
+			height: (@switch-height - 4);
+			background-color: @switch-default-color-off;
+		}
+		.label {
+			top: 3px;
+			color: @switch-default-color-off;
+		}
+		&.on {
+			border-color: @switch-default-color-on;
+			.knob {
+				background-color: @switch-default-color-on;
+			}
+			.label {
+				color: @switch-default-color-on;
+			}
+		}
+
+		// Disabled state
+		&.disabled {
+			background: none !important;
+			border-color: @switch-disabled-color !important;
+			.knob {
+				background-color: @switch-disabled-color !important;
+			}
+			.label {
+				color: @switch-disabled-color !important;
+			}
+		}
+	}
+
+}
+
+// Color options
+.switch.on {
+	&.switch-success {
+		background-color: @switch-success-color;
+	}
+	&.switch-info {
+		background-color: @switch-info-color;
+	}
+	&.switch-warning {
+		background-color: @switch-warning-color;
+	}
+	&.switch-danger {
+		background-color: @switch-danger-color;
+	}
+	&.switch-outlined {
+		&.switch-success {
+			background: none;
+			border-color: @switch-success-color;
+			.knob {
+				background-color: @switch-success-color;
+			}
+			.label {
+				color: @switch-success-color;
+			}
+		}
+		&.switch-info {
+			background: none;
+			border-color: @switch-info-color;
+			.knob {
+				background-color: @switch-info-color;
+			}
+			.label {
+				color: @switch-info-color;
+			}
+		}
+		&.switch-warning {
+			background: none;
+			border-color: @switch-warning-color;
+			.knob {
+				background-color: @switch-warning-color;
+			}
+			.label {
+				color: @switch-warning-color;
+			}
+		}
+		&.switch-danger {
+			background: none;
+			border-color: @switch-danger-color;
+			.knob {
+				background-color: @switch-danger-color;
+			}
+			.label {
+				color: @switch-danger-color;
+			}
+		}
+	}
+}

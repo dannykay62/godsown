@@ -1,0 +1,202 @@
+//
+// Panels
+// (dependencies: bootstrap/panels.less)
+// --------------------------------------------------
+
+// Base class
+.panel {
+  border: none;
+  box-shadow: none;
+}
+
+// Optional heading
+.panel-heading {
+  border-bottom: 2px solid @panel-inner-border;
+  .border-top-radius(@panel-border-radius);
+}
+.panel-title {
+  font-size: @font-size-small;
+  font-weight: bold;
+}
+
+// Optional footer (stays gray in every modifier class)
+.panel-footer {
+  border-top: 2px solid @panel-inner-border;
+  .border-bottom-radius(@panel-border-radius);
+}
+
+// List groups in panels
+.panel {
+  > .list-group,
+  > .panel-collapse > .list-group {
+    .list-group-item {
+      background-color: @panel-bg;
+    }
+
+    // Add border top radius for first one
+    &:first-child {
+      .list-group-item:first-child {
+        .border-top-radius(@panel-border-radius);
+      }
+    }
+    // Add border bottom radius for last one
+    &:last-child {
+      .list-group-item:last-child {
+        .border-bottom-radius(@panel-border-radius);
+      }
+    }
+  }
+}
+
+// Contextual variations
+.panel-default {
+  .panel-variant(@panel-default-text; @panel-default-heading-bg; #fff);
+}
+.panel-primary {
+  .panel-variant(@panel-primary-text; @panel-primary-heading-bg; #fff);
+}
+.panel-success {
+  .panel-variant(@panel-success-text; @panel-success-heading-bg; #fff);
+}
+.panel-info {
+  .panel-variant(@panel-info-text; @panel-info-heading-bg; #fff);
+}
+.panel-warning {
+  .panel-variant(@panel-warning-text; @panel-warning-heading-bg; #fff);
+}
+.panel-danger {
+  .panel-variant(@panel-danger-text; @panel-danger-heading-bg; #fff);
+}
+
+// Collapse (Accrodion)
+.panel-group {
+  .panel,
+  .panel-default,
+  .panel-primary,
+  .panel-success,
+  .panel-info,
+  .panel-warning,
+  .panel-danger {
+    background-color: transparent;
+  }
+  .panel-heading {
+    padding: 0;
+    background-color: transparent;
+    border-bottom: none;
+    + .panel-collapse > .panel-body,
+    + .panel-collapse > .list-group {
+      border-top: none;
+    }
+  }
+  .panel-title {
+    position: relative;
+    color: @text-color;
+    font-size: @font-size-base;
+    font-weight: normal;
+    border-radius: @border-radius-large;
+    .transition(background-color, 0.25s);
+    a {
+      display: block;
+      padding: 13px 50px 13px 25px;
+      font-weight: normal;
+    }
+    &:after {
+      display: block;
+      position: absolute;
+      content: "+";
+      font-size: 25px;
+      line-height: 1;
+      font-weight: normal;
+      top: 50%;
+      right: 25px;
+      margin-top: -12px;
+    }
+    &:hover {
+      background-color: @gray-lighter;
+    }
+    &.active {
+      &:after {
+        content: "";
+        width: 13px;
+        height: 2px;
+        margin-top: -1px;
+      }
+    }
+  }
+
+  .panel-body {
+    padding: 20px 25px;
+    background-color: transparent;
+  }
+
+  // Color Variations
+  &.panel-group-default {
+    .panel .panel-title.active {
+      color: @panel-default-text;
+      background-color: @panel-default-heading-bg;
+      &:after {
+        background-color:  @panel-default-text;
+      }
+    }
+  }
+  &.panel-group-primary {
+    .panel .panel-title {
+      color: @brand-primary;
+    }
+    .panel .panel-title.active {
+      color: @panel-primary-text;
+      background-color: @panel-primary-heading-bg;
+      &:after {
+        background-color:  @panel-default-text;
+      }
+    }
+  }
+  &.panel-group-success {
+    .panel .panel-title {
+      color: @brand-success;
+    }
+    .panel .panel-title.active {
+      color: @panel-success-text;
+      background-color: @panel-success-heading-bg;
+      &:after {
+        background-color:  @panel-default-text;
+      }
+    }
+  }
+  &.panel-group-info {
+    .panel .panel-title {
+      color: @brand-info;
+    }
+    .panel .panel-title.active {
+      color: @panel-info-text;
+      background-color: @panel-info-heading-bg;
+      &:after {
+        background-color:  @panel-default-text;
+      }
+    }
+  }
+  &.panel-group-warning {
+    .panel .panel-title {
+      color: @brand-warning;
+    }
+    .panel .panel-title.active {
+      color: @panel-warning-text;
+      background-color: @panel-warning-heading-bg;
+      &:after {
+        background-color:  @panel-default-text;
+      }
+    }
+  }
+  &.panel-group-danger {
+    .panel .panel-title {
+      color: @brand-danger;
+    }
+    .panel .panel-title.active {
+      color: @panel-danger-text;
+      background-color: @panel-danger-heading-bg;
+      &:after {
+        background-color:  @panel-default-text;
+      }
+    }
+  }
+}

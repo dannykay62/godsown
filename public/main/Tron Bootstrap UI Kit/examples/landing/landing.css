@@ -1,0 +1,237 @@
+/*
+ * Tron UI Kit
+ * Landing Page Template Styles
+ */
+
+
+body {
+	position: relative;
+}
+/** Navbar
+********************************************/
+.navbar-animated .navbar-logo .alt-logo {
+	margin-top: -75px;
+	opacity: 1;
+	visibility: visible;
+}
+.navbar-animated.navbar-transparent .navbar-logo .alt-logo {
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transition: opacity 0.25s;
+					transition: opacity 0.25s;
+}
+.navbar-animated .navbar-logo img:first-child {
+	visibility: hidden;
+}
+.navbar-animated.navbar-transparent .navbar-logo img:first-child {
+	visibility: visible;
+}
+
+/** Intro section
+********************************************/
+.intro {
+	position: relative;
+	width: 100%;
+	min-height: 620px;
+	padding: 180px 0 30px 0;
+	text-align: center;
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.intro .container {
+	position: relative;
+	z-index: 10;
+}
+.intro	h1,
+.intro h2,
+.intro h3,
+.intro h4,
+.intro p {
+	color: #fff;
+}
+.intro	h1 {
+	margin-bottom: 35px;
+}
+.intro p {
+	max-width: 600px;
+	margin: 15px auto 35px auto;
+}
+.intro .btn {
+	margin: 10px;
+}
+.intro .overlay {
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	min-height: 100%;
+	top: 0;
+	left: 0;
+	opacity: .7;
+	filter: alpha(opacity=70);
+	background-color: #3a3a3a;
+}
+.intro .overlay + span {
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 150px;
+	bottom: 0;
+	left: 0;
+	opacity: .6;
+	filter: alpha(opacity=60);
+	background: -moz-linear-gradient(top,  rgba(255,255,255,0.01) 0%, rgba(0,0,0,0.62) 50%, rgba(0,0,0,1) 81%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.01)), color-stop(50%,rgba(0,0,0,0.62)), color-stop(81%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,0.01) 0%,rgba(0,0,0,0.62) 50%,rgba(0,0,0,1) 81%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(255,255,255,0.01) 0%,rgba(0,0,0,0.62) 50%,rgba(0,0,0,1) 81%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(255,255,255,0.01) 0%,rgba(0,0,0,0.62) 50%,rgba(0,0,0,1) 81%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(255,255,255,0.01) 0%,rgba(0,0,0,0.62) 50%,rgba(0,0,0,1) 81%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#03ffffff', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+
+/** Features
+********************************************/
+.features {
+	margin-top: 60px;
+	margin-bottom: 60px;
+	text-align: center;
+}
+.features .icon {
+	margin: 15px auto 25px auto;
+}
+.features .icon i:before {
+	font-size: 60px;
+}
+.features .icon i.fa {
+	font-size: 50px;
+}
+.features h3 {
+	margin-top: 13px;
+	margin-bottom: 26px;
+}
+.features p {
+	margin-bottom: 30px;
+}
+
+/** Footer
+*******************************************/
+.footer {
+	width: 100%;
+	color: #fff;
+	background-color: #4c4c4c;
+	padding: 70px 0 5px 0;
+}
+.footer h3 {
+	color: #fff;
+	margin-top: 9px;
+}
+.footer p {
+	font-size: 14px;
+	margin-bottom: 30px;
+}
+.footer a {
+	font-size: 14px;
+	color: #fff;
+	text-transform: uppercase;
+}
+.footer ul {
+	line-height: 2;
+}
+.footer li.active a,
+.footer a:hover {
+	color: #abbdd1;
+}
+.footer .social-btn:hover {
+	color: #fff;
+}
+.footer .logo {
+	display: block;
+	max-width: 130px;
+	margin-bottom: 24px;
+}
+.footer .logo img {
+	width: 100%;
+	max-width: 130px;
+}
+.copyright {
+	margin-top: 60px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.footer .subscribe-form .form-group {
+	width: 70%;
+}
+.footer .subscribe-form .form-control {
+	width: 100%;
+}
+
+/** Media Queries
+*******************************************/
+@media screen and (max-width: 1200px) {
+	.footer .subscribe-form .form-group {
+		width: 60%;
+	}
+}
+@media screen and (max-width: 900px) {
+	.navbar {
+		background-color: transparent !important;
+		border: none !important; 
+	}
+	.navbar .navbar-collapse {
+		background-color: #fff !important; 
+	}
+	.navbar-fixed-top {
+		position: absolute;
+	}
+	.navbar-animated.navbar-condensed {
+		min-height: 115px;
+	}
+	.navbar-animated.navbar-condensed .navbar-logo {
+	  height: 115px;
+	  padding: 33.5px 0;
+	}
+	.navbar-animated.navbar-condensed .navbar-nav,
+	.navbar-animated.navbar-condensed .navbar-default .navbar-nav,
+	.navbar-animated.navbar-condensed .navbar-inverse .navbar-nav {
+	  margin-top: 35px;
+	}
+	.navbar-animated.navbar-condensed .navbar-right {
+		margin-top: 31.5px;
+	}
+	.navbar-animated.navbar-condensed .navbar-btn {
+		margin-top: 31.5px;
+	}
+	.navbar-animated.navbar-condensed .navbar-toggle {
+	  margin-top: 35.5px;
+	  margin-bottom: 35.5px;
+	}
+}
+@media screen and (max-width: 768px) {
+	.intro {
+		padding-top: 130px;
+		min-height: 540px; 
+	}
+	.intro	h1 {
+		font-size: 30px;
+		line-height: 1.4;
+	}
+	.intro p {
+		font-size: 15px;
+	}
+	.features {
+		margin-top: 40px;
+	}
+	.footer {
+		text-align: center;
+	}
+	.footer .logo {
+		margin-left: auto;
+		margin-right: auto;  
+	}
+	.footer .subscribe-form .form-group {
+		width: 100%;
+	}
+	.footer .social-buttons {
+		margin-bottom: 30px; 
+	}
+}

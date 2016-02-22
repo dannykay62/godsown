@@ -1,0 +1,14 @@
+Premium / Free Images and Graphics Used in Demo:
+- http://videohive.net/item/woman-using-tablet-pc-in-public-place/9336054
+- http://photodune.net/item/group-of-people/440773
+- http://photodune.net/item/smiles/2359510
+- https://unsplash.com/
+
+3rd Party JavaScript (jQuery) Plugins:
+- Bootstrap - http://getbootstrap.com/
+- Smoothscroll - https://github.com/galambalazs/smoothscroll
+- iCheck - https://github.com/fronteed/iCheck/
+- Bootstrap-select - http://silviomoreto.github.io/bootstrap-select/
+- jQuery Placeholder - https://github.com/mathiasbynens/jquery-placeholder
+- Bootstrap Slider - https://github.com/seiyria/bootstrap-slider
+- Bootstrap Datepicker - https://github.com/eternicode/bootstrap-datepicker

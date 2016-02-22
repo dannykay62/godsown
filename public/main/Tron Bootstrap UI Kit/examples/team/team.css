@@ -1,0 +1,113 @@
+/*
+ * Tron UI Kit
+ * Team Page Template Styles
+ */
+
+
+/** Thumbnails
+********************************************/
+.thumbnail {
+	max-width: 370px;
+	text-align: center;
+}
+.thumbnail span {
+	display: block;
+	font-size: 14px;
+	margin-bottom: 10px; 
+}
+
+/** Team members
+********************************************/
+.team-member {
+	max-width: 320px;
+	margin: 30px auto;
+	text-align: center;
+}
+.team-member .thumb {
+	width: 100%;
+	max-width: 280px;
+	margin: 0 auto 20px auto;
+}
+.team-member span {
+	display: block;
+	font-size: 14px;
+	margin-bottom: 10px; 
+}
+.team-member p {
+	margin-bottom: 18px; 
+}
+
+/** Footer
+*******************************************/
+.footer {
+	width: 100%;
+	color: #fff;
+	background-color: #4c4c4c;
+	padding: 70px 0 5px 0;
+}
+.footer h3 {
+	color: #fff;
+	margin-top: 9px;
+}
+.footer p {
+	font-size: 14px;
+	margin-bottom: 30px;
+}
+.footer a {
+	font-size: 14px;
+	color: #fff;
+	text-transform: uppercase;
+}
+.footer ul {
+	line-height: 2;
+}
+.footer li.active a,
+.footer a:hover {
+	color: #abbdd1;
+}
+.footer .social-btn:hover {
+	color: #fff;
+}
+.footer .logo {
+	display: block;
+	max-width: 130px;
+	margin-bottom: 24px;
+}
+.footer .logo img {
+	width: 100%;
+	max-width: 130px;
+}
+.copyright {
+	margin-top: 60px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.footer .subscribe-form .form-group {
+	width: 70%;
+}
+.footer .subscribe-form .form-control {
+	width: 100%;
+}
+
+/** Media Queries
+*******************************************/
+@media screen and (max-width: 1200px) {
+	.footer .subscribe-form .form-group {
+		width: 60%;
+	}
+}
+@media screen and (max-width: 768px) {
+	.footer {
+		text-align: center;
+	}
+	.footer .logo {
+		margin-left: auto;
+		margin-right: auto;  
+	}
+	.footer .subscribe-form .form-group {
+		width: 100%;
+	}
+	.footer .social-buttons {
+		margin-bottom: 30px; 
+	}
+}

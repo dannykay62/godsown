@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Tron Landing Template</title>
+    <!--SEO Meta Tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Tron Bootstrap based UI Kit, flat, modern front-end framework for faster and easier web development.">
+    <meta name="keywords" content="HTML, CSS, JS, JavaScript, framework, bootstrap, front-end, frontend, web development">
+    <meta name="author" content="8 Guild">
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../../favicon.ico" type="image/x-icon">
+
+    <!-- Tron Bootstrap Skin and UI CSS -->
+    <link href="../../css/tron-ui.css" rel="stylesheet">
+    <!-- Page specific CSS -->
+    <link href="landing.css" rel="stylesheet">
+
+    <!-- Outdated Browser Plugin Styles -->
+    <link href="../../outdatedbrowser/outdatedbrowser.css" rel="stylesheet">
+
+  </head>
+
+  <!-- Body -->
+
+  <body data-spy="scroll" data-target=".landing-navbar-collapse" data-offset="300">
+    
+    <!-- Login Modal -->
+    <div class="modal fade" id="signupModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title">Sign Up Form</h4>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <label for="signup-email">Email</label>
+              <input type="text" class="form-control" id="signup-email" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label for="signup-pass">Password</label>
+              <input type="text" class="form-control" id="signup-pass" placeholder="Enter password">
+            </div>
+            <div class="form-group">
+              <label for="signup-pass-repeat">Repeat password</label>
+              <input type="text" class="form-control" id="signup-pass-repeat" placeholder="Repeat password">
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox">Read and agree with terms
+              </label>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-primary">Sign Up</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <!-- Header -->
+    <header class="navbar navbar-transparent navbar-fixed-top navbar-centered-nav navbar-animated">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".landing-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="arrow"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="../../index.html" class="navbar-logo">
+            <img src="../../img/logo-light.png" alt="Tron UI Kit">
+            <img class="alt-logo" src="../../img/logo.png" alt="Tron UI Kit">
+          </a>
+        </div>
+        <nav class="collapse navbar-collapse landing-navbar-collapse" role="navigation">
+          <ul class="nav navbar-nav">
+            <li class="active"><a class="scrollTo" href="#home" data-offset-top="0">Home</a></li>
+            <li><a class="scrollTo" href="#features" data-offset-top="115">Features</span></a></li>
+            <li><a class="scrollTo" href="#info-block-1" data-offset-top="120">Info Block 1</a></li>
+            <li><a class="scrollTo" href="#info-block-2" data-offset-top="30">Info Block 2</a></li>
+          </ul>
+          <div class="navbar-right">
+            <a href="#" class="btn-outlined btn-primary navbar-btn" data-toggle="modal" data-target="#signupModal">Sign Up</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- Header Close-->
+
+    <!-- Intro Section -->
+    <section class="intro" style="background-image: url(img/intro-bg.jpg)" id="home">
+      <div class="overlay"></div>
+      <span></span>
+      <div class="container">
+        <h1>This is Basic Landing Page Template</h1>
+        <h4>Here goes your very creative tagline.</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias assumenda fugit perspiciatis non excepturi dolorum vitae voluptatem ullam.</p>
+        <a href="#" class="btn-outlined btn-light">Learn More</a>
+        <a href="#" class="btn btn-warning">Buy Now</a>
+      </div>
+    </section><!-- Intro Section End -->
+
+    <!-- Features -->
+    <section class="container features" id="features">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="icon"><i class="flaticon-users25"></i></div>
+          <h3>Special Team Plan</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat ducimus autem id quia at similique, adipisci unde harum expedita maiores natus dolorem.</p>
+        </div>
+        <div class="col-sm-4">
+          <div class="icon"><i class="flaticon-cloud306"></i></div>
+          <h3>Cloud Storage</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat ducimus autem id quia at similique, adipisci unde harum expedita maiores natus dolorem.</p>
+        </div>
+        <div class="col-sm-4">
+          <div class="icon"><i class="flaticon-headset12"></i></div>
+          <h3>Premium Support</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat ducimus autem id quia at similique, adipisci unde harum expedita maiores natus dolorem.</p>
+        </div>
+      </div>
+    </section><!-- Features End -->
+
+    <!-- Info Block 1 -->
+    <section class="container" id="info-block-1">
+      <div class="row">
+        <div class="col-sm-6 col-sm-push-6">
+          <img class="img-responsive" src="img/info-block-1.png" alt="Info Block 1">
+        </div>
+        <div class="col-sm-6 col-sm-pull-6">
+          <div class="block-header">
+            <h2><small>Subheading</small>Info Block 1 Title</h2>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quo hic quis inventore asperiores itaque, qui. Doloribus vitae, voluptatem cupiditate eum, explicabo, ullam commodi, quasi doloremque numquam rem fugiat necessitatibus.</p>
+        </div>
+      </div>
+    </section><!-- Info Block 1 End -->
+
+    <!-- Info Block 2 -->
+    <section class="container" id="info-block-2">
+      <hr class="space-top-2x space-bottom-2x">
+      <div class="row">
+        <div class="col-sm-7">
+          <img class="img-responsive" src="img/info-block-2.png" alt="Info Block 2">
+        </div>
+        <div class="col-sm-5 space-top-2x">
+          <h3>Info Block 2 Title</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quo hic quis inventore asperiores itaque, qui. Doloribus vitae, voluptatem cupiditate eum, explicabo, ullam commodi, quasi doloremque numquam rem fugiat necessitatibus.</p>
+        </div>
+      </div>
+    </section><!-- Info Block 2 End -->
+
+    <!-- Additional spaces -->
+    <div class="space-bottom-2x visible-sm-block visible-xs-block"></div>
+    <div class="padding-top visible-xs-block"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <a href="../../index.html" class="logo"><img src="../../img/logo-light.png" alt="Tron UI Kit"></a>
+            <p>Short description goes here.</p>
+            <ul class="list-unstyled">
+              <li class="active"><a href="#">Active Link</a></li>
+              <li><a href="#">Norman Link</a></li>
+              <li><a href="#">Another Link</a></li>
+              <li><a href="#">Yet Another Link</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-8">
+            <h3>Subscribe to our newspaper</h3>
+            <p>To receive latest news and updates. We do not tolerate spam!</p>
+            <form action="" class="form-inline subscribe-form space-bottom-2x">
+              <div class="form-group">
+                <label class="sr-only" for="subscr-email">Email address</label>
+                <input type="email" class="form-control" id="subscr-email" placeholder="Enter email">
+              </div>
+              <button type="submit" class="btn btn-warning">Subscribe</button>
+            </form>
+            <h3>Follow us on:</h3>
+            <div class="social-buttons">
+              <a href="#" class="social-btn sb-twitter"><i class="fa fa-twitter"></i></a>
+              <a href="#" class="social-btn sb-instagram"><i class="fa fa-instagram"></i></a>
+              <a href="#" class="social-btn sb-dribbble"><i class="fa fa-dribbble"></i></a>
+              <a href="#" class="social-btn sb-google-plus"><i class="fa fa-google-plus"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <p>Made by <a href="http://8guild.com/" target="_blank">8 Guild</a> in 2014</p>
+          </div>
+        </div>
+      </div>
+    </footer><!-- Footer End -->
+
+    <!-- Outdated Browser
+    ================================================== -->
+    <div id="outdated">
+      <span class="icon-outdated fa fa-exclamation-triangle"></span>
+      <h2>Your browser is out-of-date!</h2>
+      <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update my browser now </a></p>
+      <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+    </div>
+
+    <!-- jQuery Library
+    ================================================== -->
+    <script src="../../js/vendor/jquery.min.js"></script>
+
+    <!-- Outdated Browser Plugin
+    ================================================== -->
+    <script src="../../outdatedbrowser/outdatedbrowser.min.js"></script>
+    <script src="../../outdatedbrowser/outdatedbrowser.init.js"></script>
+
+    <!-- Plugins and Custom scripts
+    ================================================== -->
+    <script src="../../js/vendor/bootstrap.min.js"></script>
+    <script src="../../js/vendor/smoothscroll.js"></script>
+    <script src="../../js/tron-ui.js"></script>
+    <script src="landing.js"></script>
+
+  </body><!-- Body End -->
+</html>
