@@ -1,0 +1,55 @@
+//
+// Modals
+// (dependencies: bootstrap/modals.less)
+// --------------------------------------------------
+
+.modal {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.modal-dialog {
+	width: 100%;
+  max-width: @modal-md;
+  margin: 30px auto;
+
+  // Modal Sizes
+  &.modal-lg {
+  	max-width: @modal-lg
+  }
+  &.modal-sm {
+  	max-width: @modal-sm
+  }
+}
+
+.modal-content {
+  border: none;
+  border-radius: @border-radius-base;
+  box-shadow: none;
+}
+
+// Modal header
+// Top section of the modal where title and dismiss
+.modal-header {
+  border: none;
+  min-height: 60px;
+}
+
+// Title text within header
+.modal-title {
+  font-size: @font-size-base;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+// Close icon
+.modal-header .close {
+  margin-right: -5px !important;
+  color: @brand-primary;
+}
+
+// Modal footer
+.modal-footer {
+	text-align: left;
+	border: none;
+	padding-bottom: 28px;
+}

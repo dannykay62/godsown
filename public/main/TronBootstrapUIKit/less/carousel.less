@@ -1,0 +1,104 @@
+//
+// Carousel
+// (dependencies: bootstrap/carousel.less)
+// --------------------------------------------------
+
+.carousel {
+	overflow: hidden;
+}
+
+// Carousel controls (arrows prev, next)
+.carousel-control {
+	text-shadow: none;
+  &.left,
+  &.right {
+    background-image: none;
+    background-color: @carousel-control-background;
+  	.opacity(0);
+    .transition(all, 0.3s);
+  }
+
+  &.left {
+  	.translate(-50px; 0);
+  }
+   &.right {
+  	.translate(50px; 0);
+  }
+
+  // Hover/focus state
+  &:hover,
+  &:focus {
+    .opacity(1) !important;
+  }
+
+  // Toggles
+  .fa-chevron-left,
+  .fa-chevron-right,
+  .flaticon-left216,
+  .flaticon-right237 {
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    display: inline-block;
+    margin-top: -25px;
+
+    &:before {
+    	font-size: 40px;
+    }
+  }
+  .fa-chevron-left,
+  .flaticon-left216 {
+    left: 50%;
+    margin-left: -20px;
+  }
+  .fa-chevron-right,
+  .flaticon-right237 {
+    right: 50%;
+    margin-right: -20px;
+  }
+}
+
+// Showing controls when hover over slide
+.carousel:hover {
+	.carousel-control {
+		.opacity(@carousel-control-opacity);
+		.translate(0; 0);
+	}
+}
+
+// Optional indicator pips
+.carousel-indicators {
+  bottom: 5px;
+	li {
+    width:  8px;
+    height: 8px;
+    margin: 3px;
+    border: none;
+    background-color: @carousel-indicator-bg;
+    .scale(1);
+    .transition(all, 0.25s);
+	  &.active {
+	  	margin: 3px;
+	    width:  8px;
+	    height: 8px;
+	    background-color: @carousel-indicator-active-bg;
+	    .scale(1.5);
+	  }
+	}
+}
+
+// Optional captions
+.carousel-caption {
+  text-shadow: none;
+  h1, .h1, h2, .h2, h3, .h3,
+  h4, .h4, h5, .h5, h6, .h6 {
+    text-transform: uppercase;
+    color: @carousel-caption-color;
+  }
+  h1, .h1, h2, .h2, h3, .h3 {
+    font-weight: 300;
+  }
+  p {
+    font-size: @font-size-small;
+  }
+}

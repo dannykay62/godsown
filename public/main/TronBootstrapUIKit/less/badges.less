@@ -1,0 +1,43 @@
+//
+// Badges
+// (dependencies: bootstrap/badges.less)
+// --------------------------------------------------
+
+// Base class
+.badge {
+  padding: 4px 7px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1;
+  margin-left: 8px;
+
+  // Account for badges in navs
+  .nav-pills > li > a > & {
+    margin-left: 8px;
+  }
+  &.badge-default {
+    color: @badge-color !important;
+    background-color: @badge-bg !important;
+  }
+  &.badge-primary {
+    color: #fff !important;
+    background-color: @brand-primary !important;
+  }
+
+  &.floating {
+    position: absolute;
+    border: 1px solid #fff;
+    top: -11px;
+    right: -3px;
+  }
+}
+
+//Badge alignment in buttons
+.btn {
+  &.icon-right > .badge {
+    margin-left: 8px;
+  }
+  &.icon-left > .badge {
+    margin-right: 8px;
+  }
+}

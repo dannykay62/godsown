@@ -1,0 +1,204 @@
+//
+// Social Buttons
+// --------------------------------------------------
+
+// Base class
+.social-btn {
+	display: inline-block;
+	width: @sb-normal-size;
+	height: @sb-normal-size;
+	color: @sb-color;
+	line-height: @sb-normal-size;
+	text-align: center;
+	text-decoration: none;
+	border-radius: @sb-border-radius;
+	margin: 8px 4px;
+	.transition(background-color, 0.3s);
+
+	.fa, i {
+		.scale(1);
+		.transition(all, 0.25s);
+		.backface-visibility(hidden);
+	}
+
+	&:hover,
+	&:focus {
+		color: @sb-color;
+		text-decoration: none;
+		outline: none;
+		.fa, i {
+			.scale(1.3);
+		}
+	} 
+
+	// Sizes
+	&.sb-sm {
+		width: @sb-small-size;
+		height: @sb-small-size;
+		font-size: @sb-small-font-size;
+		line-height: @sb-small-size;
+		margin: 6px 2px;
+	}
+	&.sb-lg {
+		width: @sb-large-size;
+		height: @sb-large-size;
+		font-size: @sb-large-font-size;
+		line-height: @sb-large-size;
+		margin: 10px 6px;
+	}
+}
+
+// Specific networks classes
+
+// Behance
+.sb-behance {
+	.social-specific-bg(@sb-behance-bg);
+}
+// Bitbucket
+.sb-bitbucket {
+	.social-specific-bg(@sb-bitbucket-bg);
+}
+// CodePen
+.sb-codepen {
+	.social-specific-bg(@sb-codepen-bg);
+}
+// DeviantArt
+.sb-deviantart {
+	.social-specific-bg(@sb-deviantart-bg);
+}
+// Digg
+.sb-digg {
+	.social-specific-bg(@sb-digg-bg);
+}
+// Dribbble
+.sb-dribbble {
+	.social-specific-bg(@sb-dribbble-bg);
+}
+// Dropbox
+.sb-dropbox {
+	.social-specific-bg(@sb-dropbox-bg);
+}
+// Facebook
+.sb-facebook {
+	.social-specific-bg(@sb-facebook-bg);
+}
+// Flickr
+.sb-flickr {
+	.social-specific-bg(@sb-flickr-bg);
+}
+// Foursquare
+.sb-foursquare {
+	.social-specific-bg(@sb-foursquare-bg);
+}
+// GitHub
+.sb-github {
+	.social-specific-bg(@sb-github-bg);
+}
+// Google+
+.sb-google-plus {
+	.social-specific-bg(@sb-google-plus-bg);
+}
+// Instagram
+.sb-instagram {
+	.social-specific-bg(@sb-instagram-bg);
+}
+// Jsfiddle
+.sb-jsfiddle {
+	.social-specific-bg(@sb-jsfiddle-bg);
+}
+// LastFM
+.sb-lastfm {
+	.social-specific-bg(@sb-lastfm-bg);
+}
+// LinkedIn
+.sb-linkedin {
+	.social-specific-bg(@sb-linkedin-bg);
+}
+// PayPal
+.sb-paypal {
+	.social-specific-bg(@sb-paypal-bg);
+}
+// Pinterest
+.sb-pinterest {
+	.social-specific-bg(@sb-pinterest-bg);
+}
+// Reddit
+.sb-reddit {
+	.social-specific-bg(@sb-reddit-bg);
+}
+// Skype
+.sb-skype {
+	.social-specific-bg(@sb-skype-bg);
+}
+// SoundCloud
+.sb-soundcloud {
+	.social-specific-bg(@sb-soundcloud-bg);
+}
+// Stack Overflow
+.sb-stack-overflow {
+	.social-specific-bg(@sb-stack-overflow-bg);
+}
+// Steam
+.sb-steam {
+	.social-specific-bg(@sb-steam-bg);
+}
+// StumbleUpon
+.sb-stumbleupon {
+	.social-specific-bg(@sb-stumbleupon-bg);
+}
+// Trello
+.sb-trello {
+	.social-specific-bg(@sb-trello-bg);
+}
+// Tumblr
+.sb-tumblr {
+	.social-specific-bg(@sb-tumblr-bg);
+}
+// Twitch
+.sb-twitch {
+	.social-specific-bg(@sb-twitch-bg);
+}
+// Twitter
+.sb-twitter {
+	.social-specific-bg(@sb-twitter-bg);
+}
+// Vimeo
+.sb-vimeo {
+	.social-specific-bg(@sb-vimeo-bg);
+}
+// Vine
+.sb-vine {
+	.social-specific-bg(@sb-vine-bg);
+}
+// VKontakte
+.sb-vk {
+	.social-specific-bg(@sb-vk-bg);
+}
+// WeChat
+.sb-wechat {
+	.social-specific-bg(@sb-wechat-bg);
+}
+// WordPress
+.sb-wordpress {
+	.social-specific-bg(@sb-wordpress-bg);
+}
+// XING
+.sb-xing {
+	.social-specific-bg(@sb-xing-bg);
+}
+// Yahoo!
+.sb-yahoo {
+	.social-specific-bg(@sb-yahoo-bg);
+}
+// Yelp
+.sb-yelp {
+	.social-specific-bg(@sb-yelp-bg);
+}
+// YouTube
+.sb-youtube {
+	.social-specific-bg(@sb-youtube-bg);
+}
+// Email
+.sb-email {
+	.social-specific-bg(@sb-email-bg);
+}

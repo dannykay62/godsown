@@ -1,0 +1,237 @@
+//
+// Typography 
+// (dependencies: bootstrap/type.less)
+// --------------------------------------------------
+
+// Headings
+// -------------------------
+h1, .h1,
+h2, .h2 {
+  font-weight: 300;
+}
+h3, .h3 {
+  font-weight: 400;
+}
+h1, .h1,
+h2, .h2,
+h3, .h3 {
+  margin-bottom: (@line-height-computed / 1.5);
+
+  small,
+  .small {
+    font-weight: 300;
+  }
+}
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-weight: 600;
+
+  small,
+  .small {
+    font-size: 80%;
+  }
+}
+
+// Body text
+// -------------------------
+p {
+  margin: 0 0 (@line-height-computed / 1);
+}
+.lead {
+  font-size: floor((@font-size-base * 1.5));
+  line-height: 1.5;
+}
+
+// Contextual primary background
+.bg-primary {
+  color: @text-color;
+  .bg-variant(@state-primary-bg);
+}
+
+// Page header
+// -------------------------
+.page-header {
+  line-height: @line-height-large;
+  padding-bottom: 0;
+  border-bottom: none;
+  text-transform: uppercase;
+  margin: (@line-height-computed * 1.5) 0;
+  h1, .h1, h2, .h2 {
+    line-height: @line-height-small;
+  }
+  small,
+  span {
+    display: block;
+    margin-top: 12px;
+    font-size: @font-size-base;
+    line-height: @line-height-base;
+    font-weight: normal;
+    color: lighten(@gray-light, 10%);
+  }
+}
+
+// Block header
+// -------------------------
+.block-header {
+  text-transform: uppercase;
+  margin-bottom: (@line-height-computed * 1.5);
+  > h2,
+  > .h2,
+  > h3,
+  > .h3 {
+    line-height: @line-height-base;
+    font-size: @font-size-h3;
+    font-weight: normal;
+  }
+  small,
+  span {
+    display: block;
+    margin-bottom: 12px;
+    font-size: @font-size-base;
+    line-height: @line-height-base;
+    font-weight: normal;
+    color: lighten(@gray-light, 10%);
+  }
+}
+
+
+// Blockquotes
+// -------------------------
+blockquote {
+  position: relative;
+  font-weight: 300;
+  border-left: none;
+  padding-left: 0;
+
+  footer,
+  small,
+  .small {
+    display: inline-block;
+    font-size: @font-size-small;
+    font-weight: 600;
+    border-top: 4px solid @blockquote-border-color;
+    padding-top: 10px;
+
+    &:before {
+      content: '';
+    }
+  }
+
+  //Sharable Bloquotes with social media
+  &.shareable {
+    cursor: default;
+    .transition(color, 0.3s);
+    .share-btn {
+      display: block;
+      position: absolute;
+      top: -35px;
+      left: 50%;
+      padding: 1px 0;
+      margin-left: -34px;
+      width: 68px;
+      text-align: center;
+      border-radius: @border-radius-large;
+      background-color: @brand-primary;
+      visibility: hidden;
+      opacity: 0;
+      -webkit-transform: translateY(-15px);
+              transform: translateY(-15px);
+      .transition(all, 0.3s);
+
+      &:after {
+        top: 100%;
+        left: 50%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        .border-color-rgba(@brand-primary, 0);
+        border-top-color: @brand-primary;
+        border-width: 7px;
+        margin-left: -7px;
+      }
+      i {
+        font-size: 22px;
+        color: #fff;
+      } 
+    }
+
+    &:hover {
+      color: @brand-primary;
+      .share-btn {
+        visibility: visible;
+        opacity: 1;
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+      }
+    }
+  }
+}
+
+// Opposite alignment of blockquote
+.blockquote-reverse,
+blockquote.pull-right {
+  padding-right: 0;
+  padding-left: 0;
+  border-right: none;
+
+  // Account for citation
+  footer,
+  small,
+  .small {
+    &:after {
+      content: '';
+    }
+  }
+}
+
+// Lists
+//
+ul,
+ol {
+  margin-bottom: @line-height-computed;
+}
+
+// Unordered list
+ul {
+  li {
+    color: @list-style-color;
+    span {
+      color: @text-color;
+    }
+  }
+}
+
+// Unstyled list
+.list-unstyled,
+.list-inline {
+  li {
+    color: @text-color;
+  }
+}
+
+// Description Lists
+dl {
+  padding-left: 18px;
+}
+dt {
+  position: relative;
+  font-weight: 600;
+  &:before {
+    display: block;
+    position: absolute;
+    left: -17px;
+    top: 7px;
+    font-family: FontAwesome;
+    content: "\f111";
+    font-size: 8px;
+    vertical-align: middle;
+    color: @list-style-color;
+  }
+}
+dd {
+  margin-bottom: floor(@line-height-computed / 1.2);
+}

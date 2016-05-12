@@ -1,0 +1,120 @@
+//
+// List groups
+// (dependencies: bootstrap/list-groups.less)
+// --------------------------------------------------
+
+// Individual list items
+//
+.list-group-item {
+  padding: 22px 30px;
+  color: @text-color;
+
+  //Badges
+  .badge {
+    margin-right: -8px;
+  }
+}
+
+// Linked list items
+//
+a.list-group-item {
+  color: @text-color;
+  font-weight: normal;
+  .transition(background-color, 0.3s);
+
+  // Hover state
+  &:hover,
+  &:focus {
+    color: @list-group-link-hover-color;
+    background-color: @list-group-hover-bg;
+  }
+}
+
+// Contextual variants
+//
+.list-group-item-primary {
+  background-color: @state-primary-bg;
+  border-color: @state-primary-bg;
+}
+a.list-group-item-primary {
+  &:hover,
+  &:focus,
+  &.active,
+  &.active:hover,
+  &.active:focus {
+    color: @text-color;
+    background-color: darken(@state-primary-bg, 7%);
+    border-color: darken(@state-primary-bg, 7%);
+  }
+}
+.list-group-item-success {
+  background-color: @state-success-bg;
+  border-color: @state-success-bg;
+}
+a.list-group-item-success {
+  &:hover,
+  &:focus,
+  &.active,
+  &.active:hover,
+  &.active:focus {
+    color: @text-color;
+    background-color: darken(@state-success-bg, 7%);
+    border-color: darken(@state-success-bg, 7%);
+  }
+}
+.list-group-item-info {
+  background-color: @state-info-bg;
+  border-color: @state-info-bg;
+}
+a.list-group-item-info {
+  &:hover,
+  &:focus,
+  &.active,
+  &.active:hover,
+  &.active:focus {
+    color: @text-color;
+    background-color: darken(@state-info-bg, 7%);
+    border-color: darken(@state-info-bg, 7%);
+  }
+}
+.list-group-item-warning {
+  background-color: @state-warning-bg;
+  border-color: @state-warning-bg;
+}
+a.list-group-item-warning {
+  &:hover,
+  &:focus,
+  &.active,
+  &.active:hover,
+  &.active:focus {
+    color: @text-color;
+    background-color: darken(@state-warning-bg, 7%);
+    border-color: darken(@state-warning-bg, 7%);
+  }
+}
+.list-group-item-danger {
+  background-color: @state-danger-bg;
+  border-color: @state-danger-bg;
+}
+a.list-group-item-danger {
+  &:hover,
+  &:focus,
+  &.active,
+  &.active:hover,
+  &.active:focus {
+    color: @text-color;
+    background-color: darken(@state-danger-bg, 7%);
+    border-color: darken(@state-danger-bg, 7%);
+  }
+}
+
+// Custom content options
+.list-group-item-heading {
+  font-size: @font-size-base;
+  font-weight: normal;    
+  margin-bottom: 8px;
+}
+.list-group-item-text {
+  font-size: @font-size-small;
+  line-height: 1.5;
+}

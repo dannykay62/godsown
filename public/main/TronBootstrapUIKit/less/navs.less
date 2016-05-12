@@ -1,0 +1,202 @@
+//
+// Navs
+// (dependencies: bootstrap/navs.less)
+// --------------------------------------------------
+
+// Base class
+// --------------------------------------------------
+.nav {
+  > li {
+  	font-size: @font-size-small;
+    > a {
+    	margin-right: 0;
+      font-weight: normal;
+    }
+  }
+
+  // Open dropdowns
+  .open > a {
+    &,
+    &:hover,
+    &:focus {
+      border-color: transparent;
+    }
+  }
+}
+
+// Tabs
+// -------------------------
+.nav-tabs {
+  margin-bottom: ceil(@line-height-computed * 1.2);
+  > li {
+    position: relative;
+    text-transform: uppercase;
+
+    // Actual tabs (as links)
+    > a {
+      margin: 0px 18px;
+      padding-left: 0;
+      padding-right: 0;
+      font-weight: bold;
+      border: none;
+      border-bottom: 3px solid transparent;
+      border-radius: 0;
+      .transition(all, 0.3s);
+      &:hover {
+      	background-color: transparent;
+      	border-bottom-color: @nav-tabs-border-color;
+      }
+      &:focus, 
+      &:active {
+        background-color: transparent;
+      }
+    }
+    &:first-child {
+    	> a {
+    		margin-left: 0;
+    	}
+    }
+    // Active state
+    &.active > a {
+      &,
+      &:hover,
+      &:focus,
+      &:active {
+        color: @nav-tabs-active-link-color;
+        border: none;
+        border-bottom: 3px solid @nav-tabs-link-active-border-color;
+      }
+    }
+  }
+  // Center aligned Tabs
+  &.nav-center,
+  &.nav-right {
+  	text-align: center;
+    > li {
+    	display: inline-block;
+    	float: none;
+    	> a {
+    		margin: 0px 16px;
+    	}
+	    &:first-child {
+	    	> a {
+	    		margin-left: 18px;
+	    	}
+	    }
+    }
+  }
+  // Right aligned Tabs
+  &.nav-right {
+  	text-align: right;
+  	> li:last-child > a {
+			margin-right: 0;
+  	}
+  }
+
+  //Vertical Tabs
+  &.nav-vertical {
+  	display: table;
+  	padding: 10px 0;
+  	border-bottom: none;
+  	border-right: 1px solid @nav-tabs-border-color;
+  	> li {
+  		display: block;
+  		float: none;
+  		margin-bottom: 0;
+  		margin-right: -1px;
+  		> a {
+  			margin: 12px 0 12px 0;
+  			padding: 3px 45px 3px 0;
+      	border-bottom: none;
+      	border-right: 3px solid transparent;
+	      &:hover {
+	      	border-right-color: @nav-tabs-border-color;
+	      }
+  		}
+  		// Active state
+	    &.active > a {
+	      &,
+	      &:hover,
+	      &:focus {
+	        border-bottom: none;
+	        border-right: 3px solid @nav-tabs-link-active-border-color;
+	      }
+	    }
+  	}
+  }
+}
+
+// Pills
+// -------------------------
+.nav-pills {
+	> li {
+		> a {
+			.transition(all, 0.3s);
+			&:hover,
+      &:focus {
+				color: @link-color;
+			}
+		}
+    &.active {
+      .caret {
+        color: inherit;
+      }
+    }
+	}
+	&.nav-stacked {
+		> li {
+			margin-bottom: 8px;
+		}
+	}
+}
+
+// Tabs dropdown
+//-------------------------------
+.nav-tabs {
+	.dropdown-toggle {
+		> .caret {
+			color: @link-color;
+			.transition(color, 0.3s);
+		}
+		&:hover {
+			> .caret {
+				color: @link-hover-color;
+			}
+		}
+	} 
+	.dropdown.open .dropdown-toggle {
+		color: @link-hover-color;
+		background-color: transparent;
+		border-bottom-color: @nav-tabs-border-color;
+		> .caret {
+			color: @link-hover-color;
+		}
+	}
+	.dropdown-menu {
+		margin-left: 18px;
+		text-transform: none;
+	}
+}
+
+// Pills dropdown
+//-------------------------------
+.nav-pills {
+	.dropdown-toggle {
+		> .caret {
+			color: @link-color;
+		}
+	} 
+	.dropdown.open .dropdown-toggle {
+		color: @link-color;
+		border-bottom-color: transparent !important;
+		> .caret {
+			color: @link-color;
+		}
+	}
+  > .dropdown.active.open > a {
+    color: @nav-pills-active-link-hover-color;
+    .caret {
+      color: inherit;
+    }
+  }
+}

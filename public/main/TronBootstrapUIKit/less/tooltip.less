@@ -1,0 +1,21 @@
+//
+// Tooltips
+// (dependencies: bootstrap/tooltip.less)
+// --------------------------------------------------
+
+// Wrapper for the tooltip content
+.tooltip-inner {
+  padding: 10px 18px;
+  white-space: nowrap;
+  border-radius: @border-radius-large;
+}
+
+// Modified rules for Default Bootstrap Tooltip Arrows
+.tooltip {
+  &.right .tooltip-arrow {
+    left: 1px;
+  }
+  &.left .tooltip-arrow {
+    right: 1px;
+  }
+}

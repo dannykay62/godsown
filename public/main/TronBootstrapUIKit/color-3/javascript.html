@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Tron Javascript</title>
+    <!--SEO Meta Tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Tron Bootstrap based UI Kit, flat, modern front-end framework for faster and easier web development.">
+    <meta name="keywords" content="HTML, CSS, JS, JavaScript, framework, bootstrap, front-end, frontend, web development">
+    <meta name="author" content="8 Guild">
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+
+    <!-- Tron Bootstrap Skin and UI CSS -->
+    <link href="tron-ui.css" rel="stylesheet">
+    <!-- Documentation extras -->
+    <link href="../css/demo.css" rel="stylesheet">
+
+    <!-- Outdated Browser Plugin Styles -->
+    <link href="../outdatedbrowser/outdatedbrowser.css" rel="stylesheet">
+
+  </head>
+
+  <!-- Body -->
+
+  <body>
+
+    <!-- Header -->
+    <header class="navbar navbar-fixed-top navbar-centered-nav tron-nav-demo-page">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".tron-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="arrow"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="../index.html" class="navbar-logo">
+            <img src="logo.png" alt="Tron UI Kit">
+          </a>
+        </div>
+        <nav class="collapse navbar-collapse tron-navbar-collapse" role="navigation">
+          <ul class="nav navbar-nav">
+            <li><a href="../index.html">Home</a></li>
+            <li class="dropdown active">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Bootstrap<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="index.html">Core CSS</a></li>
+                <li><a href="components.html">Components</a></li>
+                <li class="active"><a href="javascript.html">Javascript</a></li>
+              </ul>
+            </li>
+            <li><a href="tron-extras.html">Tron Extras</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Examples<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="../examples/landing/">Landing Page</a></li>
+                <li><a href="../examples/blog/">Blog Page</a></li>
+                <li><a href="../examples/team">Team Page</a></li>
+                <li><a href="../examples/contacts">Contacts Page</a></li>
+                <li><a href="../examples/login">Login Page</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Colors<span class="caret"></span></a>
+              <ul class="dropdown-menu colors" role="menu">
+                <li><a href="../javascript.html">
+                  <span style="background-color: #abbdd1;" class="color"></span>
+                  <span style="background-color: #44c456;" class="color"></span>
+                  <span style="background-color: #626d83;" class="color"></span>
+                  <span style="background-color: #c2c444;" class="color"></span>
+                  <span style="background-color: #db6e79;" class="color"></span>
+                </a></li>
+                <li><a href="../color-2/javascript.html">
+                  <span style="background-color: #007aff;" class="color"></span>
+                  <span style="background-color: #4cd964;" class="color"></span>
+                  <span style="background-color: #5ac8fa;" class="color"></span>
+                  <span style="background-color: #ff9500;" class="color"></span>
+                  <span style="background-color: #ff3b30;" class="color"></span>
+                </a></li>
+                <li class="active"><a href="javascript.html">
+                  <span style="background-color: #e1c136;" class="color"></span>
+                  <span style="background-color: #62c55a;" class="color"></span>
+                  <span style="background-color: #2e9bc3;" class="color"></span>
+                  <span style="background-color: #c9b587;" class="color"></span>
+                  <span style="background-color: #a57a52;" class="color"></span>
+                </a></li>
+                <li><a href="../color-4/javascript.html">
+                  <span style="background-color: #00626e;" class="color"></span>
+                  <span style="background-color: #b7d43f;" class="color"></span>
+                  <span style="background-color: #bfdd9b;" class="color"></span>
+                  <span style="background-color: #f37032;" class="color"></span>
+                  <span style="background-color: #ef3f4f;" class="color"></span>
+                </a></li>
+                <li><a href="../color-5/javascript.html">
+                  <span style="background-color: #6a8f9f;" class="color"></span>
+                  <span style="background-color: #fdad4e;" class="color"></span>
+                  <span style="background-color: #8bd7d7;" class="color"></span>
+                  <span style="background-color: #ff908f;" class="color"></span>
+                  <span style="background-color: #d26f6a;" class="color"></span>
+                </a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="navbar-right navbar-text">
+            <a class="navbar-link" href="../docs/" target="_blank"><small>Documentation</small></a>
+          </div>
+        </nav>
+      </div>
+    </header><!-- Header Close-->
+
+    <!-- Sample Modal Content -->
+    <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="myModalLabel">Modal Heading</h4>
+          </div>
+          <div class="modal-body">
+            <h4>Text in a modal</h4>
+            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+
+            <h4>Popover in a modal</h4>
+            <p>This <button class="btn btn-default btn-sm" data-toggle="popover" title="A Title" data-content="And here's some amazing content. It's very engaging. right?">button</button> should trigger a popover on click.</p>
+
+            <h4>Tooltips in a modal</h4>
+            <p><a href="#" data-toggle="tooltip" title="Tooltip">This link</a> and <a href="#" data-toggle="tooltip" title="Tooltip">that link</a> should have tooltips on hover.</p>
+
+            <hr>
+
+            <h4>Overflowing text to show scroll behavior</h4>
+            <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+            <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+            <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+            <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+            <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+            <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger btn-sm" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-success btn-sm">Save changes</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <!--  Modal Large -->
+    <div class="modal fade tron-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="myLargeModalLabel">Large modal</h4>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <!--  Modal Small -->
+    <div class="modal fade tron-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="mySmallModalLabel">Small modal</h4>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <!-- Content -->
+    <section class="demo-page">
+      <div class="container">
+
+        <!-- Page Heading -->
+        <div class="page-header">
+          <h1>Javascript <small>Default Bootstrap Javascript Components</small></h1>
+        </div>
+
+        <!-- Modals -->
+        <div class="row space-top">
+          <div class="col-md-12">
+            <h3 class="block-heading">Modals</h3>
+            <div class="row">
+
+              <!-- Static Example -->
+              <div class="col-sm-8 space-bottom-2x">
+                <h4 class="block-subheading">Static Example</h4>
+                <div class="modal-demo space-top">
+                  <div class="modal">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                          <h4 class="modal-title">Modal title</h4>
+                        </div>
+                        <div class="modal-body">
+                          <p>Modal body&hellip;</p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-sm btn-danger" data-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-sm btn-success">Save changes</button>
+                        </div>
+                      </div><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
+                  </div><!-- /.modal -->
+                </div>
+              </div>
+
+            <!-- Live Demo -->
+            <div class="col-sm-4">
+              <div class="space-bottom-2x">
+                <h4 class="block-subheading space-bottom">Live Demo</h4>
+                <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Launch demo modal</button>
+              </div>
+
+              <!-- Modal Sizes -->
+              <h4 class="block-subheading space-bottom">Modal Sizes</h4>
+              <button class="btn btn-primary space-bottom" data-toggle="modal" data-target=".tron-example-modal-lg">Large modal</button>
+              <button class="btn btn-primary" data-toggle="modal" data-target=".tron-example-modal-sm">Small modal</button>
+            </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dropdowns -->
+        <h3 class="block-heading">Dropdowns</h3>
+        <h4 class="block-subheading space-bottom">Within Navbar</h4>
+        <nav id="navbar-example" class="navbar navbar-default navbar-static" role="navigation">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".tron-example-js-navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Project Name</a>
+            </div>
+            <div class="collapse navbar-collapse tron-example-js-navbar-collapse">
+              <ul class="nav navbar-nav">
+                <li class="dropdown">
+                  <a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Action</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Another action</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Something else here</a></li>
+                    <li role="presentation" class="divider"></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Separated link</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" id="drop2" role="button" class="dropdown-toggle" data-toggle="dropdown">Dropdown 2 <b class="caret"></b></a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Action</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Another action</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Something else here</a></li>
+                    <li role="presentation" class="divider"></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Separated link</a></li>
+                  </ul>
+                </li>
+                <li id="fat-menu" class="dropdown">
+                  <a href="#" id="drop3" role="button" class="dropdown-toggle" data-toggle="dropdown">Dropdown 3 <b class="caret"></b></a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="drop3">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Action</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Another action</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Something else here</a></li>
+                    <li role="presentation" class="divider"></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Separated link</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div><!-- /.nav-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav> <!-- /navbar-example -->
+
+        <h4 class="block-subheading space-top-2x space-bottom">Within Pills</h4>
+        <ul class="nav nav-pills">
+          <li class="active"><a href="#">Regular link</a></li>
+          <li class="dropdown">
+            <a id="drop4" role="button" data-toggle="dropdown" href="#">Dropdown <b class="caret"></b></a>
+            <ul id="menu1" class="dropdown-menu" role="menu" aria-labelledby="drop4">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Action</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Another action</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Something else here</a></li>
+              <li role="presentation" class="divider"></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Separated link</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a id="drop5" role="button" data-toggle="dropdown" href="#">Dropdown 2 <b class="caret"></b></a>
+            <ul id="menu2" class="dropdown-menu" role="menu" aria-labelledby="drop5">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Action</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Another action</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Something else here</a></li>
+              <li role="presentation" class="divider"></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Separated link</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a id="drop6" role="button" data-toggle="dropdown" href="#">Dropdown 3 <b class="caret"></b></a>
+            <ul id="menu3" class="dropdown-menu" role="menu" aria-labelledby="drop6">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Action</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Another action</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Something else here</a></li>
+              <li role="presentation" class="divider"></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Separated link</a></li>
+            </ul>
+          </li>
+        </ul> <!-- /pills -->
+        
+        <div class="padding-top-2x">
+          <h3 class="block-heading">Scrollspy</h3>
+          <nav id="navbar-example2" class="navbar navbar-default navbar-static" role="navigation">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".tron-example-js-navbar-scrollspy">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Project Name</a>
+              </div>
+              <div class="collapse navbar-collapse tron-example-js-navbar-scrollspy">
+                <ul class="nav navbar-nav">
+                  <li><a href="#bedismo">@bedismo</a></li>
+                  <li><a href="#rokaux">@rokaux</a></li>
+                  <li class="dropdown">
+                    <a href="#" id="navbarDrop1" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="navbarDrop1">
+                      <li><a href="#one" tabindex="-1">one</a></li>
+                      <li><a href="#two" tabindex="-1">two</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#three" tabindex="-1">three</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <div data-spy="scroll" data-target="#navbar-example2" data-offset="0" class="scrollspy-demo">
+            <h4 id="bedismo">@bedismo</h4>
+            <p>Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.</p>
+            <h4 id="rokaux">@rokaux</h4>
+            <p>Veniam marfa mustache skateboard, adipisicing fugiat velit pitchfork beard. Freegan beard aliqua cupidatat mcsweeney's vero. Cupidatat four loko nisi, ea helvetica nulla carles. Tattooed cosby sweater food truck, mcsweeney's quis non freegan vinyl. Lo-fi wes anderson +1 sartorial. Carles non aesthetic exercitation quis gentrify. Brooklyn adipisicing craft beer vice keytar deserunt.</p>
+            <h4 id="one">one</h4>
+            <p>Occaecat commodo aliqua delectus. Fap craft beer deserunt skateboard ea. Lomo bicycle rights adipisicing banh mi, velit ea sunt next level locavore single-origin coffee in magna veniam. High life id vinyl, echo park consequat quis aliquip banh mi pitchfork. Vero VHS est adipisicing. Consectetur nisi DIY minim messenger bag. Cred ex in, sustainable delectus consectetur fanny pack iphone.</p>
+            <h4 id="two">two</h4>
+            <p>In incididunt echo park, officia deserunt mcsweeney's proident master cleanse thundercats sapiente veniam. Excepteur VHS elit, proident shoreditch +1 biodiesel laborum craft beer. Single-origin coffee wayfarers irure four loko, cupidatat terry richardson master cleanse. Assumenda you probably haven't heard of them art party fanny pack, tattooed nulla cardigan tempor ad. Proident wolf nesciunt sartorial keffiyeh eu banh mi sustainable. Elit wolf voluptate, lo-fi ea portland before they sold out four loko. Locavore enim nostrud mlkshk brooklyn nesciunt.</p>
+            <h4 id="three">three</h4>
+            <p>Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.</p>
+            <p>Keytar twee blog, culpa messenger bag marfa whatever delectus food truck. Sapiente synth id assumenda. Locavore sed helvetica cliche irony, thundercats you probably haven't heard of them consequat hoodie gluten-free lo-fi fap aliquip. Labore elit placeat before they sold out, terry richardson proident brunch nesciunt quis cosby sweater pariatur keffiyeh ut helvetica artisan. Cardigan craft beer seitan readymade velit. VHS chambray laboris tempor veniam. Anim mollit minim commodo ullamco thundercats.
+            </p>
+          </div>
+        </div>
+        <div class="row padding-top-2x">
+
+          <!-- Tabs -->
+          <div class="col-md-6 padding-bottom-2x">
+            <h3 class="block-heading space-bottom">Tabs</h3>
+            <ul id="myTab" class="nav nav-tabs">
+              <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
+              <li><a href="#profile" data-toggle="tab">Profile</a></li>
+              <li class="dropdown">
+                <a href="#" id="myTabDrop1" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1">
+                  <li><a href="#dropdown1" tabindex="-1" data-toggle="tab">@bedismo</a></li>
+                  <li><a href="#dropdown2" tabindex="-1" data-toggle="tab">@rokaux</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div id="myTabContent" class="tab-content">
+              <div class="tab-pane fade in active" id="home">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse nesciunt minima, natus cumque at tenetur, omnis facilis quae aperiam rerum, sed voluptate culpa vero nam placeat. Deleniti nemo quos, minus? Adipisci obcaecati tempore tempora minus aspernatur numquam repellat quasi optio quis dolore. Quis ullam aperiam quos libero fuga dignissimos asperiores iste reiciendis. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</p>
+              </div>
+              <div class="tab-pane fade" id="profile">
+                <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel.</p>
+              </div>
+              <div class="tab-pane fade" id="dropdown1">
+                <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog.</p>
+              </div>
+              <div class="tab-pane fade" id="dropdown2">
+                <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo park vegan.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Collapse (Accordion) -->
+          <div class="col-md-6">
+            <h3 class="block-heading space-bottom">Collapse (Accordion)</h3>
+            <div class="panel-group panel-group-primary" id="accordion">
+              <div class="panel">
+                <div class="panel-heading">
+                  <h4 class="panel-title active">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                      Collapsible Group Item #1
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse in">
+                  <div class="panel-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                  </div>
+                </div>
+              </div>
+              <div class="panel">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                      Collapsible Group Item #2
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                  </div>
+                </div>
+              </div>
+              <div class="panel">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                      Collapsible Group Item #3
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Carousel -->
+        <div class="row padding-top">
+          <div class="col-md-12">
+            <h3 class="block-heading space-bottom">Carousel</h3>
+            <div id="carousel-example-captions" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-example-captions" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-captions" data-slide-to="1"></li>
+                <li data-target="#carousel-example-captions" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="item active">
+                  <img src="../img/carousel/slide01.jpg" alt="First slide image">
+                  <div class="carousel-caption">
+                    <h3>First slide label</h3>
+                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="../img/carousel/slide02.jpg" alt="Second slide image">
+                  <div class="carousel-caption">
+                    <h3>Second slide label</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="../img/carousel/slide03.jpg" alt="Third slide image">
+                  <div class="carousel-caption">
+                    <h3>Third slide label</h3>
+                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                  </div>
+                </div>
+              </div>
+              <a class="left carousel-control" href="#carousel-example-captions" data-slide="prev">
+                <span class="flaticon-left216"></span>
+              </a>
+              <a class="right carousel-control" href="#carousel-example-captions" data-slide="next">
+                <span class="flaticon-right237"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tooltips -->
+        <div class="row padding-top-2x">
+          <div class="col-md-12">
+            <h3 class="block-heading space-bottom">Tooltips</h3>
+            <div class="tooltip-demo">
+              <button type="button" class="btn btn-primary btn-sm" data-toggle="tooltip" data-color="danger" data-placement="left" title="Tooltip on left">Tooltip on left</button>
+              <button type="button" class="btn btn-primary btn-sm" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</button>
+              <button type="button" class="btn btn-primary btn-sm" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button>
+              <button type="button" class="btn btn-primary btn-sm" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button>
+            </div><!-- /example -->
+          </div>
+        </div>
+
+        <!-- Popovers -->
+        <div class="row padding-top-2x">
+          <div class="col-md-12">
+            <h3 class="block-heading">Popovers</h3>
+
+            <!-- Static Example -->
+            <h4 class="block-subheading">Static Example</h4>
+            <div class="popover-demo">
+              <div class="popover top">
+                <div class="arrow"></div>
+                <h3 class="popover-title">Popover top</h3>
+                <div class="popover-content">
+                  <p>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+                </div>
+              </div>
+
+              <div class="popover right">
+                <div class="arrow"></div>
+                <h3 class="popover-title">Popover right</h3>
+                <div class="popover-content">
+                  <p>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+                </div>
+              </div>
+
+              <div class="popover bottom has-title">
+                <div class="arrow"></div>
+                <h3 class="popover-title">Popover bottom</h3>
+
+                <div class="popover-content">
+                  <p>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+                </div>
+              </div>
+
+              <div class="popover left">
+                <div class="arrow"></div>
+                <h3 class="popover-title">Popover left</h3>
+                <div class="popover-content">
+                  <p>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+                </div>
+              </div>
+
+              <div class="clearfix"></div>
+            </div>
+
+            <!-- Live Demo -->
+            <h4 class="block-subheading space-bottom">Live Demo</h4>
+            <div class="popover-demo">
+              <button type="button" class="btn btn-sm btn-primary" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                Popover on left
+              </button>
+              <button type="button" class="btn btn-sm btn-primary" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                Popover on top
+              </button>
+              <button type="button" class="btn btn-sm btn-primary" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                Popover on bottom
+              </button>
+              <button type="button" class="btn btn-sm btn-primary" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                Popover on right
+              </button>
+            </div><!-- /example -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Alerts -->
+    <div class="demo-page alert-demo">
+      <div class="container">
+        <h3 class="block-heading">Alerts</h3>
+      </div>
+      <div class="alert alert-fullwidth alert-warning fade in">
+        <div class="container">
+          <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+          <strong>Warning alert!</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </div>
+      </div>
+      <div class="alert alert-fullwidth alert-danger fade in">
+        <div class="container">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+        <h4>Oh snap! You got an error!</h4>
+        <p>Change this and that and try again. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
+        <footer>
+          <button type="button" class="btn btn-sm btn-primary">Take this action</button>
+          <button type="button" class="btn btn-sm btn-default">Or do this</button>
+        </footer>
+        </div>
+      </div>
+    </div>
+
+    <!-- Buttons -->
+    <div class="demo-page buttons-group-demo">
+      <div class="container">
+        <h3 class="block-heading">Buttons</h3>
+        <div class="row">
+          <div class="col-sm-6">
+            <h4 class="block-subheading space-bottom">Group of checkboxes</h4>
+            <div class="btn-group" data-toggle="buttons">
+              <label class="btn btn-primary with-checkbox">
+                <input type="checkbox" checked=""> Option 1
+              </label>
+              <label class="btn btn-primary with-checkbox">
+                <input type="checkbox"> Option 2
+              </label>
+              <label class="btn btn-primary with-checkbox">
+                <input type="checkbox"> Option 3
+              </label>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <h4 class="block-subheading space-bottom">Group of radios</h4>
+            <div class="btn-group" data-toggle="buttons">
+              <label class="btn btn-primary with-radio">
+                <input type="radio" name="options" id="option1" checked> Option 1
+              </label>
+              <label class="btn btn-primary with-radio">
+                <input type="radio" name="options" id="option2"> Option 2
+              </label>
+              <label class="btn btn-primary with-radio">
+                <input type="radio" name="options" id="option3"> Option 3
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <a href="../index.html" class="logo"><img src="../img/logo-light.png" alt="Tron UI Kit"></a>
+            <p>New modern look of old good Bootstrap.</p>
+            <ul class="list-unstyled">
+              <li><a href="../index.html">Home</a></li>
+              <li class="active"><a href="index.html">Bootstrap</a></li>
+              <li><a href="tron-extras.html">Tron Extras</a></li>
+              <li><a href="../index.html#examples">Examples</a></li>
+              <li><a href="../docs/" target="_blank">Documentation</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-8">
+            <h3>Subscribe to our newspaper</h3>
+            <p>To receive information about new items and latest updates.</p>
+
+            <!-- Begin MailChimp Subscription Form -->
+            <form action="//8guild.us3.list-manage.com/subscribe/post?u=168a366a98d3248fbc35c0b67&amp;id=011a3332a0" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate class="form-inline subscribe-form space-bottom-2x">
+              <div class="form-group">
+                <label class="sr-only" for="subscr-email">Email address</label>
+                <input type="email" class="form-control required email" name="EMAIL" id="subscr-email" placeholder="Enter email">
+              </div>
+
+              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px;"><input type="text" name="b_168a366a98d3248fbc35c0b67_011a3332a0" tabindex="-1" value=""></div>
+
+              <button type="submit" class="btn btn-warning">Subscribe</button>
+            </form><!-- End MailChimp Subscription Form -->
+
+            <h3>Follow us on:</h3>
+            <div class="social-buttons">
+              <a href="https://www.facebook.com/8guild?fref=ts" class="social-btn sb-facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+              <a href="https://twitter.com/8Guild" class="social-btn sb-twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+              <a href="https://www.behance.net/8Guild" class="social-btn sb-behance" target="_blank"><i class="fa fa-behance"></i></a>
+              <a href="https://plus.google.com/u/0/b/109505223181338808677/109505223181338808677/posts" class="social-btn sb-google-plus" target="_blank"><i class="fa fa-google-plus"></i></a>
+              <a href="https://www.linkedin.com/profile/view?id=330938282" class="social-btn sb-linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <p>Made by <a href="http://8guild.com/" target="_blank">8 Guild</a> in 2014</p>
+          </div>
+        </div>
+      </div>
+    </footer><!-- Footer End -->
+
+    <!-- Outdated Browser
+    ================================================== -->
+    <div id="outdated">
+      <span class="icon-outdated fa fa-exclamation-triangle"></span>
+      <h2>Your browser is out-of-date!</h2>
+      <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update my browser now </a></p>
+      <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+    </div>
+
+    <!-- jQuery Library
+    ================================================== -->
+    <script src="../js/vendor/jquery.min.js"></script>
+
+    <!-- Outdated Browser Plugin
+    ================================================== -->
+    <script src="../outdatedbrowser/outdatedbrowser.min.js"></script>
+    <script src="../outdatedbrowser/outdatedbrowser.init.js"></script>
+
+    <!-- Plugins and Custom scripts
+    ================================================== -->
+    <script src="../js/vendor/bootstrap.min.js"></script>
+    <script src="../js/vendor/smoothscroll.js"></script>
+    <script src="../js/tron-ui.js"></script>
+    <script src="../js/demo.js"></script>
+
+  </body><!-- Body End -->
+</html>

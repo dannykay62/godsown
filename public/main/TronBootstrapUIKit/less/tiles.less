@@ -1,0 +1,76 @@
+//
+// Tiles
+// --------------------------------------------------
+
+.tile {
+	width: 100%;
+	max-width: @tile-max-width; 
+	margin: 0 auto 30px auto;
+	
+	// Thumbnail
+	.thumb {
+		position: relative;
+		overflow: hidden;
+		.border-top-radius(@tile-border-radius);
+		img {
+			.border-top-radius(@tile-border-radius);
+			.img-responsive();
+		}
+		&:before {
+			position: absolute;
+			display: block;
+			content: "";
+			width: 100%;
+			min-height: 100%;
+			top: 0;
+			left: 0;
+			z-index: 1;
+			background-color: @tile-thumb-overlay-bg;
+			.border-top-radius(@tile-border-radius);
+			.opacity(0);
+			.transition(opacity, 0.3s);
+		}
+		.action {
+			position: absolute;
+			width: 100%;
+			text-align: center;
+			z-index: 10;
+			top: 50%;
+			margin-top: -24px;
+			.opacity(0);
+			.scale(1.7);
+			.transition(all, 0.3s);
+			.fa {	margin-left: 5px; }
+		}
+		&:hover {
+			&:before {
+				.opacity(@tile-thumb-overlay-opacity);
+			}
+			.action {
+				.opacity(1);
+				.scale(1);
+			}
+		}
+	}
+
+	// Caption
+	.caption {
+		padding: @tile-caption-padding;
+		background-color: @tile-caption-bg;
+		.border-bottom-radius(@tile-border-radius);
+		p {
+			font-size: @font-size-small;
+			color: @tile-text-color;
+			margin-bottom: 12px;
+		}
+		h2, h3 {
+			font-size: @font-size-h3;
+			font-weight: 600;
+		}
+	}
+	
+	// Bordered version for the cases when image has white background
+	&.bordered {
+	  .thumb { border: 1px solid @tile-caption-bg; }
+	}
+}

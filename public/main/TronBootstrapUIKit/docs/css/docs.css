@@ -1,0 +1,634 @@
+/*
+ * Tron UI Kit Documentation
+ * Special styles for presenting Tron UI Kit documentation and code examples.
+ */
+
+body {
+  position: relative;
+}
+.table code {
+  font-size: 13px;
+  font-weight: normal;
+}
+.tron-docs-footer {
+  font-size: 14px;
+  border-top: 1px solid #eaeef3;
+  padding-top: 40px;
+  margin-top: 60px;
+  background-color: #f5f5f5;
+}
+.support-message {
+  color: #3e5473;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.tron-docs-footer p {
+  line-height: 1.8;
+}
+.copyright {
+  color: #3e5473;
+  text-shadow: 0 1px 0 #fff;
+  font-size: 1em;
+  text-align: center;
+  background: #eaeef3;
+  padding: 20px 15px;
+}
+.tron-docs-nav {
+  margin-bottom: 0;
+}
+
+/* Page headers */
+.tron-docs-header {
+  position: relative;
+  padding: 30px 15px;
+  color: #fff;
+  text-align: center;
+  background-color: #abbdd1;
+  margin-bottom: 40px;
+  font-size: 20px;
+}
+.tron-docs-header h1 {
+  margin-top: 0;
+  color: #fff;
+}
+.tron-docs-header p {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+.tron-docs-header .container {
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .tron-docs-header {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    font-size: 24px;
+    text-align: left;
+  }
+  .tron-docs-header h1 {
+    font-size: 60px;
+    line-height: 1;
+  }
+}
+
+@media (min-width: 992px) {
+  .tron-docs-header h1,
+  .tron-docs-header p {
+    margin-right: 380px;
+  }
+}
+
+/*
+ * Side navigation
+ */
+.tron-docs-sidebar.affix {
+  position: static;
+}
+@media (min-width: 768px) {
+  .tron-docs-sidebar {
+    padding-left: 20px;
+  }
+}
+.tron-docs-sidenav {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.tron-docs-sidebar .nav > li > a {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  color: #999;
+  padding: 3px 20px;
+}
+.tron-docs-sidebar .nav > li > a:hover,
+.tron-docs-sidebar .nav > li > a:focus {
+  padding-left: 19px;
+  color: #abbdd1;
+  text-decoration: none;
+  background-color: transparent;
+  border-left: 1px solid #abbdd1;
+  outline: none;
+}
+.tron-docs-sidebar .nav > .active > a,
+.tron-docs-sidebar .nav > .active:hover > a,
+.tron-docs-sidebar .nav > .active:focus > a {
+  padding-left: 18px;
+  font-weight: 600;
+  color: #abbdd1;
+  background-color: transparent;
+  border-left: 2px solid #abbdd1;
+}
+.tron-docs-sidebar .nav .nav {
+  display: none;
+  padding-bottom: 10px;
+}
+.tron-docs-sidebar .nav .nav > li > a {
+  padding-top:    1px;
+  padding-bottom: 1px;
+  padding-left: 30px;
+  font-size: 13px;
+  font-weight: normal;
+}
+.tron-docs-sidebar .nav .nav > li > a:hover,
+.tron-docs-sidebar .nav .nav > li > a:focus {
+  padding-left: 29px;
+}
+.tron-docs-sidebar .nav .nav > .active > a,
+.tron-docs-sidebar .nav .nav > .active:hover > a,
+.tron-docs-sidebar .nav .nav > .active:focus > a {
+  font-weight: 500;
+  padding-left: 28px;
+}
+.back-to-top {
+  display: none;
+  margin-top: 8px;
+  margin-left: 10px;
+  padding: 3px 10px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #999;
+}
+.back-to-top:hover {
+  text-decoration: none;
+  color: #abbdd1;
+}
+@media (min-width: 768px) {
+  .back-to-top {
+    display: block;
+  }
+}
+@media (min-width: 992px) {
+  .tron-docs-sidebar .nav > .active > ul {
+    display: block;
+  }
+  .tron-docs-sidebar.affix,
+  .tron-docs-sidebar.affix-bottom {
+    width: 213px;
+  }
+  .tron-docs-sidebar.affix {
+    position: fixed;
+    top: 20px;
+  }
+  .tron-docs-sidebar.affix-bottom {
+    position: absolute;
+  }
+  .tron-docs-sidebar.affix-bottom .tron-docs-sidenav,
+  .tron-docs-sidebar.affix .tron-docs-sidenav {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1200px) {
+  /* Widen the fixed sidebar again */
+  .tron-docs-sidebar.affix-bottom,
+  .tron-docs-sidebar.affix {
+    width: 263px;
+  }
+}
+
+/*
+ * Docs sections
+ */
+.tron-docs-section {
+  margin-bottom: 30px;
+}
+.tron-docs-section:last-child {
+  margin-bottom: 0;
+}
+h1[id] {
+  margin-top: 0;
+  padding-top: 20px;
+}
+.space-bottom {
+  margin-bottom: 24px;
+}
+.space-top {
+  margin-top: 24px;
+}
+
+/*
+ * Page header
+ */
+.page-header {
+  padding-bottom: 6px;
+  margin: 40px 0 20px;
+  border-bottom: 1px solid #eee;
+  text-transform: none;
+}
+.page-header small,
+.page-header span {
+  display: inline;
+  margin-top: 0;
+}
+
+/*
+ * Color swatches
+ *
+ * Color swatches and associated values for our grayscale and brand colors.
+ */
+
+.color-swatches {
+  margin: 0 -5px;
+  overflow: hidden; /* clearfix */
+}
+.color-swatch {
+  float: left;
+  width:  60px;
+  height: 60px;
+  margin: 0 5px;
+  border-radius: 3px;
+}
+
+@media (min-width: 768px) {
+  .color-swatch {
+    width:  100px;
+    height: 100px;
+  }
+}
+
+/* Framework colors */
+.color-swatches .gray-darker   { background-color: #333; }
+.color-swatches .gray-dark     { background-color: #4c4c4c; }
+.color-swatches .gray          { background-color: #666; }
+.color-swatches .gray-light    { background-color: #999; }
+.color-swatches .gray-lighter  { background-color: #f5f5f5; }
+.color-swatches .brand-primary { background-color: #abbdd1; }
+.color-swatches .brand-success { background-color: #44c456; }
+.color-swatches .brand-warning { background-color: #626d83; }
+.color-swatches .brand-danger  { background-color: #c2c444; }
+.color-swatches .brand-info    { background-color: #db6e79; }
+
+/*
+ * Examples
+ *
+ */
+.tron-example {
+  position: relative;
+  padding: 45px 15px 15px;
+  margin: 0 -15px 15px;
+  background-color: #fff;
+  border: 1px solid #e4e4e4;
+  border-radius: 12px 12px 0 0;
+}
+.tron-example:after {
+  content: "Example";
+  position: absolute;
+  top:  12px;
+  left: 15px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #999;
+  letter-spacing: 1px;
+}
+.tron-example + .highlight {
+  margin: -15px -15px 15px;
+  border-radius: 0;
+  border-width: 0 0 1px;
+}
+@media (min-width: 768px) {
+  .tron-example {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .tron-example + .highlight {
+    margin-top: -16px;
+    margin-left: 0;
+    margin-right: 0;
+    border-width: 1px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
+}
+.highlight {
+  padding: 12px 14px;
+  margin-bottom: 14px;
+  background-color: #f5f5f5;
+  border: 1px solid #e4e4e4;
+  border-radius: 12px;
+}
+.highlight pre {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  background-color: transparent;
+  border: 0;
+  white-space: nowrap;
+}
+.highlight pre code {
+  font-size: inherit;
+  color: #333;
+  font-size: 13px;
+  line-height: 1;
+}
+.tron-example .container {
+  width: auto;
+}
+.tron-example > p:last-child,
+.tron-example > ul:last-child,
+.tron-example > ol:last-child,
+.tron-example > blockquote:last-child,
+.tron-example > .form-control:last-child,
+.tron-example > .table:last-child,
+.tron-example > .navbar:last-child,
+.tron-example > .jumbotron:last-child,
+.tron-example > .alert:last-child,
+.tron-example > .panel:last-child,
+.tron-example > .list-group:last-child,
+.tron-example > .well:last-child,
+.tron-example > .progress:last-child,
+.tron-example > .table-responsive:last-child > .table {
+  margin-bottom: 0;
+}
+.tron-example > p > .close {
+  float: none;
+}
+.tron-example > .page-header {
+  padding-bottom: 0;
+  border-bottom: none;
+  text-transform: uppercase;
+}
+.tron-example > .page-header small,
+.tron-example > .page-header span {
+  display: block;
+  margin-top: 16px;
+  font-size: @font-size-base;
+  font-weight: normal;
+  color: lighten(@gray-light, 10%);
+}
+.tron-example table {
+  width: 100%;
+  background-color: transparent;
+}
+.tron-example table td {
+  padding: 20px 8px;
+  line-height: 1.5;
+  vertical-align: top;
+  border-top: 1px solid #ddd;
+}
+.tron-example table tr:first-child td {
+  border-top: none;
+}
+.tron-example .close {
+  margin-right: 8px;
+}
+
+/* Typography */
+.tron-example-type .table .type-info {
+  color: #999;
+  vertical-align: middle;
+}
+.tron-example-type .table td {
+  padding: 15px 0;
+  border-color: #eee;
+}
+.tron-example-type .table tr:first-child td {
+  border-top: 0;
+}
+.tron-example-type h1,
+.tron-example-type h2,
+.tron-example-type h3,
+.tron-example-type h4,
+.tron-example-type h5,
+.tron-example-type h6 {
+  margin: 0;
+}
+
+/* Contextual background colors */
+.tron-example-bg-classes p {
+  padding: 15px;
+}
+
+/* Images */
+.tron-example > .img-circle,
+.tron-example > .img-rounded,
+.tron-example > .img-thumbnail {
+  margin: 5px;
+}
+
+/* Tables */
+.tron-example > .table-responsive > .table {
+  background-color: #fff;
+}
+
+/* Buttons */
+.tron-example > .btn,
+.tron-example > .btn-outlined {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.tron-example > .btn-group {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.tron-example > .btn-toolbar + .btn-toolbar {
+  margin-top: 10px;
+}
+.tron-example > .btn-group-vertical {
+  margin-right: 20px;
+}
+.tron-example > .btn-group-outlined {
+  margin-right: 10px;
+}
+
+/* Forms */
+.tron-example-control-sizing select,
+.tron-example-control-sizing input[type="text"] + input[type="text"] {
+  margin-top: 10px;
+}
+.tron-example-form .input-group {
+  margin-bottom: 10px;
+}
+.tron-example > textarea.form-control {
+  resize: vertical;
+}
+
+/* List groups */
+.tron-example > .list-group {
+  max-width: 400px;
+}
+
+/* Navbars */
+.tron-example .navbar:last-child {
+  margin-bottom: 0;
+}
+
+/* Breadcrumbs */
+.tron-example .breadcrumb {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+/* Pagination */
+.tron-example .pagination {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Pager */
+.tron-example > .pager {
+  margin-top: 0;
+}
+
+/* Example modals */
+.tron-example-modal {
+  background-color: #f5f5f5;
+}
+.tron-example-modal .modal {
+  position: relative;
+  top: auto;
+  right: auto;
+  left: auto;
+  bottom: auto;
+  z-index: 1;
+  display: block;
+}
+.tron-example-modal .modal-dialog {
+  left: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Example dropdowns */
+.tron-example > .dropdown > .dropdown-menu {
+  position: static;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Tooltips */
+.tron-example-tooltips {
+  text-align: center;
+}
+.tron-example-tooltips > .btn {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* Popovers */
+.tron-example-popover {
+  padding-bottom: 24px;
+}
+.tron-example-popover .popover {
+  position: relative;
+  display: block;
+  float: left;
+  width: 260px;
+  margin: 20px;
+}
+
+/* Scrollspy demo on fixed height div */
+.scrollspy-example {
+  position: relative;
+  height: 200px;
+  margin-top: 10px;
+  overflow: auto;
+}
+
+/* Example switch */
+.tron-example-switch {
+  padding-top: 60px;
+}
+
+/* Example tiles and pricing plans */
+.tron-example-pricing,
+.tron-example-tiles {
+  padding-top: 60px;
+}
+
+/*
+ * Brand guidelines
+ *
+ * Extra styles for displaying wordmarks, logos, etc.
+ */
+
+/* Logo series wrapper */
+.bs-brand-logos {
+  display: table;
+  width: 100%;
+  margin-bottom: 15px;
+  overflow: hidden;
+  color: #563d7c;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+}
+
+/* Individual items */
+.bs-brand-item {
+  padding: 60px 0;
+  text-align: center;
+}
+.bs-brand-item + .bs-brand-item {
+  border-top: 1px solid #fff;
+}
+.bs-brand-logos .inverse {
+  color: #fff;
+  background-color: #563d7c;
+}
+
+/* Heading content within */
+.bs-brand-item h1,
+.bs-brand-item h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.bs-brand-item .tron-docs-booticon {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Make the icons stand out on what is/isn't okay */
+.bs-brand-item .glyphicon {
+  width: 30px;
+  height: 30px;
+  margin: 10px auto -10px;
+  line-height: 30px;
+  color: #fff;
+  border-radius: 50%;
+}
+.bs-brand-item .glyphicon-ok { background-color: #5cb85c; }
+.bs-brand-item .glyphicon-remove { background-color: #d9534f; }
+
+@media (min-width: 768px) {
+  .bs-brand-item {
+    display: table-cell;
+    width: 1%;
+  }
+  .bs-brand-item + .bs-brand-item {
+    border-top: 0;
+    border-left: 1px solid #fff;
+  }
+  .bs-brand-item h1 {
+    font-size: 60px;
+  }
+}
+
+
+/*
+ * Miscellaneous
+ *
+ * Odds and ends for optimum docs display.
+ */
+
+/* Examples gallery: space out content better */
+.tron-examples .thumbnail {
+  margin-bottom: 10px;
+}
+.tron-examples h4 {
+  margin-bottom: 5px;
+}
+.tron-examples p {
+  margin-bottom: 20px;
+}
+
+/* Pseudo :focus state for showing how it looks in the docs */
+#focusedInput {
+  border-color: rgb(204,204,204); /* Restate unfocused value to make CSSLint happy that there's a pre-CSS3 fallback*/
+  border-color: rgba(82,168,236,.8);
+  outline: 0;
+  outline: thin dotted \9; /* IE6-9 */
+  -moz-box-shadow: 0 0 8px rgba(82,168,236,.6);
+       box-shadow: 0 0 8px rgba(82,168,236,.6);
+}

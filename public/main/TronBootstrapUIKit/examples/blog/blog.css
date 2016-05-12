@@ -1,0 +1,156 @@
+/*
+ * Tron UI Kit
+ * Blog Page Template Styles
+ */
+
+/** Page Content
+********************************************/
+.page-content {
+	padding-top: 140px;
+}
+.thumbnail span {
+	display: block;
+	font-size: 14px;
+	margin-bottom: 10px; 
+}
+
+/** Page Header with Breadcrumbs
+********************************************/
+.page-header-with-breadcrumb {
+	display: table;
+	width: 100%;
+}
+.page-header-with-breadcrumb .td {
+	display: table-cell;
+}
+
+/** Sidebar
+********************************************/
+.sidebar {
+	max-width: 400px;
+	margin: 50px auto 30px auto; 
+}
+.sidebar-widget {
+	margin-top: 35px; 
+}
+.sidebar-widget > h3,
+.sidebar-widget > h4 {
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #bcbcbc;
+	margin-bottom: 18px;
+}
+.sidebar-widget .media.first {
+	margin-top: 25px; 
+}
+.sidebar-widget .media {
+	margin-top: 18px; 
+}
+
+/** Footer
+*******************************************/
+.footer {
+	width: 100%;
+	color: #fff;
+	background-color: #4c4c4c;
+	padding: 70px 0 5px 0;
+}
+.footer h3 {
+	color: #fff;
+	margin-top: 9px;
+}
+.footer p {
+	font-size: 14px;
+	margin-bottom: 30px;
+}
+.footer a {
+	font-size: 14px;
+	color: #fff;
+	text-transform: uppercase;
+}
+.footer ul {
+	line-height: 2;
+}
+.footer li.active a,
+.footer a:hover {
+	color: #abbdd1;
+}
+.footer .social-btn:hover {
+	color: #fff;
+}
+.footer .logo {
+	display: block;
+	max-width: 130px;
+	margin-bottom: 24px;
+}
+.footer .logo img {
+	width: 100%;
+	max-width: 130px;
+}
+.copyright {
+	margin-top: 60px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.footer .subscribe-form .form-group {
+	width: 70%;
+}
+.footer .subscribe-form .form-control {
+	width: 100%;
+}
+
+/** Media Queries
+*******************************************/
+@media screen and (max-width: 1200px) {
+	.footer .subscribe-form .form-group {
+		width: 60%;
+	}
+}
+@media screen and (max-width: 900px) {
+	.navbar-fixed-top {
+		position: absolute;
+	}
+	.navbar-animated.navbar-condensed {
+		min-height: 115px;
+	}
+	.navbar-animated.navbar-condensed .navbar-logo {
+	  height: 115px;
+	  padding: 33.5px 0;
+	}
+	.navbar-animated.navbar-condensed .navbar-nav,
+	.navbar-animated.navbar-condensed .navbar-default .navbar-nav,
+	.navbar-animated.navbar-condensed .navbar-inverse .navbar-nav {
+	  margin-top: 35px;
+	}
+	.navbar-animated.navbar-condensed .navbar-right {
+		margin-top: 31.5px;
+	}
+	.navbar-animated.navbar-condensed .navbar-btn {
+		margin-top: 31.5px;
+	}
+	.navbar-animated.navbar-condensed .navbar-toggle {
+	  margin-top: 35.5px;
+	  margin-bottom: 35.5px;
+	}
+}
+@media screen and (max-width: 768px) {
+	.page-header-with-breadcrumb,
+	.page-header-with-breadcrumb .td {
+		display: block;
+		text-align: center !important;
+	}
+	.footer {
+		text-align: center;
+	}
+	.footer .logo {
+		margin-left: auto;
+		margin-right: auto;  
+	}
+	.footer .subscribe-form .form-group {
+		width: 100%;
+	}
+	.footer .social-buttons {
+		margin-bottom: 30px; 
+	}
+}

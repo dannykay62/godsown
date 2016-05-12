@@ -25,7 +25,43 @@ Route::get('/', function () {
 | kernel and includes session state, CSRF protection, and more.
 |
 */
+//Pages
+Route::get('judges', 'JudgesController@judges');
 
-Route::group(['middleware' => ['web']], function () {
-    //
+/**
+ * Blog routes
+ */
+Route::get('blog', 'BlogController@index');
+Route::get('blog/{slug}', 'BlogController@showPost');
+//Blog Admin area route
+Route::get('admin', function() {
+   return redirect('/admin/post');
 });
+$router->group([
+   'namespace' => 'Admin',
+    'middleware' => ['web','auth'],
+    ], function () {
+        Route::resource('admin/post', 'PostController');
+        Route::resource('admin/tag', 'TagController');
+        Route::get('admin/upload', 'UploadController@index');
+    }
+);
+// Loggin in and out
+
+
+
+/**
+ * Auth routes
+ */
+Route::group(['middleware' => 'web'], function () {
+    Route::auth();
+
+    Route::get('/home', 'HomeController@index');
+    Route::get('auth/facebook', 'Auth\AuthController@redirectToProvider');
+    Route::get('auth/facebook/callback', 'Auth\AuthController@handleProviderCallback');
+});
+
+
+//Route::get('/home', 'HomeController@index');
+//Route::get('auth/facebook', 'Auth\AuthController@redirectToProvider');
+//Route::get('auth/facebook/callback', 'Auth\AuthController@handleProviderCallback');

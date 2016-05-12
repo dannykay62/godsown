@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Tron Contacts Template</title>
+    <!--SEO Meta Tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Tron Bootstrap based UI Kit, flat, modern front-end framework for faster and easier web development.">
+    <meta name="keywords" content="HTML, CSS, JS, JavaScript, framework, bootstrap, front-end, frontend, web development">
+    <meta name="author" content="8 Guild">
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../../favicon.ico" type="image/x-icon">
+
+    <!-- Tron Bootstrap Skin and UI CSS -->
+    <link href="../../css/tron-ui.css" rel="stylesheet">
+    <!-- Page specific CSS -->
+    <link href="contacts.css" rel="stylesheet">
+
+    <!--Google Maps API-->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5DLwPPVAz88_k0yO2nmFe7T9k1urQs84"></script>
+
+    <!-- Outdated Browser Plugin Styles -->
+    <link href="../../outdatedbrowser/outdatedbrowser.css" rel="stylesheet">
+
+  </head>
+
+  <!-- Body -->
+
+  <body>
+    
+    <!-- Header -->
+    <header class="navbar navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".landing-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="arrow"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="../../index.html" class="navbar-logo">
+            <img src="../../img/logo.png" alt="Tron UI Kit">
+          </a>
+        </div>
+        <nav class="collapse navbar-collapse landing-navbar-collapse" role="navigation">
+          <ul class="nav navbar-nav">
+            <li><a href="../../index.html">Home</a></li>
+            <li class="active"><a href="#">Contacts</span></a></li>
+            <li><a href="#">Link</a></li>
+            <li class="dropdown">
+              <a href="#" data-toggle="dropdown">Dropdown<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="navbar-form navbar-right" role="search">
+            <div class="input-group">
+              <input type="text" class="form-control addon-right" placeholder="Search">
+              <span class="input-group-btn">
+                <button class="btn btn-primary icon-left" type="button"><i class="fa fa-search"></i></button>
+              </span>
+            </div><!-- /input-group -->
+          </form>
+        </nav>
+      </div>
+    </header><!-- Header End -->
+
+    <!-- Container -->
+    <section class="container padding-bottom">
+    
+      <!-- Page Header with Breadcrumbs -->
+      <div class="page-header-with-breadcrumb">
+        <div class="page-header td">
+          <h1>Contacts <small>Get in touch with us</small></h1>
+        </div>
+        <div class="td text-right">
+          <ol class="breadcrumb">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Pages</a></li>
+            <li class="active">Contacts</li>
+          </ol>
+        </div>
+      </div><!-- Page Header End -->
+      
+      <!--Google Map-->
+      <div class="google-map space-top" data-location="4120 Lenox Avenue, NY" data-zoom="12"><!--Insert Location in data-location, insert map zoom in data-zoom-->
+        <div id="map-canvas"></div>
+      </div><!--Google Map End-->
+
+      <div class="row space-top">
+        
+        <!-- Contact Info -->
+        <div class="col-sm-6 space-bottom-2x">
+          <h3>Contact Info</h3>
+          <ul class="list-group space-top">
+            <li class="list-group-item" href="#"><i class="fa fa-home fa-fw"></i>&nbsp; 4402 American Parkway Palo Alto, CA 95064</li>
+            <li class="list-group-item" href="#"><i class="fa fa-phone fa-fw"></i>&nbsp; (408) 775 3000, (409) 768 4400</li>
+            <li class="list-group-item" href="#"><i class="fa fa-envelope fa-fw"></i>&nbsp; <a href="mailto:info@yourdomain.com">info@yourdomain.com</a></li>
+            <li class="list-group-item" href="#"><i class="fa fa-clock-o fa-fw"></i>&nbsp; Monday - Friday  9 AM - 6 PM</li>
+          </ul>
+        </div><!--Contact Info End-->
+
+        <!-- Contact Form -->
+        <div class="col-sm-6">
+          <h3>Drop us a line</h3>
+          <form role="form" id="example-form1" class="space-top">
+            <div class="form-group">
+              <input type="text" class="form-control" name="exampleName" id="exampleName" placeholder="Enter name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" name="exampleEmail" id="exampleEmail" placeholder="Enter email" required>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" name="exampleMessage" id="exampleMessage" placeholder="Enter message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form>
+        </div><!--Contact Form End-->
+
+      </div>
+    </section><!-- Container End -->
+
+    <!-- Footer -->
+    <footer class="footer space-top-2x">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <a href="../../index.html" class="logo"><img src="../../img/logo-light.png" alt="Tron UI Kit"></a>
+            <p>Short description goes here.</p>
+            <ul class="list-unstyled">
+              <li class="active"><a href="#">Active Link</a></li>
+              <li><a href="#">Norman Link</a></li>
+              <li><a href="#">Another Link</a></li>
+              <li><a href="#">Yet Another Link</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-8">
+            <h3>Subscribe to our newspaper</h3>
+            <p>To receive latest news and updates. We do not tolerate spam!</p>
+            <form action="" class="form-inline subscribe-form space-bottom-2x">
+              <div class="form-group">
+                <label class="sr-only" for="subscr-email">Email address</label>
+                <input type="email" class="form-control" id="subscr-email" placeholder="Enter email">
+              </div>
+              <button type="submit" class="btn btn-warning">Subscribe</button>
+            </form>
+            <h3>Follow us on:</h3>
+            <div class="social-buttons">
+              <a href="#" class="social-btn sb-twitter"><i class="fa fa-twitter"></i></a>
+              <a href="#" class="social-btn sb-instagram"><i class="fa fa-instagram"></i></a>
+              <a href="#" class="social-btn sb-dribbble"><i class="fa fa-dribbble"></i></a>
+              <a href="#" class="social-btn sb-google-plus"><i class="fa fa-google-plus"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <p>Made by <a href="http://8guild.com/" target="_blank">8 Guild</a> in 2014</p>
+          </div>
+        </div>
+      </div>
+    </footer><!-- Footer End -->
+
+    <!-- Outdated Browser
+    ================================================== -->
+    <div id="outdated">
+      <span class="icon-outdated fa fa-exclamation-triangle"></span>
+      <h2>Your browser is out-of-date!</h2>
+      <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update my browser now </a></p>
+      <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+    </div>
+
+    <!-- jQuery Library
+    ================================================== -->
+    <script src="../../js/vendor/jquery.min.js"></script>
+
+    <!-- Outdated Browser Plugin
+    ================================================== -->
+    <script src="../../outdatedbrowser/outdatedbrowser.min.js"></script>
+    <script src="../../outdatedbrowser/outdatedbrowser.init.js"></script>
+
+    <!-- Plugins and Custom scripts
+    ================================================== -->
+    <script src="../../js/vendor/bootstrap.min.js"></script>
+    <script src="../../js/vendor/smoothscroll.js"></script>
+    <script src="../../js/tron-ui.js"></script>
+    <script src="contacts.js"></script>
+
+  </body><!-- Body End -->
+</html>

@@ -1,0 +1,26 @@
+/*
+ * Tron UI Kit
+ * Login Page Template Styles
+ */
+
+.login-form {
+	width: 100%;
+	position: absolute;
+	padding: 60px 15px;
+	height: 486px;
+	top: 50%;
+	margin-top: -263px; 
+}
+.login-form .logo {
+	display: block;
+	max-width: 130px;
+	margin: 0 auto 40px auto;
+}
+.login-form .logo img {
+	width: 100%;
+	max-width: 100%;
+}
+.login-form .inner {
+	max-width: 500px;
+	margin: auto;
+}

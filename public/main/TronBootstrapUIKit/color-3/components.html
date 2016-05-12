@@ -1,0 +1,1726 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Tron Components</title>
+    <!--SEO Meta Tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Tron Bootstrap based UI Kit, flat, modern front-end framework for faster and easier web development.">
+    <meta name="keywords" content="HTML, CSS, JS, JavaScript, framework, bootstrap, front-end, frontend, web development">
+    <meta name="author" content="8 Guild">
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+
+    <!-- Tron Bootstrap Skin and UI CSS -->
+    <link href="tron-ui.css" rel="stylesheet">
+    <!-- Documentation extras -->
+    <link href="../css/demo.css" rel="stylesheet">
+
+    <!-- Outdated Browser Plugin Styles -->
+    <link href="../outdatedbrowser/outdatedbrowser.css" rel="stylesheet">
+
+  </head>
+
+  <!-- Body -->
+
+  <body>
+
+    <!-- Header -->
+    <header class="navbar navbar-fixed-top navbar-centered-nav tron-nav-demo-page">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".tron-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="arrow"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="../index.html" class="navbar-logo">
+            <img src="logo.png" alt="Tron UI Kit">
+          </a>
+        </div>
+        <nav class="collapse navbar-collapse tron-navbar-collapse" role="navigation">
+          <ul class="nav navbar-nav">
+            <li><a href="../index.html">Home</a></li>
+            <li class="dropdown active">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Bootstrap<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="index.html">Core CSS</a></li>
+                <li class="active"><a href="components.html">Components</a></li>
+                <li><a href="javascript.html">Javascript</a></li>
+              </ul>
+            </li>
+            <li><a href="tron-extras.html">Tron Extras</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Examples<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="../examples/landing/">Landing Page</a></li>
+                <li><a href="../examples/blog/">Blog Page</a></li>
+                <li><a href="../examples/team">Team Page</a></li>
+                <li><a href="../examples/contacts">Contacts Page</a></li>
+                <li><a href="../examples/login">Login Page</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Colors<span class="caret"></span></a>
+              <ul class="dropdown-menu colors" role="menu">
+                <li><a href="../components.html">
+                  <span style="background-color: #abbdd1;" class="color"></span>
+                  <span style="background-color: #44c456;" class="color"></span>
+                  <span style="background-color: #626d83;" class="color"></span>
+                  <span style="background-color: #c2c444;" class="color"></span>
+                  <span style="background-color: #db6e79;" class="color"></span>
+                </a></li>
+                <li><a href="../color-2/components.html">
+                  <span style="background-color: #007aff;" class="color"></span>
+                  <span style="background-color: #4cd964;" class="color"></span>
+                  <span style="background-color: #5ac8fa;" class="color"></span>
+                  <span style="background-color: #ff9500;" class="color"></span>
+                  <span style="background-color: #ff3b30;" class="color"></span>
+                </a></li>
+                <li class="active"><a href="components.html">
+                  <span style="background-color: #e1c136;" class="color"></span>
+                  <span style="background-color: #62c55a;" class="color"></span>
+                  <span style="background-color: #2e9bc3;" class="color"></span>
+                  <span style="background-color: #c9b587;" class="color"></span>
+                  <span style="background-color: #a57a52;" class="color"></span>
+                </a></li>
+                <li><a href="../color-4/components.html">
+                  <span style="background-color: #00626e;" class="color"></span>
+                  <span style="background-color: #b7d43f;" class="color"></span>
+                  <span style="background-color: #bfdd9b;" class="color"></span>
+                  <span style="background-color: #f37032;" class="color"></span>
+                  <span style="background-color: #ef3f4f;" class="color"></span>
+                </a></li>
+                <li><a href="../color-5/components.html">
+                  <span style="background-color: #6a8f9f;" class="color"></span>
+                  <span style="background-color: #fdad4e;" class="color"></span>
+                  <span style="background-color: #8bd7d7;" class="color"></span>
+                  <span style="background-color: #ff908f;" class="color"></span>
+                  <span style="background-color: #d26f6a;" class="color"></span>
+                </a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="navbar-right navbar-text">
+            <a class="navbar-link" href="../docs/" target="_blank"><small>Documentation</small></a>
+          </div>
+        </nav>
+      </div>
+    </header><!-- Header Close-->
+    
+    <!-- Content -->
+    <section class="demo-page">
+      <div class="container">
+
+        <!-- Page Heading -->
+        <div class="page-header">
+          <h1>Components <small>Default Bootstrap Components</small></h1>
+        </div>
+
+        <!-- Font Icons  -->
+        <div class="row space-top">
+          <div class="col-md-12">
+            <h3 class="block-heading">Font Icons</h3>
+            <h4 class="block-subheading space-bottom">Flaticon Material Design Pack (423 icons)</h4>
+            <div class="flaticon-demo space-bottom-2x">
+              <i class="flaticon-add179"></i>
+              <i class="flaticon-airplane106"></i>
+              <i class="flaticon-android12"></i>
+              <i class="flaticon-apple70"></i>
+              <i class="flaticon-attachment19"></i>
+              <i class="flaticon-automatic3"></i>
+              <i class="flaticon-birthday20"></i>
+              <i class="flaticon-black396"></i>
+              <i class="flaticon-black398"></i>
+              <i class="flaticon-blueetooth"></i>
+              <i class="flaticon-briefcase50"></i>
+              <i class="flaticon-brightness10"></i>
+              <i class="flaticon-burn99"></i>
+              <i class="flaticon-call48"></i>
+              <i class="flaticon-camera59"></i>
+              <i class="flaticon-car145"></i>
+              <i class="flaticon-cell11"></i>
+              <i class="flaticon-chat75"></i>
+              <i class="flaticon-city24"></i>
+              <i class="flaticon-clipboard99"></i>
+              <i class="flaticon-clock100"></i>
+              <i class="flaticon-compass106"></i>
+              <i class="flaticon-create2"></i>
+              <i class="flaticon-crop14"></i>
+              <i class="flaticon-cut23"></i>
+              <i class="flaticon-device4"></i>
+              <i class="flaticon-download166"></i>
+              <i class="flaticon-earth205"></i>
+              <i class="flaticon-emoticon117"></i>
+              <i class="flaticon-google123"></i>
+              <i class="flaticon-google124"></i>
+              <i class="flaticon-gps26"></i>
+              <i class="flaticon-graduate32"></i>
+              <i class="flaticon-headset12"></i>
+              <i class="flaticon-https"></i>
+              <i class="flaticon-magic20"></i>
+              <i class="flaticon-man459"></i>
+              <i class="flaticon-missed"></i>
+              <i class="flaticon-public11"></i>
+              <i class="laticon-screen45"></i>
+              <i class="flaticon-search100"></i>
+              <i class="flaticon-share39"></i>
+              <i class="flaticon-shopping232"></i>
+              <i class="flaticon-synchronization3"></i>
+              <i class="flaticon-tag71"></i>
+              <i class="flaticon-turn20"></i>
+              <i class="flaticon-volume51"></i>
+              <div class="space-top"><a class="btn btn-primary" href="../docs/flaticon.html" target="_blank">View More</a></div>
+            </div>
+
+            <!-- FontAwesome Icons -->
+            <h4 class="block-subheading space-bottom">FontAwesome Icons (479 icons)</h4>
+            <div class="fontawesome-demo space-bottom">
+              <i class="fa fa-ambulance"></i>
+              <i class="fa fa-anchor"></i>
+              <i class="fa fa-angellist"></i>
+              <i class="fa fa-angle-double-down"></i>
+              <i class="fa fa-area-chart"></i>
+              <i class="fa fa-arrow-right"></i>
+              <i class="fa fa-beer"></i>
+              <i class="fa fa-bell-o"></i>
+              <i class="fa fa-binoculars"></i>
+              <i class="fa fa-briefcase"></i>
+              <i class="fa fa-bug"></i>
+              <i class="fa fa-cab"></i>
+              <i class="fa fa-bullhorn"></i>
+              <i class="fa fa-calculator"></i>
+              <i class="fa fa-camera-retro"></i>
+              <i class="fa fa-check-square-o"></i>
+              <i class="fa fa-cloud-upload"></i>
+              <i class="fa fa-copy"></i>
+              <i class="fa fa-edit"></i>
+              <i class="fa fa-download"></i>
+              <i class="fa fa-eye"></i>
+              <i class="fa fa-eyedropper"></i>
+              <i class="fa fa-fax"></i>
+              <i class="fa fa-file-image-o"></i>
+              <i class="fa fa-file-movie-o"></i>
+              <i class="fa fa-fire-extinguisher"></i>
+              <i class="fa fa-flag"></i>
+              <i class="fa fa-flask"></i>
+              <i class="fa fa-gamepad"></i>
+              <i class="fa fa-gavel"></i>
+              <i class="fa fa-gears"></i>
+              <i class="fa fa-hand-o-right"></i>
+              <i class="fa fa-heart-o"></i>
+              <i class="fa fa-institution"></i>
+              <i class="fa fa-key"></i>
+              <i class="fa fa-laptop"></i>
+              <i class="fa fa-leaf"></i>
+              <i class="fa fa-lightbulb-o"></i>
+              <i class="fa fa-paint-brush"></i>
+              <i class="fa fa-paper-plane"></i>
+              <i class="fa fa-mortar-board"></i>
+              <i class="fa fa-music"></i>
+              <i class="fa fa-print"></i>
+              <i class="fa fa-search-plus"></i>
+              <i class="fa fa-space-shuttle"></i>
+              <i class="fa fa-wheelchair"></i>
+              <i class="fa fa-thumb-tack"></i>
+              <i class="fa  fa-wrench"></i>
+              <div class="space-top"><a class="btn btn-primary" href="http://fontawesome.io/icons/" target="_blank">View More</a></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Button Groups -->
+        <div class="row space-top">
+          <div class="col-md-12">
+            <h3 class="block-heading">Button Groups</h3>
+            <div class="row">
+
+              <!-- Basic Example -->
+              <div class="col-sm-6">
+                <h4 class="block-subheading">Basic Example</h4>
+                <div class="btn-group buttons-demo">
+                  <button type="button" class="btn btn-primary">Left</button>
+                  <button type="button" class="btn btn-primary">Middle</button>
+                  <button type="button" class="btn btn-primary">Right</button>
+                </div><br>
+                <div class="btn-group buttons-demo space-bottom">
+                  <button type="button" class="btn-outlined btn-default">Left</button>
+                  <button type="button" class="btn-outlined btn-default">Middle</button>
+                  <button type="button" class="btn-outlined btn-default">Right</button>
+                </div>
+
+                <!-- Nesting -->
+                <h4 class="block-subheading">Nesting</h4>
+                <div class="btn-group buttons-demo space-bottom">
+                  <button type="button" class="btn btn-primary">1</button>
+                  <button type="button" class="btn btn-primary">2</button>
+                  <div class="btn-group">
+                    <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle icon-right" data-toggle="dropdown">
+                      Dropdown
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="btnGroupDrop1">
+                      <li><a href="#">Dropdown link</a></li>
+                      <li><a href="#">Dropdown link</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Vertical Variationt -->
+                <h4 class="block-subheading space-bottom">Vertical Variationt</h4>
+                <div style="margin-right: 20px;" class="btn-group-vertical">
+                  <button type="button" class="btn btn-primary">Button</button>
+                  <div class="btn-group">
+                    <button id="btnGroupVerticalDrop1" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                      Dropdown
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="#">Dropdown link</a></li>
+                      <li><a href="#">Dropdown link</a></li>
+                    </ul>
+                  </div>
+                  <button type="button" class="btn btn-primary">Button</button>
+                  <div class="btn-group">
+                    <button id="btnGroupVerticalDrop2" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                      Dropdown
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="#">Dropdown link</a></li>
+                      <li><a href="#">Dropdown link</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="btn-group-vertical">
+                  <button type="button" class="btn-outlined btn-default">Button</button>
+                  <div class="btn-group">
+                    <button id="btnGroupVerticalDrop3" type="button" class="btn-outlined btn-default dropdown-toggle" data-toggle="dropdown">
+                      Dropdown
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="#">Dropdown link</a></li>
+                      <li><a href="#">Dropdown link</a></li>
+                    </ul>
+                  </div>
+                  <button type="button" class="btn-outlined btn-default">Button</button>
+                  <div class="btn-group">
+                    <button id="btnGroupVerticalDrop4" type="button" class="btn-outlined btn-default dropdown-toggle" data-toggle="dropdown">
+                      Dropdown
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="#">Dropdown link</a></li>
+                      <li><a href="#">Dropdown link</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Sizes -->
+              <div class="col-sm-6">
+                <h4 class="block-subheading">Sizes</h4>
+                <div class="btn-group btn-group-lg buttons-demo">
+                  <button type="button" class="btn btn-primary">Left</button>
+                  <button type="button" class="btn btn-primary">Middle</button>
+                  <button type="button" class="btn btn-primary">Right</button>
+                </div><br>
+                <div class="btn-group buttons-demo">
+                  <button type="button" class="btn btn-primary">Left</button>
+                  <button type="button" class="btn btn-primary">Middle</button>
+                  <button type="button" class="btn btn-primary">Right</button>
+                </div><br>
+                <div class="btn-group btn-group-sm buttons-demo">
+                  <button type="button" class="btn btn-primary">Left</button>
+                  <button type="button" class="btn btn-primary">Middle</button>
+                  <button type="button" class="btn btn-primary">Right</button>
+                </div><br>
+                <div class="btn-group btn-group-xs buttons-demo">
+                  <button type="button" class="btn btn-primary">Left</button>
+                  <button type="button" class="btn btn-primary">Middle</button>
+                  <button type="button" class="btn btn-primary">Right</button>
+                </div><br>
+                <div class="btn-group btn-group-lg buttons-demo">
+                  <button type="button" class="btn-outlined btn-default">Left</button>
+                  <button type="button" class="btn-outlined btn-default">Middle</button>
+                  <button type="button" class="btn-outlined btn-default">Right</button>
+                </div><br>
+                <div class="btn-group buttons-demo">
+                  <button type="button" class="btn-outlined btn-default">Left</button>
+                  <button type="button" class="btn-outlined btn-default">Middle</button>
+                  <button type="button" class="btn-outlined btn-default">Right</button>
+                </div><br>
+                <div class="btn-group btn-group-sm buttons-demo">
+                  <button type="button" class="btn-outlined btn-default">Left</button>
+                  <button type="button" class="btn-outlined btn-default">Middle</button>
+                  <button type="button" class="btn-outlined btn-default">Right</button>
+                </div><br>
+                <div class="btn-group btn-group-xs buttons-demo">
+                  <button type="button" class="btn-outlined btn-default">Left</button>
+                  <button type="button" class="btn-outlined btn-default">Middle</button>
+                  <button type="button" class="btn-outlined btn-default">Right</button>
+                </div><br>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Button Dropdowns -->
+        <div class="row space-top-2x">
+          <div class="col-md-12">
+            <h3 class="block-heading">Button Dropdowns</h3>
+            <h4 class="block-subheading">Single Button Dropdowns</h4>
+            <div class="button-dropdown-demo">
+              <div class="btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle icon-right" data-toggle="dropdown">Default <span class="caret"></span></button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+              <div class="btn-group">
+                <button type="button" class="btn btn-primary dropdown-toggle icon-right" data-toggle="dropdown">Primary <span class="caret"></span></button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+              <div class="btn-group">
+                <button type="button" class="btn btn-success dropdown-toggle icon-right" data-toggle="dropdown">Success <span class="caret"></span></button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+              <div class="btn-group">
+                <button type="button" class="btn btn-info dropdown-toggle icon-right" data-toggle="dropdown">Info <span class="caret"></span></button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+              <div class="btn-group">
+                <button type="button" class="btn btn-warning dropdown-toggle icon-right" data-toggle="dropdown">Warning <span class="caret"></span></button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+              <div class="btn-group">
+                <button type="button" class="btn btn-danger dropdown-toggle icon-right" data-toggle="dropdown">Danger <span class="caret"></span></button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+            </div>
+            <div class="button-dropdown-demo">
+              <div class="btn-group btn-group-outlined">
+                <button type="button" class="btn-outlined btn-default dropdown-toggle icon-right" data-toggle="dropdown">Default <span class="caret"></span></button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+              <div class="btn-group btn-group-outlined">
+                <button type="button" class="btn-outlined btn-primary dropdown-toggle icon-right" data-toggle="dropdown">Primary <span class="caret"></span></button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+              <div class="btn-group btn-group-outlined">
+                <button type="button" class="btn-outlined btn-success dropdown-toggle icon-right" data-toggle="dropdown">Success <span class="caret"></span></button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+              <div class="btn-group btn-group-outlined">
+                <button type="button" class="btn-outlined btn-info dropdown-toggle icon-right" data-toggle="dropdown">Info <span class="caret"></span></button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+              <div class="btn-group btn-group-outlined">
+                <button type="button" class="btn-outlined btn-warning dropdown-toggle icon-right" data-toggle="dropdown">Warning <span class="caret"></span></button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+              <div class="btn-group btn-group-outlined">
+                <button type="button" class="btn-outlined btn-danger dropdown-toggle icon-right" data-toggle="dropdown">Danger <span class="caret"></span></button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+            </div>
+            
+            <!-- Split Button Dropdowns -->
+            <h4 class="block-subheading space-top">Split Button Dropdowns</h4>
+            <div class="button-dropdown-demo">
+              <div class="btn-group">
+                <button type="button" class="btn btn-default icon-right">Default</button>
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                  <span class="caret"></span>
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+              <div class="btn-group">
+                <button type="button" class="btn btn-primary icon-right">Primary</button>
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                  <span class="caret"></span>
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+              <div class="btn-group">
+                <button type="button" class="btn btn-success icon-right">Success</button>
+                <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
+                  <span class="caret"></span>
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+              <div class="btn-group">
+                <button type="button" class="btn btn-info icon-right">Info</button>
+                <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+                  <span class="caret"></span>
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+              <div class="btn-group">
+                <button type="button" class="btn btn-warning icon-right">Warning</button>
+                <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">
+                  <span class="caret"></span>
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+              <div class="btn-group">
+                <button type="button" class="btn btn-danger icon-right">Danger</button>
+                <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
+                  <span class="caret"></span>
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+            </div>
+            <div class="button-dropdown-demo">
+              <div class="btn-group btn-group-outlined">
+                <button type="button" class="btn-outlined btn-default icon-right">Default</button>
+                <button type="button" class="btn-outlined btn-default dropdown-toggle" data-toggle="dropdown">
+                  <span class="caret"></span>
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+              <div class="btn-group btn-group-outlined">
+                <button type="button" class="btn-outlined btn-primary icon-right">Primary</button>
+                <button type="button" class="btn-outlined btn-primary dropdown-toggle" data-toggle="dropdown">
+                  <span class="caret"></span>
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+              <div class="btn-group btn-group-outlined">
+                <button type="button" class="btn-outlined btn-success icon-right">Success</button>
+                <button type="button" class="btn-outlined btn-success dropdown-toggle" data-toggle="dropdown">
+                  <span class="caret"></span>
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+              <div class="btn-group btn-group-outlined">
+                <button type="button" class="btn-outlined btn-info icon-right">Info</button>
+                <button type="button" class="btn-outlined btn-info dropdown-toggle" data-toggle="dropdown">
+                  <span class="caret"></span>
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+              <div class="btn-group btn-group-outlined">
+                <button type="button" class="btn-outlined btn-warning icon-right">Warning</button>
+                <button type="button" class="btn-outlined btn-warning dropdown-toggle" data-toggle="dropdown">
+                  <span class="caret"></span>
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+              <div class="btn-group btn-group-outlined">
+                <button type="button" class="btn-outlined btn-danger icon-right">Danger</button>
+                <button type="button" class="btn-outlined btn-danger dropdown-toggle" data-toggle="dropdown">
+                  <span class="caret"></span>
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+            </div>
+            <div class="row space-top">
+
+              <!-- Sizes -->
+              <div class="col-sm-8">
+                <h4 class="block-subheading">Sizes</h4>
+                <div class="btn-toolbar button-dropdown-demo" role="toolbar">
+                  <div class="btn-group">
+                    <button class="btn btn-primary btn-lg dropdown-toggle icon-right" type="button" data-toggle="dropdown">
+                      Large button <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="#">Action</a></li>
+                      <li><a href="#">Another action</a></li>
+                      <li><a href="#">Something else here</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#">Separated link</a></li>
+                    </ul>
+                  </div><!-- /btn-group -->
+                  <div class="btn-group">
+                    <button class="btn btn-primary btn-sm dropdown-toggle icon-right" type="button" data-toggle="dropdown">
+                      Small button <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="#">Action</a></li>
+                      <li><a href="#">Another action</a></li>
+                      <li><a href="#">Something else here</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#">Separated link</a></li>
+                    </ul>
+                  </div><!-- /btn-group -->
+                  <div class="btn-group">
+                    <button class="btn btn-primary btn-xs dropdown-toggle icon-right" type="button" data-toggle="dropdown">
+                      Extra small button <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="#">Action</a></li>
+                      <li><a href="#">Another action</a></li>
+                      <li><a href="#">Something else here</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#">Separated link</a></li>
+                    </ul>
+                  </div><!-- /btn-group -->
+                </div><!-- /btn-toolbar -->
+                <div class="btn-toolbar button-dropdown-demo" role="toolbar">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-default btn-lg">Large</button>
+                    <button type="button" class="btn btn-default btn-lg dropdown-toggle" data-toggle="dropdown">
+                      <span class="caret"></span>
+                      <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="#">Action</a></li>
+                      <li><a href="#">Another action</a></li>
+                      <li><a href="#">Something else here</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#">Separated link</a></li>
+                    </ul>
+                  </div><!-- /btn-group -->
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-default btn-sm">Small</button>
+                    <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">
+                      <span class="caret"></span>
+                      <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="#">Action</a></li>
+                      <li><a href="#">Another action</a></li>
+                      <li><a href="#">Something else here</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#">Separated link</a></li>
+                    </ul>
+                  </div><!-- /btn-group -->
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-default btn-xs">Extra Small</button>
+                    <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
+                      <span class="caret"></span>
+                      <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="#">Action</a></li>
+                      <li><a href="#">Another action</a></li>
+                      <li><a href="#">Something else here</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#">Separated link</a></li>
+                    </ul>
+                  </div><!-- /btn-group -->
+                </div>
+              </div>
+
+              <!-- Dropup -->
+              <div class="col-sm-4">
+                <h4 class="block-subheading space-bottom">Dropup</h4>
+                <div class="btn-group dropup">
+                  <button type="button" class="btn btn-primary icon-right">Dropup</button>
+                  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                    <span class="caret"></span>
+                    <span class="sr-only">Toggle Dropdown</span>
+                  </button>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                  </ul>
+                </div><!-- /btn-group -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Input Groups -->
+        <div class="row space-top-2x">
+          <div class="col-md-12">
+            <h3 class="block-heading">Input Groups</h3>
+            <div class="row">
+
+              <!-- Basic Example -->
+              <div class="col-sm-6">
+                <h4 class="block-subheading space-bottom">Basic Example</h4>
+                <form role="form">
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                    <input type="text" class="form-control addon-left" placeholder="Username">
+                  </div>
+                  <br>
+                  <div class="input-group">
+                    <input type="text" class="form-control addon-right">
+                    <span class="input-group-addon">.00</span>
+                  </div>
+                  <br>
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-dollar"></i></span>
+                    <input type="text" class="form-control addon-left addon-right">
+                    <span class="input-group-addon">.00</span>
+                  </div>
+                </form>
+              </div>
+              
+              <div class="space-top-2x visible-xs"></div>
+              <!-- Sizes -->
+              <div class="col-sm-6">
+                <h4 class="block-subheading space-bottom">Sizes</h4>
+                <form role="form">
+                  <div class="input-group input-group-lg">
+                    <span class="input-group-addon">@</span>
+                    <input type="text" class="form-control addon-left" placeholder="Username">
+                  </div>
+                  <br>
+                  <div class="input-group">
+                    <span class="input-group-addon">@</span>
+                    <input type="text" class="form-control addon-left" placeholder="Username">
+                  </div>
+                  <br>
+                  <div class="input-group input-group-sm">
+                    <span class="input-group-addon">@</span>
+                    <input type="text" class="form-control addon-left" placeholder="Username">
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="row space-top">
+              <div class="col-sm-6">
+
+                <!-- Checkboxes and radios addons -->
+                <h4 class="block-subheading space-bottom">Checkboxes and radios addons</h4>
+                <form>
+                  <div class="input-group form-group">
+                    <span class="input-group-addon">
+                      <input type="checkbox">
+                    </span>
+                    <input type="text" class="form-control addon-left">
+                  </div><!-- /input-group -->
+                  <div class="input-group form-group">
+                    <span class="input-group-addon">
+                      <input type="radio">
+                    </span>
+                    <input type="text" class="form-control addon-left">
+                  </div><!-- /input-group -->
+                </form>
+
+                <!-- Button addons -->
+                <h4 class="block-subheading padding-top space-bottom">Button addons</h4>
+                <div class="input-group form-group">
+                  <span class="input-group-btn">
+                    <button class="btn btn-primary" type="button">Go!</button>
+                  </span>
+                  <input type="text" class="form-control addon-left">
+                </div><!-- /input-group -->
+                <div class="input-group form-group">
+                  <input type="text" class="form-control addon-right">
+                  <span class="input-group-btn">
+                    <button class="btn btn-primary" type="button">Go!</button>
+                  </span>
+                </div><!-- /input-group -->
+              </div>
+              <div class="col-sm-6">
+                
+                <!-- Buttons with dropdowns -->
+                <h4 class="block-subheading space-bottom">Buttons with dropdowns</h4>
+                <form role="form">
+                  <div class="input-group form-group">
+                    <div class="input-group-btn">
+                      <button type="button" class="btn btn-primary dropdown-toggle icon-right" data-toggle="dropdown">Action<span class="caret"></span></button>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                      </ul>
+                    </div><!-- /btn-group -->
+                    <input type="text" class="form-control addon-left">
+                  </div><!-- /input-group -->
+                  <div class="input-group form-group">
+                    <input type="text" class="form-control addon-right">
+                    <div class="input-group-btn">
+                      <button type="button" class="btn btn-primary dropdown-toggle icon-right" data-toggle="dropdown">Action<span class="caret"></span></button>
+                      <ul class="dropdown-menu pull-right" role="menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                      </ul>
+                    </div><!-- /btn-group -->
+                  </div><!-- /input-group -->
+                </form>
+
+                <!-- Segmented buttons -->
+                <h4 class="block-subheading padding-top space-bottom">Segmented buttons</h4>
+                <form role="form">
+                  <div class="input-group form-group">
+                    <div class="input-group-btn">
+                      <button type="button" class="btn btn-primary icon-right" tabindex="-1">Action</button>
+                      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" tabindex="-1">
+                        <span class="caret"></span>
+                        <span class="sr-only">Toggle Dropdown</span>
+                      </button>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                      </ul>
+                    </div>
+                    <input type="text" class="form-control addon-left">
+                  </div><!-- /.input-group -->
+                  <div class="input-group form-group">
+                    <input type="text" class="form-control addon-right">
+                    <div class="input-group-btn">
+                      <button type="button" class="btn btn-primary icon-right" tabindex="-1">Action</button>
+                      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" tabindex="-1">
+                        <span class="caret"></span>
+                        <span class="sr-only">Toggle Dropdown</span>
+                      </button>
+                      <ul class="dropdown-menu pull-right" role="menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                      </ul>
+                    </div>
+                  </div><!-- /.input-group -->
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navs -->
+        <div class="row space-top">
+          <div class="col-md-12">
+            <h3 class="block-heading">Navs</h3>
+            <div class="row">
+
+              <!-- Tabs -->
+              <div class="col-sm-6 space-bottom-2x">
+                <h4 class="block-subheading">Tabs Horizontal</h4>
+                <ul class="nav nav-tabs">
+                  <li class="active"><a href="#">Home</a></li>
+                  <li><a href="#">Profile</a></li>
+                  <li><a href="#">Messages</a></li>
+                </ul>
+                <h4 class="block-subheading space-top">Tabs Vertical</h4>
+                <ul class="nav nav-vertical nav-tabs">
+                  <li class="active"><a href="#">Home</a></li>
+                  <li><a href="#">Profile</a></li>
+                  <li><a href="#">Messages</a></li>
+                </ul>
+                <h4 class="block-subheading space-top">Tabs with Dropdowns</h4>
+                <ul class="nav nav-tabs">
+                  <li class="active"><a href="#">Home</a></li>
+                  <li><a href="#">Help</a></li>
+                  <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                      Dropdown <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="#">Action</a></li>
+                      <li><a href="#">Another action</a></li>
+                      <li><a href="#">Something else here</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#">Separated link</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Pills -->
+              <div class="col-sm-6">
+                <h4 class="block-subheading">Pills</h4>
+                <ul class="nav nav-pills space-top">
+                  <li class="active"><a href="#">Home</a></li>
+                  <li><a href="#">Profile</a></li>
+                  <li><a href="#">Messages</a></li>
+                </ul>
+                <div class="space-top-2x visible-xs"></div>
+                <h4 class="block-subheading space-top">Pills Stacked</h4>
+                <ul class="nav nav-pills nav-stacked space-top" style="max-width: 300px;">
+                  <li class="active"><a href="#">Home</a></li>
+                  <li><a href="#">Profile</a></li>
+                  <li><a href="#">Messages</a></li>
+                </ul>
+                <h4 class="block-subheading space-top">Pills with Dropdowns</h4>
+                <ul class="nav nav-pills space-top">
+                  <li class="active"><a href="#">Home</a></li>
+                  <li><a href="#">Help</a></li>
+                  <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                      Dropdown <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="#">Action</a></li>
+                      <li><a href="#">Another action</a></li>
+                      <li><a href="#">Something else here</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#">Separated link</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navbar -->
+        <div class="row space-top">
+          <div class="col-md-12">
+            <h3 class="block-heading">Navbar</h3>
+            <h4 class="block-subheading space-bottom">Default Navbar</h4>
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#tron-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#">Brand</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="tron-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">One more separated link</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <form class="navbar-form navbar-right" role="search">
+                    <div class="input-group">
+                      <input type="text" class="form-control addon-right" placeholder="Search">
+                      <span class="input-group-btn">
+                        <button class="btn btn-primary icon-left" type="button"><i class="fa fa-search"></i></button>
+                      </span>
+                    </div><!-- /input-group -->
+                  </form>
+                </div><!-- /.navbar-collapse -->
+              </div><!-- /.container-fluid -->
+            </nav>
+            <h4 class="block-subheading space-bottom">Condensed Navbar</h4>
+            <nav class="navbar navbar-default navbar-condensed" role="navigation">
+              <div class="container-fluid">
+                <!-- Logo and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#tron-example-navbar-condensed">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#">Brand</a>
+                </div>
+                <div class="collapse navbar-collapse" id="tron-example-navbar-condensed">
+                  <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                  </ul>
+                </div><!-- /.navbar-collapse -->
+              </div><!-- /.container-fluid -->
+            </nav>
+          </div>
+        </div>
+
+        <!-- Breadcrumbs -->
+        <div class="row space-top">
+          <div class="col-md-12">
+            <h3 class="block-heading">Breadcrumbs</h3>
+            <ol class="breadcrumb">
+              <li class="active">Home</li>
+            </ol>
+            <ol class="breadcrumb">
+              <li><a href="#">Home</a></li>
+              <li class="active">Pages</li>
+            </ol>
+            <ol class="breadcrumb">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Pages</a></li>
+              <li class="active">Blog</li>
+            </ol>
+          </div>
+        </div>
+
+        <!-- Pagination -->
+        <div class="row space-top">
+          <div class="col-md-12">
+            <h3 class="block-heading">Pagination</h3>
+            <div class="row">
+              <div class="col-md-4 col-sm-6">
+                <ul class="pagination">
+                  <li class="prev-page"><a href="#"><i class="fa fa-caret-left"></i></a></li>
+                  <li><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li class="next-page"><a href="#"><i class="fa fa-caret-right"></i></a></li>
+                </ul>
+              </div>
+              <div class="col-md-8 col-sm-6">
+                <ul class="pagination">
+                  <li class="prev-page disabled"><span><i class="fa fa-caret-left"></i></span></li>
+                  <li><a href="#">1 <span class="sr-only">(current)</span></a></li>
+                  <li class="active"><span>2</span></li>
+                  <li><a href="#">3</a></li>
+                  <li class="disabled"><span>4</span></li>
+                  <li><a href="#">5</a></li>
+                  <li class="next-page"><a href="#"><i class="fa fa-caret-right"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pager -->
+        <div class="row space-top">
+          <div class="col-md-12">
+            <h3 class="block-heading">Pager</h3>
+            <div class="row">
+              <div class="col-sm-7">
+                <ul class="pager">
+                  <li class="previous icon-left"><a href="#"><i class="fa fa-long-arrow-left"></i>Older</a></li>
+                  <li class="next icon-right"><a href="#">Newer<i class="fa fa-long-arrow-right"></i></a></li>
+                </ul>
+                <ul class="pager">
+                  <li class="previous icon-left disabled"><span><i class="fa fa-long-arrow-left"></i>Older</span></li>
+                  <li class="next icon-right"><a href="#">Newer<i class="fa fa-long-arrow-right"></i></a></li>
+                </ul>
+              </div>
+              <div class="col-sm-5">
+                <ul class="pager">
+                  <li class="icon-left"><a href="#"><i class="fa fa-caret-left"></i>Previous</a></li>
+                  <li class="icon-right"><a href="#">Next<i class="fa fa-caret-right"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Labels -->
+        <div class="row space-top">
+          <div class="col-md-12">
+            <h3 class="block-heading">Labels</h3>
+            <div class="row">
+              <div class="col-sm-6 space-bottom-2x">
+                <h1>Example heading <span class="label label-default">New</span></h1>
+                <h2>Example heading <span class="label label-default">New</span></h2>
+                <h3>Example heading <span class="label label-default">New</span></h3>
+                <h4>Example heading <span class="label label-default">New</span></h4>
+                <h5>Example heading <span class="label label-default">New</span></h5>
+                <h6>Example heading <span class="label label-default">New</span></h6>
+              </div>
+              <div class="col-sm-6 labels-demo">
+                <h4 class="block-subheading space-bottom">Color Variations</h4>
+                <span class="label label-default">Default</span>
+                <span class="label label-primary">Primary</span>
+                <span class="label label-success">Success</span>
+                <span class="label label-info">Info</span>
+                <span class="label label-warning">Warning</span>
+                <span class="label label-danger">Danger</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="space-top visible-xs"></div>
+
+        <!-- Badges -->
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="block-heading">Badges</h3>
+            <div class="space-bottom">
+              <a href="#">Inbox<span class="badge">42</span></a>
+            </div>
+            <ul class="nav nav-pills">
+              <li class="active"><a href="#">Home<span class="badge">42</span></a></li>
+              <li><a href="#">Profile</a></li>
+              <li><a href="#">Messages<span class="badge">3</span></a></li>
+            </ul>
+            <br>
+            <ul class="nav nav-pills nav-stacked" style="max-width: 260px;">
+              <li class="active">
+                <a href="#">
+                  <span class="badge pull-right">42</span>
+                  Home
+                </a>
+              </li>
+              <li><a href="#">Profile</a></li>
+              <li>
+                <a href="#">
+                  <span class="badge pull-right">3</span>
+                  Messages
+                </a>
+              </li>
+            </ul>
+            <div class="buttons-demo">
+              <button class="btn btn-primary icon-right" type="button">
+                Messages<span class="badge">4</span>
+              </button>
+              <button class="btn btn-primary icon-right" type="button">
+                Posts<span class="badge badge-default">9</span>
+              </button>
+              <button class="btn btn-primary" type="button">
+                Items<span class="badge badge-default floating">9</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Jumbotron -->
+        <div class="row space-top-2x">
+          <div class="col-md-12">
+            <h3 class="block-heading">Jumbotron</h3>
+            <div class="jumbotron">
+              <h1>Hello, world!</h1>
+              <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+              <p><a class="btn btn-primary btn-lg" role="button">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Thumbnails -->
+        <div class="row space-top">
+          <div class="col-md-12">
+            <h3 class="block-heading">Thumbnails</h3>
+            <h4 class="block-subheading space-bottom">Basic Example</h4>
+            <div class="row">
+              <div class="col-md-3 col-sm-6">
+                <a href="#" class="thumbnail">
+                  <img src="../img/thumbnails/thumb04.jpg" alt="Thumbnail">
+                </a>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <a href="#" class="thumbnail">
+                  <img src="../img/thumbnails/thumb05.jpg" alt="Thumbnail">
+                </a>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <a href="#" class="thumbnail">
+                  <img src="../img/thumbnails/thumb06.jpg" alt="Thumbnail">
+                </a>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <a href="#" class="thumbnail">
+                  <img src="../img/thumbnails/thumb07.jpg" alt="Thumbnail">
+                </a>
+              </div>
+            </div>
+            <h4 class="block-subheading space-bottom">With Custom Content</h4>
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="thumbnail with-caption">
+                  <img src="../img/thumbnails/thumb01.jpg" alt="Thumbnail">
+                  <div class="caption">
+                    <h4>Thumbnail label</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco.</p>
+                    <a href="#" class="btn btn-primary" role="button">Button</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="thumbnail with-caption">
+                  <img src="../img/thumbnails/thumb02.jpg" alt="Thumbnail">
+                  <div class="caption">
+                    <h4>Thumbnail label</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco.</p>
+                    <a href="#" class="btn btn-primary" role="button">Button</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="thumbnail with-caption">
+                  <img src="../img/thumbnails/thumb03.jpg" alt="Thumbnail">
+                  <div class="caption">
+                    <h4>Thumbnail label</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco.</p>
+                    <a href="#" class="btn btn-primary" role="button">Button</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Progress Bars -->
+        <div class="row space-top">
+          <div class="col-md-12">
+            <h3 class="block-heading">Progress Bars</h3>
+            <div class="row">
+              <div class="col-sm-6">
+                <h4 class="block-subheading space-bottom">Standard Version</h4>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+                    50%
+                  </div>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                    40%
+                  </div>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                    20%
+                  </div>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                    60%
+                  </div>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                    80%
+                  </div>
+                </div>
+
+                <!-- Stacked -->
+                <h4 class="block-subheading space-top-2x space-bottom">Stacked</h4>
+                <div class="progress progress-stacked space-bottom-2x">
+                  <div class="progress-bar progress-bar-success" style="width: 35%">
+                    <span class="sr-only">35% Complete (success)</span>
+                  </div>
+                  <div class="progress-bar progress-bar-warning" style="width: 20%">
+                    <span class="sr-only">20% Complete (warning)</span>
+                  </div>
+                  <div class="progress-bar progress-bar-danger" style="width: 25%">
+                    <span class="sr-only">25% Complete (danger)</span>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Striped Version -->
+              <div class="col-sm-6">
+                <h4 class="block-subheading space-bottom">Striped Version</h4>
+                <div class="progress progress-striped">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+                  </div>
+                </div>
+                <div class="progress progress-striped">
+                  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                  </div>
+                </div>
+                <div class="progress progress-striped">
+                  <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                  </div>
+                </div>
+                <div class="progress progress-striped">
+                  <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                  </div>
+                </div>
+                <div class="progress progress-striped">
+                  <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                  </div>
+                </div>
+
+                <!-- Animated -->
+                <h4 class="block-subheading space-top-2x space-bottom">Animated</h4>
+                <div class="progress progress-striped active">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%"><span class="sr-only">50% Complete</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Media Objects -->
+        <div class="row">
+          <div class="col-md-8">
+            <h3 class="block-heading">Media Objects</h3>
+            <div class="media">
+              <a class="pull-left" href="#">
+                <img class="media-object" src="../img/thumbnails/thumb08.jpg" alt="Thumbnail">
+              </a>
+              <div class="media-body">
+                <h4 class="media-heading">Media heading</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In tenetur blanditiis minus cum minima harum inventore quas iure aliquid ex ut, facilis eaque earum. Rerum eos, laudantium veniam vero esse. Voluptatum blanditiis illum neque quo architecto reprehenderit inventore.</p>
+              </div>
+            </div>
+            <div class="media">
+              <a class="pull-left" href="#">
+                <img class="media-object" src="../img/thumbnails/thumb09.jpg" alt="Thumbnail">
+              </a>
+              <div class="media-body">
+                <h4 class="media-heading">Media heading</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In tenetur blanditiis minus cum minima harum inventore quas iure aliquid ex ut, facilis eaque earum. Rerum eos, laudantium veniam vero esse. Voluptatum blanditiis illum neque quo architecto reprehenderit inventore.</p>
+              </div>
+            </div>
+            <div class="media">
+              <a class="pull-left" href="#">
+                <img class="media-object" src="../img/thumbnails/thumb10.jpg" alt="Thumbnail">
+              </a>
+              <div class="media-body">
+                <h4 class="media-heading">Media heading</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In tenetur blanditiis minus cum minima harum inventore quas iure aliquid ex ut, facilis eaque earum. Rerum eos, laudantium veniam vero esse. Voluptatum blanditiis illum neque quo architecto reprehenderit inventore.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- List Groups -->
+        <div class="row space-top-2x">
+          <div class="col-md-12">
+            <h3 class="block-heading">List Groups</h3>
+            <div class="row">
+
+              <!-- Basic Example -->
+              <div class="col-md-4 col-sm-6">
+                <h4 class="block-subheading space-bottom">Basic Example</h4>
+                <ul class="list-group">
+                  <li class="list-group-item">Lorem ipsum dolor</li>
+                  <li class="list-group-item">Cras justo odio</li>
+                  <li class="list-group-item">Dapibus ac facilisis in</li>
+                  <li class="list-group-item">Morbi leo risus</li>
+                </ul>
+              </div>
+
+              <!-- Example with Badges -->
+              <div class="col-md-4 col-sm-6">
+                <h4 class="block-subheading space-bottom">Example with Badges</h4>
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <span class="badge badge-primary">15</span>
+                    Lorem ipsum dolor
+                  </li>
+                  <li class="list-group-item">
+                    <span class="badge badge-primary">15</span>
+                    Cras justo odio
+                  </li>
+                  <li class="list-group-item">
+                    <span class="badge">3</span>
+                    Dapibus ac facilisis in
+                  </li>
+                  <li class="list-group-item">
+                    <span class="badge badge-primary">8</span>
+                    Morbi leo risus
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Linked Items -->
+              <div class="col-md-4 col-sm-6">
+                <h4 class="block-subheading space-bottom">Linked Items</h4>
+                <div class="list-group">
+                  <a href="#" class="list-group-item active">
+                    <span class="badge">15</span>
+                    Lorem ipsum dolor
+                  </a>
+                  <a href="#" class="list-group-item">
+                    <span class="badge badge-primary">15</span>
+                    Cras justo odio
+                  </a>
+                  <a href="#" class="list-group-item">
+                    <span class="badge">3</span>
+                    Dapibus ac facilisis in
+                  </a>
+                  <a href="#" class="list-group-item">
+                    <span class="badge badge-primary">8</span>
+                    Morbi leo risus
+                  </a>
+                </div>
+              </div>
+
+              <!-- Contextual Colors -->
+              <div class="col-md-4 col-sm-6">
+                <h4 class="block-subheading space-bottom">Contextual Colors</h4>
+                <ul class="list-group">
+                  <li class="list-group-item list-group-item-primary">Lorem ipsum dolor sit amet</li>
+                  <li class="list-group-item list-group-item-success">Dapibus ac facilisis in</li>
+                  <li class="list-group-item list-group-item-info">Sed ut perspiciatis unde omnis</li>
+                  <li class="list-group-item list-group-item-warning">Porta ac consectetur ac</li>
+                  <li class="list-group-item list-group-item-danger">Vestibulum at eros</li>
+                </ul>
+              </div>
+
+              <!-- Contextual Colors Linked Items -->
+              <div class="col-md-4 col-sm-6">
+                <h4 class="block-subheading space-bottom">Contextual Colors Linked Items</h4>
+                <div class="list-group">
+                  <a href="#" class="list-group-item list-group-item-primary">Lorem ipsum dolor sit amet</a>
+                  <a href="#" class="list-group-item list-group-item-success">Dapibus ac facilisis in</a>
+                  <a href="#" class="list-group-item list-group-item-info">Cras sit amet nibh libero</a>
+                  <a href="#" class="list-group-item list-group-item-warning">Porta ac consectetur ac</a>
+                  <a href="#" class="list-group-item list-group-item-danger">Vestibulum at eros</a>
+                </div>
+              </div>
+
+              <!-- Custom Content -->
+              <div class="col-md-4 col-sm-6">
+                <h4 class="block-subheading space-bottom">Custom Content</h4>
+                <div class="list-group">
+                  <a href="#" class="list-group-item active">
+                    <h4 class="list-group-item-heading">List group item heading</h4>
+                    <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus.</p>
+                  </a>
+                  <a href="#" class="list-group-item">
+                    <h4 class="list-group-item-heading">List group item heading</h4>
+                    <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus.</p>
+                  </a>
+                  <a href="#" class="list-group-item">
+                    <h4 class="list-group-item-heading">List group item heading</h4>
+                    <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus.</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panels -->
+        <div class="row space-top">
+          <div class="col-md-12">
+            <h3 class="block-heading">Panels</h3>
+            <div class="row">
+
+              <!-- Panels Options -->
+              <div class="col-sm-6 space-bottom">
+                <h4 class="block-subheading space-bottom">Panels Options</h4>
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Panel Primary</h3>
+                  </div>
+                  <div class="panel-body">
+                    Panel content
+                  </div>
+                </div>
+                <div class="panel panel-primary">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Panel Primary</h3>
+                  </div>
+                  <div class="panel-body">
+                    Panel content
+                  </div>
+                </div>
+                <div class="panel panel-success">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Panel Success</h3>
+                  </div>
+                  <div class="panel-body">
+                    Panel content
+                  </div>
+                </div>
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Panel Info</h3>
+                  </div>
+                  <div class="panel-body">
+                    Panel content
+                  </div>
+                </div>
+                <div class="panel panel-warning">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Panel Warning</h3>
+                  </div>
+                  <div class="panel-body">
+                    Panel content
+                  </div>
+                </div>
+                <div class="panel panel-danger">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Panel Danger</h3>
+                  </div>
+                  <div class="panel-body">
+                    Panel content
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <h4 class="block-subheading space-bottom">Panel with List Group</h4>
+                <div class="panel panel-primary">
+                  <!-- Default panel contents -->
+                  <div class="panel-heading">Panel heading</div>
+                  <div class="panel-body">
+                    Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.
+                  </div>
+                  <!-- List group -->
+                  <ul class="list-group">
+                    <li class="list-group-item">Cras justo odio</li>
+                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                    <li class="list-group-item">Morbi leo risus</li>
+                    <li class="list-group-item">Porta ac consectetur ac</li>
+                    <li class="list-group-item">Vestibulum at eros</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Responsive Embed -->
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="block-heading">Responsive Embed</h3>
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="//player.vimeo.com/video/24927298?title=0&amp;byline=0&amp;portrait=0&amp;color=abbdd1" width="500" height="281" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- Wells -->
+        <div class="row space-top-2x space-bottom-2x">
+          <div class="col-md-8">
+            <h3 class="block-heading">Wells</h3>
+            <div class="well well-sm">
+              Look, I'm in a small well!
+            </div>
+            <div class="well">
+              Look, I'm in a well!
+            </div>
+            <div class="well well-lg">
+              Look, I'm in a large well!
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <a href="../index.html" class="logo"><img src="../img/logo-light.png" alt="Tron UI Kit"></a>
+            <p>New modern look of old good Bootstrap.</p>
+            <ul class="list-unstyled">
+              <li><a href="../index.html">Home</a></li>
+              <li class="active"><a href="index.html">Bootstrap</a></li>
+              <li><a href="tron-extras.html">Tron Extras</a></li>
+              <li><a href="../index.html#examples">Examples</a></li>
+              <li><a href="../docs/" target="_blank">Documentation</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-8">
+            <h3>Subscribe to our newspaper</h3>
+            <p>To receive information about new items and latest updates.</p>
+
+            <!-- Begin MailChimp Subscription Form -->
+            <form action="//8guild.us3.list-manage.com/subscribe/post?u=168a366a98d3248fbc35c0b67&amp;id=011a3332a0" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate class="form-inline subscribe-form space-bottom-2x">
+              <div class="form-group">
+                <label class="sr-only" for="subscr-email">Email address</label>
+                <input type="email" class="form-control required email" name="EMAIL" id="subscr-email" placeholder="Enter email">
+              </div>
+
+              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px;"><input type="text" name="b_168a366a98d3248fbc35c0b67_011a3332a0" tabindex="-1" value=""></div>
+
+              <button type="submit" class="btn btn-warning">Subscribe</button>
+            </form><!-- End MailChimp Subscription Form -->
+
+            <h3>Follow us on:</h3>
+            <div class="social-buttons">
+              <a href="https://www.facebook.com/8guild?fref=ts" class="social-btn sb-facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+              <a href="https://twitter.com/8Guild" class="social-btn sb-twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+              <a href="https://www.behance.net/8Guild" class="social-btn sb-behance" target="_blank"><i class="fa fa-behance"></i></a>
+              <a href="https://plus.google.com/u/0/b/109505223181338808677/109505223181338808677/posts" class="social-btn sb-google-plus" target="_blank"><i class="fa fa-google-plus"></i></a>
+              <a href="https://www.linkedin.com/profile/view?id=330938282" class="social-btn sb-linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <p>Made by <a href="http://8guild.com/" target="_blank">8 Guild</a> in 2014</p>
+          </div>
+        </div>
+      </div>
+    </footer><!-- Footer End -->
+
+    <!-- Outdated Browser
+    ================================================== -->
+    <div id="outdated">
+      <span class="icon-outdated fa fa-exclamation-triangle"></span>
+      <h2>Your browser is out-of-date!</h2>
+      <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update my browser now </a></p>
+      <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+    </div>
+
+    <!-- jQuery Library
+    ================================================== -->
+    <script src="../js/vendor/jquery.min.js"></script>
+
+    <!-- Outdated Browser Plugin
+    ================================================== -->
+    <script src="../outdatedbrowser/outdatedbrowser.min.js"></script>
+    <script src="../outdatedbrowser/outdatedbrowser.init.js"></script>
+
+    <!-- Plugins and Custom scripts
+    ================================================== -->
+    <script src="../js/vendor/bootstrap.min.js"></script>
+    <script src="../js/vendor/smoothscroll.js"></script>
+    <script src="../js/tron-ui.js"></script>
+    <script src="../js/demo.js"></script>
+
+  </body><!-- Body End -->
+</html>

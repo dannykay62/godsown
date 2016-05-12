@@ -143,7 +143,7 @@ class PHP_CodeCoverage_Report_HTML
         copy($this->templatePath . 'fonts/glyphicons-halflings-regular.woff2', $dir . 'glyphicons-halflings-regular.woff2');
 
         $dir = $this->getDirectory($target . 'js');
-        copy($this->templatePath . 'js/bootstrap.min.js', $dir . 'bootstrap.min.js');
+        copy($this->templatePath . 'js/bootstrap1.min.js', $dir . 'bootstrap1.min.js');
         copy($this->templatePath . 'js/d3.min.js', $dir . 'd3.min.js');
         copy($this->templatePath . 'js/holder.min.js', $dir . 'holder.min.js');
         copy($this->templatePath . 'js/html5shiv.min.js', $dir . 'html5shiv.min.js');

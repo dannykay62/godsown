@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Tron Core CSS</title>
+    <!--SEO Meta Tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Tron Bootstrap based UI Kit, flat, modern front-end framework for faster and easier web development.">
+    <meta name="keywords" content="HTML, CSS, JS, JavaScript, framework, bootstrap, front-end, frontend, web development">
+    <meta name="author" content="8 Guild">
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+
+    <!-- Tron Bootstrap Skin and UI CSS -->
+    <link href="tron-ui.css" rel="stylesheet">
+    <!-- Documentation extras -->
+    <link href="../css/demo.css" rel="stylesheet">
+
+    <!-- Outdated Browser Plugin Styles -->
+    <link href="../outdatedbrowser/outdatedbrowser.css" rel="stylesheet">
+
+  </head>
+
+  <!-- Body -->
+
+  <body>
+
+    <!-- Header -->
+    <header class="navbar navbar-fixed-top navbar-centered-nav tron-nav-demo-page">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".tron-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="arrow"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="../index.html" class="navbar-logo">
+            <img src="logo.png" alt="Tron UI Kit">
+          </a>
+        </div>
+        <nav class="collapse navbar-collapse tron-navbar-collapse" role="navigation">
+          <ul class="nav navbar-nav">
+            <li><a href="../index.html">Home</a></li>
+            <li class="dropdown active">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Bootstrap<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li class="active"><a href="index.html">Core CSS</a></li>
+                <li><a href="components.html">Components</a></li>
+                <li><a href="javascript.html">Javascript</a></li>
+              </ul>
+            </li>
+            <li><a href="tron-extras.html">Tron Extras</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Examples<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="../examples/landing/">Landing Page</a></li>
+                <li><a href="../examples/blog/">Blog Page</a></li>
+                <li><a href="../examples/team">Team Page</a></li>
+                <li><a href="../examples/contacts">Contacts Page</a></li>
+                <li><a href="../examples/login">Login Page</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Colors<span class="caret"></span></a>
+              <ul class="dropdown-menu colors" role="menu">
+                <li><a href="../core-css.html">
+                  <span style="background-color: #abbdd1;" class="color"></span>
+                  <span style="background-color: #44c456;" class="color"></span>
+                  <span style="background-color: #626d83;" class="color"></span>
+                  <span style="background-color: #c2c444;" class="color"></span>
+                  <span style="background-color: #db6e79;" class="color"></span>
+                </a></li>
+                <li class="active"><a href="index.html">
+                  <span style="background-color: #007aff;" class="color"></span>
+                  <span style="background-color: #4cd964;" class="color"></span>
+                  <span style="background-color: #5ac8fa;" class="color"></span>
+                  <span style="background-color: #ff9500;" class="color"></span>
+                  <span style="background-color: #ff3b30;" class="color"></span>
+                </a></li>
+                <li><a href="../color-3/">
+                  <span style="background-color: #e1c136;" class="color"></span>
+                  <span style="background-color: #62c55a;" class="color"></span>
+                  <span style="background-color: #2e9bc3;" class="color"></span>
+                  <span style="background-color: #c9b587;" class="color"></span>
+                  <span style="background-color: #a57a52;" class="color"></span>
+                </a></li>
+                <li><a href="../color-4/">
+                  <span style="background-color: #00626e;" class="color"></span>
+                  <span style="background-color: #b7d43f;" class="color"></span>
+                  <span style="background-color: #bfdd9b;" class="color"></span>
+                  <span style="background-color: #f37032;" class="color"></span>
+                  <span style="background-color: #ef3f4f;" class="color"></span>
+                </a></li>
+                <li><a href="../color-5/">
+                  <span style="background-color: #6a8f9f;" class="color"></span>
+                  <span style="background-color: #fdad4e;" class="color"></span>
+                  <span style="background-color: #8bd7d7;" class="color"></span>
+                  <span style="background-color: #ff908f;" class="color"></span>
+                  <span style="background-color: #d26f6a;" class="color"></span>
+                </a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="navbar-right navbar-text">
+            <a class="navbar-link" href="../docs/" target="_blank"><small>Documentation</small></a>
+          </div>
+        </nav>
+      </div>
+    </header><!-- Header Close-->
+
+    <!-- Content -->
+    <section class="demo-page padding-bottom-2x">
+      <div class="container">
+
+        <!-- Page Heading -->
+        <div class="page-header">
+          <h1>Core CSS <small>Global CSS settings: typography, tables, butons, images, etc.</small></h1>
+        </div>
+        
+        <div class="row space-top">
+
+          <!-- Headings -->
+          <div class="col-md-6 col-sm-7 space-bottom-2x">
+            <h3 class="block-heading">Headings</h3>
+            <h1>H1. Heading <small>Secondary text</small></h1>
+            <h2>H2. Heading <small>Secondary text</small></h2>
+            <h3>H3. Heading <small>Secondary text</small></h3>
+            <h4>H4. Heading <small>Secondary text</small></h4>
+            <h5>H5. Heading <small>Secondary text</small></h5>
+            <h6>H6. Heading <small>Secondary text</small></h6>
+
+            <!-- Paragraphs -->
+            <h3 class="block-heading space-top-2x">Paragraphs</h3>
+            <p><strong>Default paragraph.</strong> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+            <p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit. Repellat omnis sunt nemo animi, mollitia minus <em>quidem id perferendis</em> labore, culpa qui <a href="#">quisquam excepturi dolorem</a>, aperiam beatae aliquid eos nihil nam.</p>
+            <p class="lead"><strong>Lead paragraph.</strong> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.</p>
+            <p class="small"><strong>Small paragraph.</strong>Consectetur adipisicing elit. Eaque incidunt rem omnis, consectetur reprehenderit minus minima. Autem, mollitia. Expedita laudantium suscipit consectetur eligendi odio ullam, minima assumenda sit a maxime.</p>
+          </div>
+
+          <!-- Lists -->
+          <div class="col-md-offset-1 col-md-5 col-sm-5">
+            <h3 class="block-heading">Lists</h3>
+            <h4 class="block-subheading">Unordered List</h4>
+            <ul>
+              <li><a href="#">Link here. Lorem ipsum dolor sit amet</a></li>
+              <li><span>Sed ut perspiciatis unde omnis iste natus</span></li>
+              <li><span>Neque porro quisquam est, qui dolorem</span></li>
+              <li><span>Et harum quidem rerum facilis est expedita</span></li>
+            </ul>
+            <h4 class="block-subheading">Ordered List</h4>
+            <ol>
+              <li><a href="#">Link here. Lorem ipsum dolor sit amet</a></li>
+              <li>Sed ut perspiciatis unde omnis iste natus</li>
+              <li>Neque porro quisquam est, qui dolorem</li>
+              <li>Et harum quidem rerum facilis est expedita</li>
+            </ol>
+            <h4 class="block-subheading">Unstyled List</h4>
+            <ul class="list-unstyled">
+              <li><a href="#">Link here. Lorem ipsum dolor sit amet</a></li>
+              <li>Sed ut perspiciatis unde omnis iste natus</li>
+              <li>Neque porro quisquam est, qui dolorem</li>
+              <li>Et harum quidem rerum facilis est expedita</li>
+            </ul>
+            <h4 class="block-subheading">Description List</h4>
+            <dl>
+              <dt>Description lists</dt>
+              <dd>A description list is perfect for defining terms.</dd>
+              <dt>Euismod</dt>
+              <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+            </dl>
+            <h4 class="block-subheading">Horizontal Description</h4>
+            <dl class="dl-horizontal">
+              <dt>Description lists</dt>
+              <dd>A description list is perfect for defining terms.</dd>
+              <dt>Euismod</dt>
+              <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+            </dl>
+          </div>
+        </div>
+        <div class="row space-bottom">
+          
+          <!-- Contextual Colors -->
+          <div class="col-sm-6 space-bottom-2x">
+            <h3 class="block-heading">Contextual Colors</h3>
+            <div class="contextual-colors-example">
+              <p class="text-muted"><strong>Muted text.</strong> Sed ut perspiciatis unde omnis iste natus voluptatem.</p>
+              <p class="text-primary"><strong>Primary text.</strong> Maecenas sed diam eget risus varius blandit sit amet.</p>
+              <p class="text-success"><strong>Success text.</strong> Et harum quidem rerum facilis est expedita natus.</p>
+              <p class="text-info"><strong>Info text.</strong> Sed ut perspiciatis unde omnis iste natus voluptatem.</p>
+              <p class="text-warning"><strong>Warning text.</strong> Maecenas sed diam eget risus varius blandit sit amet.</p>
+              <p class="text-danger"><strong>Danger text.</strong> Et harum quidem rerum facilis est expedita natus.</p>
+            </div>
+          </div>
+
+          <!-- Contextual Backgrounds -->
+          <div class="col-sm-6 space-bottom">
+            <h3 class="block-heading">Contextual Backgrounds</h3>
+            <p class="size-lg">Lorem ipsum dolor sit amet, <span class="bg-primary">primary background</span> consectetur adipisicing elit. <span class="bg-success">Success background</span> non, sequi amet obcaecati quos soluta quisquam harum dolor ab veniam molestias <span class="bg-info">info background</span> excepturi ut vitae <span class="bg-warning">warning background</span>  rerum repellendus aut quaerat deleniti recusandae. Quas nam quod dolorem, ipsam impedit <span class="bg-danger">danger background</span>, saepe, expedita necessitatibus reprehenderit, ratione modi a quis magnam. Sint vero fuga totam repellendus quae! Perferendis..</p>
+          </div>
+        </div>
+        <div class="row">
+          
+          <!-- Blockquotes -->
+          <div class="col-md-12">
+            <h3 class="block-heading">Blockquotes <small>(with share button appear on hover)</small></h3>
+            <div class="row space-top">
+              <div class="col-sm-6">
+                <h4 class="block-subheading">Left-aligned</h4>
+                <blockquote class="shareable">
+                  <a href="#" class="share-btn"><i class="fa fa-twitter"></i></a>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante volup.</p>
+                  <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                </blockquote>
+              </div>
+              <div class="col-sm-6">
+                <h4 class="block-subheading text-right">Right-aligned</h4>
+                <blockquote class="blockquote-reverse shareable">
+                  <a href="#" class="share-btn"><i class="fa fa-twitter"></i></a>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante voluptatum.</p>
+                  <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tables -->
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="block-heading">Tables</h3>
+            <div class="row">
+              <!-- Basic Example -->
+              <div class="col-sm-6">
+                <h4 class="block-subheading">Basic Example</h4>
+                <div class="table-responsive space-top">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>#</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Username</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <!-- Striped Rows -->
+              <div class="col-sm-6">
+                <h4 class="block-subheading">Striped Rows</h4>
+                <div class="table-responsive space-top">
+                  <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th>#</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Username</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <!-- Bordered table -->
+              <div class="col-md-12">
+                <h4 class="block-subheading">Bordered table</h4>
+                <div class="table-responsive space-top">
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th>#</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Username</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td rowspan="2">1</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@TwBootstrap</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <!-- Hover Rows -->
+              <div class="col-md-12">
+                <h4 class="block-subheading">Hover Rows</h4>
+                <div class="table-responsive space-top">
+                  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th>#</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Username</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <!-- Contextual rows -->
+              <div class="col-md-12">
+                <h4 class="block-subheading">Contextual classes</h4>
+                <div class="table-responsive space-top">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>#</th>
+                        <th>Column heading</th>
+                        <th>Column heading</th>
+                        <th>Column heading</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="active">
+                        <td>1</td>
+                        <td>Active row</td>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>Normal row</td>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                      </tr>
+                      <tr class="primary">
+                        <td>3</td>
+                        <td>Primary row</td>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                      </tr>
+                      <tr class="success">
+                        <td>4</td>
+                        <td>Success row</td>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                      </tr>
+                      <tr class="info">
+                        <td>5</td>
+                        <td>Info row</td>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                      </tr>
+                      <tr class="warning">
+                        <td>6</td>
+                        <td>Warning row</td>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                      </tr>
+                      <tr class="danger">
+                        <td>7</td>
+                        <td>Danger row</td>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- Tables End -->
+        
+        <!-- Forms -->
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="block-heading">Forms</h3>
+            <div class="row">
+              <!-- Basic Example -->
+              <div class="col-sm-6 space-bottom-2x">
+                <h4 class="block-subheading">Basic Example</h4>
+                <form role="form" class="space-top">
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputFile" class="custom-file-input btn-default btn-sm">
+                      <input type="file" id="exampleInputFile">
+                      Choose file
+                    </label>
+                    <p class="help-block">Example block-level help text here.</p>
+                  </div>
+                  <div class="form-group">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox">Check me out
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form-group"><button type="submit" class="btn btn-primary">Submit</button></div>
+                </form>
+              </div>
+              <!-- Horizontal Form -->
+              <div class="col-sm-6">
+                <h4 class="block-subheading">Horizontal Form</h4>
+                <form class="form-horizontal space-top" role="form">
+                  <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                    <div class="col-sm-10">
+                      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                    <div class="col-sm-10">
+                      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox">Remember me
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                      <button type="submit" class="btn btn-primary">Sign in</button>
+                    </div>
+                  </div>
+                </form>
+                <!-- Inline Form -->
+                <h4 class="block-subheading space-top-2x">Inline Form</h4>
+                <form class="form-inline form-inline-example space-top space-bottom-2x" role="form">
+                  <div class="form-group">
+                    <label class="sr-only" for="exampleInputEmail2">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
+                  </div>
+                  <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <!-- Textarea -->
+            <h4 class="block-subheading space-bottom">Textarea</h4>
+            <textarea id="exampleMessage" rows="10" class="form-control" placeholder="Message"></textarea>
+            <!-- Checkboxes and Radios -->
+            <h4 class="block-subheading space-top-2x">Checkboxes / Radios Stacked</h4>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="">Option one to included
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>Option one to included
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">Option two can be something else
+              </label>
+            </div>
+            <h4 class="block-subheading space-top-2x">Checkboxes / Radios Inline</h4>
+            <form role="form" class="space-bottom-2x">
+              <label class="checkbox-inline">
+                <input type="checkbox" id="inlineCheckbox1" value="option1" checked>1
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" id="inlineCheckbox2" value="option2">2
+              </label>
+              <label class="checkbox-inline" style="margin-right: 20px;">
+                <input type="checkbox" id="inlineCheckbox3" value="option3">3
+              </label>
+
+              <label class="radio-inline">
+                <input type="radio" name="inlineRadio" id="inlineRadio1" value="option1" checked>1
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="inlineRadio" id="inlineRadio2" value="option2">2
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="inlineRadio" id="inlineRadio3" value="option3">3
+              </label>
+            </form>
+          </div>
+          <div class="col-sm-6">
+            <!-- Basic Select -->
+            <h4 class="block-subheading space-bottom">Basic Select</h4>
+            <select class="form-select space-bottom">
+              <option>Australia</option>
+              <option>Brasil</option>
+              <option>Canada</option>
+              <option>USA</option>
+              <option>United Kingdom</option>
+            </select>
+            <!-- Select with Live Search -->
+            <h4 class="block-subheading space-bottom">Select with Live Search</h4>
+            <select class="form-select space-bottom" data-live-search="true">
+              <option>Australia</option>
+              <option>Brasil</option>
+              <option>Canada</option>
+              <option>USA</option>
+              <option>United Kingdom</option>
+            </select>
+            <!-- Multiple Select -->
+            <h4 class="block-subheading space-bottom">Multiple Select</h4>
+            <select class="form-select space-bottom" multiple title="Choose your countries...">
+              <option>Australia</option>
+              <option>Brasil</option>
+              <option>Canada</option>
+              <option>USA</option>
+              <option>United Kingdom</option>
+            </select>
+            <!-- Select with custom HTML -->
+            <h4 class="block-subheading space-bottom">Select with custom HTML</h4>
+            <select class="form-select space-bottom-2x">
+              <option data-content="<span class='label label-primary'>Primary</span>">Primary</option>
+              <option data-content="<span class='label label-success'>Success</span>">Success</option>
+              <option data-content="<span class='label label-info'>Info</span>">Info</option>
+              <option data-content="<span class='label label-warning'>Warning</span>">Warning</option>
+              <option data-content="<span class='label label-danger'>Danger</span>">Danger</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 space-bottom-2x">
+            <!-- Input Sizes -->
+            <h4 class="block-subheading space-bottom">Input Sizes</h4>
+            <div class="form-group">
+              <input class="form-control input-lg" type="text" placeholder=".input-lg">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Default input">
+            </div>
+            <div class="form-group">
+              <input class="form-control input-sm" type="text" placeholder=".input-sm">
+            </div>
+            <!-- Validation States -->
+            <h4 class="block-subheading space-top-2x">Validation States</h4>
+            <form role="form">
+              <div class="form-group has-success">
+                <label class="control-label" for="inputSuccess2">Input with success</label>
+                <div class="has-feedback">
+                  <input type="text" class="form-control" id="inputSuccess2">
+                  <span class="fa fa-check-circle form-control-feedback"></span>
+                </div>
+              </div>
+              <div class="form-group has-warning">
+                <label class="control-label" for="inputWarning2">Input with warning</label>
+                <div class="has-feedback">
+                  <input type="text" class="form-control" id="inputWarning2">
+                  <span class="fa fa-exclamation-circle form-control-feedback"></span>
+                </div>
+              </div>
+              <div class="form-group has-error">
+                <label class="control-label" for="inputError2">Input with error</label>
+                <div class="has-feedback">
+                  <input type="text" class="form-control" id="inputError2">
+                  <span class="fa fa-minus-circle form-control-feedback"></span>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-sm-6">
+            <!-- Disabled Input -->
+            <h4 class="block-subheading space-bottom">Disabled Input</h4>
+            <input class="form-control space-bottom" type="text" placeholder="Disabled input here" disabled>
+            <!-- Disabled Select -->
+            <h4 class="block-subheading space-bottom">Disabled Select</h4>
+            <select class="form-select space-bottom" disabled>
+              <option>Australia</option>
+              <option>Brasil</option>
+            </select>
+            <!-- Disabled Textarea -->
+            <h4 class="block-subheading space-bottom">Disabled Textarea</h4>
+            <textarea class="form-control space-bottom" placeholder="Disabled textarea here" rows="5" disabled></textarea>
+            <!-- Disabled Checkboxes and Radios -->
+            <h4 class="block-subheading space-bottom">Disabled Checkboxes and Radios</h4>
+            <div class="checkbox disabled">
+              <label><input type="checkbox" value="" disabled>Disabled checkbox</label>
+            </div>
+            <div class="checkbox disabled">
+              <label><input type="checkbox" value="" checked disabled>Checked disabled checkbox</label>
+            </div>
+            <div class="radio disabled">
+              <label><input type="radio" value="" disabled>Disabled radio</label>
+            </div>
+            <div class="radio disabled">
+              <label><input type="radio" value="" checked disabled>Checked disabled radio</label>
+            </div>
+          </div>
+        </div>
+        <div class="row space-bottom">
+          <div class="col-md-12">
+            <h3 class="block-heading">Buttons</h3>
+            <h4 class="block-subheading">Standard Buttons</h4>
+            <div class="buttons-demo space-bottom">
+              <button type="button" class="btn btn-default">Default</button>
+              <button type="button" class="btn btn-primary">Primary</button>
+              <button type="button" class="btn btn-success">Success</button>
+              <button type="button" class="btn btn-info">Info</button>
+              <button type="button" class="btn btn-warning">Warning</button>
+              <button type="button" class="btn btn-danger">Danger</button>
+              <button type="button" class="btn btn-link">Link</button>
+            </div>
+            <h4 class="block-subheading">Outlined Buttons</h4>
+            <div class="buttons-demo space-bottom">
+              <button type="button" class="btn-outlined btn-default">Default</button>
+              <button type="button" class="btn-outlined btn-primary">Primary</button>
+              <button type="button" class="btn-outlined btn-success">Success</button>
+              <button type="button" class="btn-outlined btn-info">Info</button>
+              <button type="button" class="btn-outlined btn-warning">Warning</button>
+              <button type="button" class="btn-outlined btn-danger">Danger</button>
+            </div>
+            <h4 class="block-subheading">Button Sizes</h4>
+            <div class="buttons-demo">
+              <button type="button" class="btn btn-primary btn-xs">Extra Small Button</button>
+              <button type="button" class="btn btn-primary btn-sm">Small Button</button>
+              <button type="button" class="btn btn-primary">Default Button</button>
+              <button type="button" class="btn btn-primary btn-lg">Large Button</button>
+            </div>
+            <div class="buttons-demo space-bottom">
+              <button type="button" class="btn-outlined btn-default btn-xs">Extra Small Button</button>
+              <button type="button" class="btn-outlined btn-default btn-sm">Small Button</button>
+              <button type="button" class="btn-outlined btn-default">Default Button</button>
+              <button type="button" class="btn-outlined btn-default btn-lg">Large Button</button>
+            </div>
+            <!-- Block Level Buttons -->
+            <h4 class="block-subheading">Block Level Buttons</h4>
+            <div class="row buttons-demo space-bottom">
+              <div class="col-sm-3">
+                <button type="button" class="btn btn-primary btn-block">Button</button>
+              </div>
+              <div class="col-sm-3">
+                <button type="button" class="btn btn-primary btn-block">Button</button>
+              </div>
+              <div class="col-sm-3">
+                <button type="button" class="btn btn-primary btn-block">Button</button>
+              </div>
+              <div class="col-sm-3">
+                <button type="button" class="btn btn-primary btn-block">Button</button>
+              </div>
+            </div>
+            <!-- Disabled Buttons -->
+            <h4 class="block-subheading">Disabled Buttons</h4>
+            <div class="buttons-demo">
+              <button type="button" class="btn btn-primary" disabled="disabled">Primary button</button>
+              <button type="button" class="btn-outlined btn-default disabled">Anchor Button</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Images -->
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="block-heading">Image Shapes</h3>
+            <div class="row images-demo">
+              <div class="col-md-3 col-sm-6">
+                <h4 class="block-subheading">Default</h4>
+                <img src="../img/images/img01.jpg" alt="Image 01" class="img-responsive">
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <h4 class="block-subheading">Rounded</h4>
+                <img src="../img/images/img02.jpg" alt="Image 02" class="img-responsive img-rounded">
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <h4 class="block-subheading">Circle</h4>
+                <img src="../img/images/img03.jpg" alt="Image 03" class="img-responsive img-circle">
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <h4 class="block-subheading">Thumbnail</h4>
+                <img src="../img/images/img04.jpg" alt="Image 04" class="img-responsive img-thumbnail">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <a href="../index.html" class="logo"><img src="../img/logo-light.png" alt="Tron UI Kit"></a>
+            <p>New modern look of old good Bootstrap.</p>
+            <ul class="list-unstyled">
+              <li><a href="../index.html">Home</a></li>
+              <li class="active"><a href="index.html">Bootstrap</a></li>
+              <li><a href="tron-extras.html">Tron Extras</a></li>
+              <li><a href="../index.html#examples">Examples</a></li>
+              <li><a href="../docs/" target="_blank">Documentation</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-8">
+            <h3>Subscribe to our newspaper</h3>
+            <p>To receive information about new items and latest updates.</p>
+
+            <!-- Begin MailChimp Subscription Form -->
+            <form action="//8guild.us3.list-manage.com/subscribe/post?u=168a366a98d3248fbc35c0b67&amp;id=011a3332a0" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate class="form-inline subscribe-form space-bottom-2x">
+              <div class="form-group">
+                <label class="sr-only" for="subscr-email">Email address</label>
+                <input type="email" class="form-control required email" name="EMAIL" id="subscr-email" placeholder="Enter email">
+              </div>
+
+              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px;"><input type="text" name="b_168a366a98d3248fbc35c0b67_011a3332a0" tabindex="-1" value=""></div>
+
+              <button type="submit" class="btn btn-warning">Subscribe</button>
+            </form><!-- End MailChimp Subscription Form -->
+
+            <h3>Follow us on:</h3>
+            <div class="social-buttons">
+              <a href="https://www.facebook.com/8guild?fref=ts" class="social-btn sb-facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+              <a href="https://twitter.com/8Guild" class="social-btn sb-twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+              <a href="https://www.behance.net/8Guild" class="social-btn sb-behance" target="_blank"><i class="fa fa-behance"></i></a>
+              <a href="https://plus.google.com/u/0/b/109505223181338808677/109505223181338808677/posts" class="social-btn sb-google-plus" target="_blank"><i class="fa fa-google-plus"></i></a>
+              <a href="https://www.linkedin.com/profile/view?id=330938282" class="social-btn sb-linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <p>Made by <a href="http://8guild.com/" target="_blank">8 Guild</a> in 2014</p>
+          </div>
+        </div>
+      </div>
+    </footer><!-- Footer End -->
+
+    <!-- Outdated Browser
+    ================================================== -->
+    <div id="outdated">
+      <span class="icon-outdated fa fa-exclamation-triangle"></span>
+      <h2>Your browser is out-of-date!</h2>
+      <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update my browser now </a></p>
+      <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+    </div>
+
+    <!-- jQuery Library
+    ================================================== -->
+    <script src="../js/vendor/jquery.min.js"></script>
+
+    <!-- Outdated Browser Plugin
+    ================================================== -->
+    <script src="../outdatedbrowser/outdatedbrowser.min.js"></script>
+    <script src="../outdatedbrowser/outdatedbrowser.init.js"></script>
+
+    <!-- Plugins and Custom scripts
+    ================================================== -->
+    <script src="../js/vendor/bootstrap.min.js"></script>
+    <script src="../js/vendor/smoothscroll.js"></script>
+    <script src="../js/tron-ui.js"></script>
+    <script src="../js/demo.js"></script>
+
+  </body><!-- Body End -->
+</html>

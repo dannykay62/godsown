@@ -1,0 +1,148 @@
+//
+// Slider
+// --------------------------------------------------
+/*! =========================================================
+ * bootstrap-slider.js
+ *
+ * Maintainers: 
+ *		Kyle Kemp 
+ *			- Twitter: @seiyria
+ *			- Github:  seiyria
+ *		Rohit Kalkur
+ *			- Twitter: @Rovolutionary
+ *			- Github:  rovolution
+ *
+ * =========================================================*/
+
+.slider {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+
+	// Horizontal slider
+  &.slider-horizontal {
+	  width: @slider-horizontal-width;
+	  height: @slider-horizontal-height;
+
+	  .slider-track {
+		  height: @slider-horizontal-height;
+		  width: 100%;
+		  margin-top: -(@slider-horizontal-height / 2);
+		  top: 50%;
+		  left: 0;
+		}
+		.slider-selection {
+		  height: 100%;
+		  top: 0;
+		  bottom: 0;
+			.border-right-radius(0);
+		}
+		.slider-handle {
+				margin-left: -(@slider-handler-size / 3);
+		  &.max-slider-handle {
+		  	margin-left: -(@slider-handler-size / 2);
+		  }
+		}
+	}
+
+	// Vertical slider
+	&.slider-vertical {
+	  height: @slider-vertical-height;
+	  width: @slider-vertical-width;
+
+	  .slider-track {
+		  width: @slider-vertical-width;
+		  height: 100%;
+		  margin-left: -(@slider-vertical-width / 2);
+		  left: 50%;
+		  top: 0;
+		}
+		.slider-selection {
+		  width: 100%;
+		  left: 0;
+		  top: 0;
+		  bottom: 0;
+		  .border-bottom-radius(0);
+		}
+		.slider-handle {
+		  margin-top: -(@slider-handler-size / 3);
+		}
+	}
+
+	input {
+	  display: none;
+	}
+	.tooltip {
+		.transition(opacity, 0.25s);
+	}
+	.tooltip.top {
+	  margin-top: -60px;
+	  .tooltip-arrow {
+	  	border-top-color: @slider-tooltip-bg;
+	  }
+	}
+	.tooltip.right {
+	  .tooltip-arrow {
+	  	border-right-color: @slider-tooltip-bg;
+	  }
+	}
+	.tooltip-inner {
+		background-color: @slider-tooltip-bg;
+	}
+	.hide {
+	  display: none;
+	}
+	
+	// Track
+	.slider-track {
+	  position: absolute;
+	  cursor: pointer;
+	  background-color: @slider-track-bg;
+	  border-radius: @slider-border-radius;
+	}
+
+	// Selection
+	.slider-selection {
+	  position: absolute;
+	  background-color: @slider-selection-bg;
+	  border-radius: @slider-border-radius;
+	}
+
+	// Handler
+	.slider-handle {
+	  position: absolute;
+	  width: @slider-handler-size;
+	  height: @slider-handler-size;
+	  background-color: @slider-handler-bg;
+	  border-radius: @slider-handler-border-radius;
+	  .scale(1);
+	  .transition(transform, 0.3s);
+	}
+	&:hover {
+		.slider-handle {
+			.scale(1.5);
+		}
+	}
+	
+	// Disabled state
+	&.slider-disabled {
+		.slider-handle {
+			background-color: @slider-disabled-handler-bg;
+
+		}
+		.slider-selection {
+			background-color: @slider-disabled-selection-bg;
+		}
+		.slider-track {
+			cursor: not-allowed;
+		}
+		.tooltip {
+			display: none;
+		}
+		&:hover {
+			.slider-handle {
+				.scale(1);
+			}
+		}
+	}
+}

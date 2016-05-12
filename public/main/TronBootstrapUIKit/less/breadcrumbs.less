@@ -1,0 +1,19 @@
+//
+// Breadcrumbs
+// (dependencies: bootstrap/breadcrumbs.less)
+// --------------------------------------------------
+
+.breadcrumb {
+  display: inline-block;
+  border-radius: @border-radius-large;
+  font-size: @font-size-small;
+
+  > li {
+    + li:before {
+      padding: 0 6px;
+    }
+    > a {
+      font-weight: normal;
+    }
+  }
+}

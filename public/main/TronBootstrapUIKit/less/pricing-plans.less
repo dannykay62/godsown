@@ -1,0 +1,102 @@
+//
+// Pricing Plans
+// --------------------------------------------------
+
+// Base class
+.pricing-plan {
+	width: 100%;
+	max-width: @pricing-plan-max-width; 
+	margin: 0 auto 30px auto;
+
+	// Heading
+	.pp-heading {
+		padding: 24px 40px 20px 40px;
+		color: @pricing-plan-heading-color;
+		text-align: center;
+		background-color: @pricing-plan-default-heading-bg;
+		.border-top-radius(@pricing-plan-border-radius);
+
+		@media screen and (max-width: 380px) {
+			padding: 24px 25px 20px 25px;
+		}
+
+		// Optional icon
+		.pp-icon {
+			color: @pricing-plan-heading-color;
+			line-height: 1;
+			i, span {
+				&:before {
+					font-size: 45px;
+				}
+				&.fa {
+					margin-bottom: 5px;
+					&:before {
+						font-size: 40px;
+					}
+				}
+			}
+		}
+	}
+	.pp-title {
+		font-size: ceil((@font-size-base * 1.125));
+		font-weight: 300;
+		color: @pricing-plan-heading-color;
+		margin: 10px 0;
+	}
+	.pp-price {
+		margin-top: 20px;
+		padding-top: 7px;
+		font-size: floor((@font-size-base * 2.25));
+		font-weight: bold;
+		border-top: 1px solid transparent;
+		.border-color-rgba(#fff, 0.7);
+		small {
+			font-size: @font-size-small;
+			font-weight: normal;
+			margin-left: 4px;
+		}
+	}
+
+	// Body
+	.pp-body {
+		padding: 15px 60px 40px 60px;
+		text-align: center;
+		border: @pricing-plan-default-body-border;
+		border-top: none !important;
+		.border-bottom-radius(@pricing-plan-border-radius);
+
+		@media screen and (max-width: 380px) {
+			padding: 15px 35px 35px 35px;
+		}
+		ul {
+			list-style: none;
+			padding: 0;
+			li {
+				color: @text-color;
+				line-height: (@line-height-computed * 3);
+				font-weight: bold;
+				border-bottom: 1px solid @text-color;
+			}
+		}
+		.btn {
+			margin-top: (@line-height-computed / 3);
+		}
+	}
+
+	// Color options 
+	&.pricing-plan-primary {
+		.pricing-plan-variant(@pricing-plan-primary-heading-bg; @pricing-plan-primary-body-border);
+	}
+	&.pricing-plan-success {
+		.pricing-plan-variant(@pricing-plan-success-heading-bg; @pricing-plan-success-body-border);
+	}
+	&.pricing-plan-info {
+		.pricing-plan-variant(@pricing-plan-info-heading-bg; @pricing-plan-info-body-border);
+	}
+	&.pricing-plan-warning {
+		.pricing-plan-variant(@pricing-plan-warning-heading-bg; @pricing-plan-warning-body-border);
+	}
+	&.pricing-plan-danger {
+		.pricing-plan-variant(@pricing-plan-danger-heading-bg; @pricing-plan-danger-body-border);
+	}
+}

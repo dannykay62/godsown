@@ -1,0 +1,259 @@
+//
+// Forms
+// (dependencies: bootstrap/forms.less)
+// --------------------------------------------------
+
+label {
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+
+.form-control {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-size: @font-size-small;
+  border: 2px solid @input-border;
+  box-shadow: none;
+
+  // Disabled and read-only inputs
+  &[disabled],
+  &[readonly],
+  fieldset[disabled] & {
+    border-color: @input-bg-disabled;
+  }
+}
+
+// Styling file upload button
+//
+label input[type="file"] {
+  position: fixed;
+  top: -1000px;
+}
+.custom-file-input {
+  display: inline-block;
+}
+
+// Checkboxes and radios custom styling
+//
+.icheckbox,
+.iradio {
+  position: relative;
+  display: inline-block;
+  margin-right: 8px;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  margin-top: -1px;
+  cursor: pointer;
+  &:before {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 16px;
+    height: 16px;
+    top: 0;
+    left: 0;
+    .scale(1);
+    .transition(all, 0.25s);
+  }
+  &:hover {
+    &:before {
+      .scale(1.5);
+    }
+  }
+}
+
+.icheckbox {
+  padding: 1px 0 0 3px;
+  .backface-visibility(hidden);
+
+  &:before {
+    background-color: @checkbox-bg-color;
+    border-radius: 4px;
+  }
+
+  &:after {
+    display: block;
+    font-family: FontAwesome;
+    content: '\f00c';
+    font-size: 10px;
+    color: @checkbox-color;
+    .opacity(0);
+    .scale(0);
+    .transition(all, 0.15s);
+  }
+
+  &.checked {
+    &:after {
+      .opacity(1);
+      .scale(1);
+    }
+  }
+}
+
+.iradio {
+  padding: 3px 0 0 3px;
+  .backface-visibility(hidden);
+
+  &:before {
+    background-color: @radio-bg-color;
+    border-radius: 50%;
+  }
+
+  &:after {
+    display: block;
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: @radio-color;
+    border-radius: 50%;
+    .opacity(0);
+    .scale(0);
+    .transition(all, 0.15s);
+  }
+
+  &.checked {
+    &:after {
+      .opacity(1);
+      .scale(1);
+    }
+  }
+}
+.checkbox,
+.radio,
+.checkbox-inline,
+.radio-inline {
+  label {
+    font-size: @font-size-small;
+    .user-select(none);
+    padding-left: 0;
+
+    &.hover {
+      .icheckbox,
+      .iradio {
+        &:before {
+          .scale(1.5);
+        }
+      }
+    }
+  }
+
+  &.disabled {
+    label {
+      color: @gray-light;
+    }
+    .icheckbox,
+    .iradio {
+      &:before {
+        background-color: lighten(@gray-light, 15%);
+      }
+
+      &:hover {
+        &:before {
+          -webkit-transform: none;
+              -ms-transform: none;
+               -o-transform: none;
+                  transform: none;
+        }
+      }
+    }
+  }
+}
+label {
+  &.checkbox-inline,
+  &.radio-inline {
+    font-size: @font-size-small;
+    padding-left: 0;
+    margin-left: 0;
+    margin-right: 6px;
+    .user-select(none);
+    &.hover {
+      .icheckbox,
+      .iradio {
+        &:before {
+          .scale(1.5);
+        }
+      }
+    }
+  }
+}
+
+// Form groups
+.form-group {
+  margin-bottom: 20px;
+}
+
+// Help texts
+.help-block {
+  font-size: @font-size-small;
+  color: @gray-light;
+}
+
+//Inline forms
+.form-inline {
+
+  .form-group {
+    margin-right: 10px;
+  }
+  .checkbox,
+  .radio {
+    margin-right: 10px;
+  }
+}
+.form-horizontal {
+  label {
+    line-height: 2;
+    &.checkbox-inline,
+    &.radio-inline {
+      line-height: 1.5;
+    }
+  }
+  .checkbox,
+  .radio,
+  .checkbox-inline,
+  .radio-inline {
+    label {
+      line-height: 1.5;
+    }
+  }
+}
+
+// Form control sizing
+.input-sm {
+  .input-size(@input-height-small; @padding-small-vertical; @padding-base-horizontal; @font-size-small; @line-height-small; ceil(@border-radius-base*1.5));
+}
+
+.input-lg {
+  .input-size(@input-height-large; ceil(@padding-large-vertical / 2); @padding-base-horizontal; @font-size-large; @line-height-large; @border-radius-xl);
+}
+
+// Form control feedback states
+//
+form,
+.form-inline,
+.form-horizontal {
+  .has-feedback {
+    position: relative;
+    
+    .form-control-feedback {
+      font-size: 19px;
+      line-height: 1;
+      top: 50%;
+      right: (@padding-base-horizontal / 6);
+      margin-top: -9px;
+    }
+    // Ensure icons don't overlap text
+    .form-control {
+      padding-right: (@input-height-base * 1.1);
+    }
+  }
+}
+.form-inline,
+.form-horizontal {
+  .has-feedback {
+    .form-control-feedback {
+      right: (@padding-base-horizontal / 1.3);
+    }
+  }
+}

@@ -1,0 +1,195 @@
+//
+// Button groups
+// (dependencies: bootstrap/button-groups.less)
+// --------------------------------------------------
+
+.btn-group {
+  > .btn {
+    margin-right: 2px;
+  }
+
+  // Outlined buttons
+  > .btn-outlined {
+     position: relative;
+     float: left;
+     margin-right: -2px;
+  }
+}
+.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle),
+.btn-group > .btn-outlined:not(:first-child):not(:last-child):not(.dropdown-toggle) {
+  border-radius: 0 !important;
+}
+.btn-group > .btn:first-child,
+.btn-group > .btn-outlined:first-child {
+  margin-left: 0;
+  &:not(:last-child):not(.dropdown-toggle) {
+    .border-right-radius(0) !important;
+  }
+}
+.btn-group > .btn:last-child:not(:first-child),
+.btn-group > .btn-outlined:last-child:not(:first-child) {
+  .border-left-radius(0) !important;
+}
+
+.btn-group > .btn-group {
+  float: left;
+}
+.btn-group > .btn-group:not(:first-child):not(:last-child) > .btn,
+.btn-group > .btn-group:not(:first-child):not(:last-child) > .btn-outlined {
+  border-radius: 0 !important;
+}
+.btn-group > .btn-group:first-child {
+  > .btn:last-child,
+  > .btn-outlined:last-child {
+   .border-right-radius(0) !important;
+  }
+}
+.btn-group > .btn-group:last-child > .btn-outlined:first-child {
+  .border-left-radius(0);
+}
+
+// Button group sizes (outlined buttons)
+.btn-group-xs > .btn-outlined { &:extend(.btn-xs); }
+.btn-group-sm > .btn-outlined { &:extend(.btn-sm); }
+.btn-group-lg > .btn-outlined { &:extend(.btn-lg); }
+
+
+// Split button dropdowns
+.btn-group > .btn + .dropdown-toggle,
+.btn-group > .btn-outlined + .dropdown-toggle,
+.input-group-btn > .btn + .dropdown-toggle,
+.input-group-btn > .btn-outlined + .dropdown-toggle {
+  padding-left: 15px;
+  padding-right: 20px;
+
+  > .caret {
+    margin-left: 0px !important;
+  }
+}
+.btn-group > .dropdown-toggle,
+.input-group-btn > .dropdown-toggle {
+  padding-right: ceil(@padding-base-horizontal*1.25);
+}
+.btn-group > .btn-lg + .dropdown-toggle {
+  padding-left: 20px !important;
+  padding-right: 25px !important;
+  .border-left-radius(0) !important;
+}
+.btn-group > .btn-lg.btn:not(.dropdown-toggle),
+.btn-group > .btn-lg.btn-outlined:not(.dropdown-toggle) {
+  padding-right: floor(@padding-large-horizontal*0.8) !important;
+}
+.btn-group > .btn-sm.btn:not(.dropdown-toggle),
+.btn-group > .btn-sm.btn-outlined:not(.dropdown-toggle) {
+  padding-right: floor(@padding-base-horizontal*0.8) !important;
+}
+.btn-group > .btn-xs.btn:not(.dropdown-toggle),
+.btn-group > .btn-xs.btn-outlined:not(.dropdown-toggle) {
+  padding-right: floor(@padding-base-horizontal*0.75) !important;
+}
+.btn-group > .btn-sm + .dropdown-toggle {
+  padding-left: 12px !important;
+  padding-right: 16px !important;
+  .border-left-radius(0) !important;
+}
+.btn-group > .btn-xs + .dropdown-toggle {
+  padding-left: 8px !important;
+  padding-right: 12px !important;
+  .border-left-radius(0) !important;
+}
+
+// The clickable button for toggling the menu
+.btn-group.open .dropdown-toggle {
+  box-shadow: none;
+
+  &.btn-link {
+    box-shadow: none;
+  }
+}
+
+// Vertical button groups
+.btn-group-vertical {
+  > .btn,
+  > .btn-outlined,
+  > .btn-group {
+    margin-right: 2px;
+    margin-bottom: 2px;
+  }
+  > .btn-group > .btn {
+    margin-bottom: 0px;
+  }
+  > .btn-outlined {
+    display: block;
+    float: none;
+    width: 100%;
+    max-width: 100%;
+    margin-right: 0px;
+    margin-bottom: -2px;
+  }
+  > .btn-group > .btn-outlined {
+    margin-bottom: -4px;
+  }
+}
+
+.btn-group-vertical > .btn,
+.btn-group-vertical > .btn-outlined {
+  &:not(:first-child):not(:last-child) {
+    border-radius: 0;
+  }
+  &:first-child:not(:last-child) {
+    border-top-right-radius: @border-radius-large;
+    .border-bottom-radius(0);
+  }
+  &:last-child:not(:first-child) {
+    border-bottom-left-radius: @border-radius-large;
+    .border-top-radius(0);
+  }
+}
+.btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .btn-outlined {
+  border-radius: 0;
+}
+.btn-group-vertical > .btn-group:first-child:not(:last-child) {
+  > .btn-outlined:last-child {
+    .border-bottom-radius(0);
+  }
+}
+.btn-group-vertical > .btn-group:last-child:not(:first-child) > .btn-outlined:first-child {
+  .border-top-radius(0);
+}
+
+// Justified button groups
+// ----------------------
+.btn-group-justified {
+  > .btn,
+  > .btn-group {
+    float: none;
+    display: table-cell;
+    width: 1%;
+    border-left: 1px solid #fff;
+    text-align: center;
+    cursor: pointer;
+    &:first-child {
+      border-left: none;
+    }
+  }
+  > .btn-outlined {
+    float: none;
+    display: table-cell;
+    width: 1%;
+    text-align: center;
+    cursor: pointer;
+  }
+  > .btn-group .btn,
+  > .btn-group .btn-outlined {
+    width: 100%;
+  }
+}
+.btn-group-justified {
+  > .btn-outlined:not(:first-child):not(:last-child) {
+    border-right: 0;
+    border-left: 0;
+  }
+  > .btn-group-outlined {
+    border: none;
+  }
+}
